@@ -2,9 +2,15 @@
 #include<alpng.h>
 #include<time.h>
 
+
+
 BITMAP* buffer;
 
 bool close_button_pressed;
+
+int random_number=0;
+
+int step;
 
 // FPS System
 volatile int ticks = 0;
@@ -51,6 +57,12 @@ void abort_on_error(const char *message){
 }
 
 void update(){
+  if(key[KEY_ENTER] && step>9){
+    random_number=random(1,122);
+    step=0;
+  }
+
+  step++;
 
 
 
@@ -58,6 +70,10 @@ void update(){
 
 void draw(){
 
+
+
+    rectfill(buffer,0,0,SCREEN_W,SCREEN_H,makecol(255,255,255));
+    textprintf_ex(buffer,font,10,10,makecol(0,0,0),makecol(0,0,-1),"%i",random_number);
     draw_sprite(screen,buffer,0,0);
 }
 
@@ -110,7 +126,7 @@ int main(){
 
 
 
-  set_window_title("Sci-Fi game!");
+  set_window_title("Dale's Game 2015");
   setup();
 
 
