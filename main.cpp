@@ -1,10 +1,17 @@
 #include<allegro.h>
 #include<alpng.h>
 #include<time.h>
+#include<iostream>
+#include <fstream>
+#include<vector>
 
+#include "rapidxml.hpp"
+#include "rapidxml_print.hpp"
 
+using namespace rapidxml;
+using namespace std;
 
-BITMAP* buffer;
+BITMAP* al_buffer;
 
 bool close_button_pressed;
 
@@ -67,14 +74,55 @@ void update(){
 
 
 }
+void load_xml(){
+
+  textprintf_ex(al_buffer,font,10,10,makecol(0,0,0),makecol(0,0,-1),"Parsing my beer journal...");
+
+	xml_document<> doc;
+	xml_node<> * root_node;
+	// Read the xml file into a vector
+	ifstream theFile ("beerJournal.xml");
+	vector<char> buffer((istreambuf_iterator<char>(theFile)), istreambuf_iterator<char>());
+	buffer.push_back('\0');
+	// Parse the buffer using the xml file parsing library into doc
+	doc.parse<0>(&buffer[0]);
+	// Find our root node
+	root_node = doc.first_node("MyBeerJournal");
+	// Iterate over the brewerys
+	for (xml_node<> * brewery_node = root_node->first_node("Brewery"); brewery_node; brewery_node = brewery_node->next_sibling())
+	{
+
+	  textprintf_ex(al_buffer,font,10,30,makecol(0,0,0),makecol(0,0,-1),"I have visited %s in %s",
+      brewery_node->first_attribute("name")->value(),
+      brewery_node->first_attribute("location")->value()
+
+    );
+            // Interate over the beers
+	    for(xml_node<> * beer_node = brewery_node->first_node("Beer"); beer_node; beer_node = beer_node->next_sibling())
+	    {
+
+	    	textprintf_ex(al_buffer,font,10,50,makecol(0,0,0),makecol(0,0,-1),"On %s, I tried their %s which is a %s. ",
+
+	    		beer_node->first_attribute("dateSampled")->value(),
+	    		beer_node->first_attribute("name")->value(),
+	    		beer_node->first_attribute("description")->value());
+
+      textprintf_ex(al_buffer,font,10,40,makecol(0,0,0),makecol(0,0,-1),"I gave it the following review: %s", beer_node->value());
+
+	    }
+
+	}
+
+}
 
 void draw(){
 
 
 
-    rectfill(buffer,0,0,SCREEN_W,SCREEN_H,makecol(255,255,255));
-    textprintf_ex(buffer,font,10,10,makecol(0,0,0),makecol(0,0,-1),"%i",random_number);
-    draw_sprite(screen,buffer,0,0);
+    rectfill(al_buffer,0,0,SCREEN_W,SCREEN_H,makecol(255,255,255));
+    textprintf_ex(al_buffer,font,10,10,makecol(0,0,0),makecol(0,0,-1),"%i",random_number);
+    load_xml();
+    draw_sprite(screen,al_buffer,0,0);
 }
 
 
@@ -84,7 +132,7 @@ void draw(){
 
 
 void setup(){
-    buffer=create_bitmap(1024,768);
+    al_buffer=create_bitmap(1024,768);
 
 
     srand(time(NULL));
