@@ -96,29 +96,32 @@ void load_xml(){
 	xml_document<> doc;
 	xml_node<> * root_node;
 	// Read the xml file into a vector
-	ifstream theFile ("beerJournal.xml");
+	ifstream theFile ("1b.xml");
 	vector<char> buffer((istreambuf_iterator<char>(theFile)), istreambuf_iterator<char>());
 	buffer.push_back('\0');
 	// Parse the buffer using the xml file parsing library into doc
 	doc.parse<0>(&buffer[0]);
 	// Find our root node
-	root_node = doc.first_node("MyBeerJournal");
+	root_node = doc.first_node("data");
 	// Iterate over the brewerys
 	int y=-60;
 	for (xml_node<> * brewery_node = root_node->first_node("GeneratedNumber"); brewery_node; brewery_node = brewery_node->next_sibling())
 	{
-    y+=60;
+    y+=80;
     //if(brewery_node->first_attribute("number")->value()=)
       textprintf_ex(al_buffer,font,10,30+y,makecol(0,0,0),makecol(0,0,-1),"Generated number is %s",
         brewery_node->first_attribute("number")->value()
       );
             // Interate over the beers
-	    for(xml_node<> * beer_node = brewery_node->first_node("Beer"); beer_node; beer_node = beer_node->next_sibling())
+	    for(xml_node<> * beer_node = brewery_node->first_node("batResult"); beer_node; beer_node = beer_node->next_sibling())
 	    {
 
 	    	textprintf_ex(al_buffer,font,10,50+y,makecol(0,0,0),makecol(0,0,-1),"1P:%s", beer_node->first_attribute("pitcher1")->value());
         textprintf_ex(al_buffer,font,10,60+y,makecol(0,0,0),makecol(0,0,-1),"2P:%s", beer_node->first_attribute("pitcher2")->value());
         textprintf_ex(al_buffer,font,10,70+y,makecol(0,0,0),makecol(0,0,-1),"3P:%s", beer_node->first_attribute("pitcher3")->value());
+        textprintf_ex(al_buffer,font,10,80+y,makecol(0,0,0),makecol(0,0,-1),"4P:%s", beer_node->first_attribute("pitcher4")->value());
+        textprintf_ex(al_buffer,font,10,90+y,makecol(0,0,0),makecol(0,0,-1),"5P:%s", beer_node->first_attribute("pitcher5")->value());
+        textprintf_ex(al_buffer,font,10,100+y,makecol(0,0,0),makecol(0,0,-1),"6P:%s", beer_node->first_attribute("pitcher6")->value());
 
 
 

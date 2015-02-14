@@ -1,0 +1,1223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  
+    <GeneratedNumber number="1"
+    <cell cellsource="1">G-CON / K-GEN / K-POW</cell>
+    <cell cellsource="2">G-CON / K-GEN / K-POW</cell>
+    <cell cellsource="3">G-CON / K-GEN / K-POW</cell>
+    <cell cellsource="4">G-CON / K-GEN / K-POW</cell>
+    <cell cellsource="5">G-CON / K-GEN / K-POW</cell>
+    <cell cellsource="6">G-CON / K-GEN / K-POW</cell>
+
+  </GeneratedNumber>
+  
+    <cell cellsource="A3">2"
+    <cell cellsource="1">G-CON / K-GEN / K-POW</cell>
+    <cell cellsource="2">G-CON / K-GEN / K-POW</cell>
+    <cell cellsource="3">G-CON / K-GEN / K-POW</cell>
+    <cell cellsource="4">G-CON / K-GEN / K-POW</cell>
+    <cell cellsource="5">G-CON / K-GEN / K-POW</cell>
+    <cell cellsource="6">G-CON / K-GEN / K-POW</cell>
+
+  </GeneratedNumber>
+  
+    <cell cellsource="A4">3"
+    <cell cellsource="1">G-CON / K-GEN / K-POW</cell>
+    <cell cellsource="2">G-CON / K-GEN / K-POW</cell>
+    <cell cellsource="3">G-CON / K-GEN / K-POW</cell>
+    <cell cellsource="4">G-CON / K-GEN / K-POW</cell>
+    <cell cellsource="5">G-CON / K-GEN / K-POW</cell>
+    <cell cellsource="6">G-CON / K-GEN / K-POW</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="4"
+    <cell cellsource="1">G-CON / G-GEN / K-POW</cell>
+    <cell cellsource="2">G-CON / G-GEN / K-POW</cell>
+    <cell cellsource="3">G-CON / G-GEN / K-POW</cell>
+    <cell cellsource="4">G-CON / G-GEN / K-POW</cell>
+    <cell cellsource="5">G-CON / G-GEN / K-POW</cell>
+    <cell cellsource="6">G-CON / G-GEN / K-POW</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="5"
+    <cell cellsource="1">F-CON / G-GEN / K-POW</cell>
+    <cell cellsource="2">F-CON / G-GEN / K-POW</cell>
+    <cell cellsource="3">F-CON / G-GEN / K-POW</cell>
+    <cell cellsource="4">F-CON / G-GEN / K-POW</cell>
+    <cell cellsource="5">F-CON / G-GEN / K-POW</cell>
+    <cell cellsource="6">F-CON / G-GEN / K-POW</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="6"
+    <cell cellsource="1">F-CON / F-GEN / K-POW</cell>
+    <cell cellsource="2">F-CON / F-GEN / K-POW</cell>
+    <cell cellsource="3">F-CON / F-GEN / K-POW</cell>
+    <cell cellsource="4">F-CON / F-GEN / K-POW</cell>
+    <cell cellsource="5">F-CON / F-GEN / K-POW</cell>
+    <cell cellsource="6">F-CON / F-GEN / K-POW</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="7"
+    <cell cellsource="1">1B / BB / BB</cell>
+    <cell cellsource="2">1B / BB / BB</cell>
+    <cell cellsource="3">1B / BB / BB</cell>
+    <cell cellsource="4">1B / BB / BB</cell>
+    <cell cellsource="5">1B / BB / BB</cell>
+    <cell cellsource="6">1B / BB / BB</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="8"
+    <cell cellsource="1">1B / BB / BB</cell>
+    <cell cellsource="2">1B / BB / BB</cell>
+    <cell cellsource="3">1B / BB / BB</cell>
+    <cell cellsource="4">1B / BB / BB</cell>
+    <cell cellsource="5">1B / BB / BB</cell>
+    <cell cellsource="G9">1B / BB / BB</cell>
+    <cell cellsource="H9" />
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="9"
+    <cell cellsource="1">1B / 1B / BB</cell>
+    <cell cellsource="2">1B / 1B / BB</cell>
+    <cell cellsource="3">1B / 1B / BB</cell>
+    <cell cellsource="4">1B / 1B / BB</cell>
+    <cell cellsource="5">1B / 1B / BB</cell>
+    <cell cellsource="6">1B / 1B / BB</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="10"
+    <cell cellsource="1">1B / 1B / BB</cell>
+    <cell cellsource="2">1B / 1B / BB</cell>
+    <cell cellsource="3">1B / 1B / BB</cell>
+    <cell cellsource="4">1B / 1B / BB</cell>
+    <cell cellsource="5">1B / 1B / BB</cell>
+    <cell cellsource="6">1B / 1B / BB</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="11"
+    <cell cellsource="1">STRIKEOUT</cell>
+    <cell cellsource="2">STRIKEOUT</cell>
+    <cell cellsource="3">STRIKEOUT</cell>
+    <cell cellsource="4">STRIKEOUT</cell>
+    <cell cellsource="5">IF 20 BF- WP, K</cell>
+    <cell cellsource="6">IF 15 BF- WP, K</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="12"
+    <cell cellsource="1">STRIKEOUT</cell>
+    <cell cellsource="2">STRIKEOUT</cell>
+    <cell cellsource="3">STRIKEOUT</cell>
+    <cell cellsource="4">STRIKEOUT</cell>
+    <cell cellsource="5">IF 25 BF- WP, K</cell>
+    <cell cellsource="6">FOUL OUT</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="13"
+    <cell cellsource="1">STRIKEOUT</cell>
+    <cell cellsource="2">STRIKEOUT</cell>
+    <cell cellsource="3">STRIKEOUT</cell>
+    <cell cellsource="4">IF 20 BF- WP, K</cell>
+    <cell cellsource="5">FOUL OUT</cell>
+    <cell cellsource="6">FOUL OUT</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="14"
+    <cell cellsource="1">STRIKEOUT</cell>
+    <cell cellsource="2">STRIKEOUT</cell>
+    <cell cellsource="3">STRIKEOUT</cell>
+    <cell cellsource="4">IF 25 BF- WP, K</cell>
+    <cell cellsource="5">FOUL OUT</cell>
+    <cell cellsource="6">FOUL OUT</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="15"
+    <cell cellsource="1">STRIKEOUT</cell>
+    <cell cellsource="2">STRIKEOUT</cell>
+    <cell cellsource="3">IF 20 BF- WP, K</cell>
+    <cell cellsource="4">FOUL OUT</cell>
+    <cell cellsource="5">FOUL OUT</cell>
+    <cell cellsource="6">FOUL OUT</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="16"
+    <cell cellsource="1">STRIKEOUT</cell>
+    <cell cellsource="2">STRIKEOUT</cell>
+    <cell cellsource="3">IF 25 BF- WP, K</cell>
+    <cell cellsource="4">FOUL OUT</cell>
+    <cell cellsource="5">FOUL OUT</cell>
+    <cell cellsource="6">POP OUT / 1B IF DP DEPTH</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="17"
+    <cell cellsource="1">STRIKEOUT</cell>
+    <cell cellsource="2">IF 20 BF- WP, K</cell>
+    <cell cellsource="3">FOUL OUT</cell>
+    <cell cellsource="4">FOUL OUT</cell>
+    <cell cellsource="5">POP OUT / 1B IF DP DEPTH</cell>
+    <cell cellsource="6">POP OUT</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="18"
+    <cell cellsource="1">STRIKEOUT</cell>
+    <cell cellsource="2">IF 25 BF- WP, K</cell>
+    <cell cellsource="3">FOUL OUT</cell>
+    <cell cellsource="4">FOUL OUT</cell>
+    <cell cellsource="5">POP OUT</cell>
+    <cell cellsource="6">GO / 1B if DP Dpth, Crnrs In</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="19"
+    <cell cellsource="1">IF 20 BF- WP, K</cell>
+    <cell cellsource="2">FOUL OUT</cell>
+    <cell cellsource="3">FOUL OUT</cell>
+    <cell cellsource="4">POP OUT / 1B IF DP DEPTH</cell>
+    <cell cellsource="5">GO / 1B if DP Dpth, Crnrs In</cell>
+    <cell cellsource="6">GROUND OUT</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="20"
+    <cell cellsource="1">IF 25 BF- WP, K</cell>
+    <cell cellsource="2">FOUL OUT</cell>
+    <cell cellsource="3">FOUL OUT</cell>
+    <cell cellsource="4">POP OUT</cell>
+    <cell cellsource="5">GROUND OUT</cell>
+    <cell cellsource="6">GROUND OUT</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="21"
+    <cell cellsource="1">FOUL OUT</cell>
+    <cell cellsource="2">FOUL OUT</cell>
+    <cell cellsource="3">POP OUT / 1B IF DP DEPTH</cell>
+    <cell cellsource="4">GO / 1B if DP Dpth, Crnrs In</cell>
+    <cell cellsource="5">GROUND OUT</cell>
+    <cell cellsource="6">GO/K IF SS</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="22"
+    <cell cellsource="1">FOUL OUT</cell>
+    <cell cellsource="2">FOUL OUT</cell>
+    <cell cellsource="3">POP OUT</cell>
+    <cell cellsource="4">GROUND OUT</cell>
+    <cell cellsource="5">GO/K IF SS</cell>
+    <cell cellsource="6">GO/K IF GS</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="23"
+    <cell cellsource="1">FOUL OUT</cell>
+    <cell cellsource="2">POP OUT / 1B IF DP DEPTH</cell>
+    <cell cellsource="3">GO / 1B if DP Dpth, Crnrs In</cell>
+    <cell cellsource="4">GROUND OUT</cell>
+    <cell cellsource="5">GO/K IF GS</cell>
+    <cell cellsource="6">GO/K IFGS</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="24"
+    <cell cellsource="1">FOUL OUT</cell>
+    <cell cellsource="2">POP OUT</cell>
+    <cell cellsource="3">GROUND OUT</cell>
+    <cell cellsource="4">GO/K IF SS</cell>
+    <cell cellsource="5">GO/K IFGS</cell>
+    <cell cellsource="6">GO/K IF AS</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="25"
+    <cell cellsource="1">POP OUT / 1B IF DP DEPTH</cell>
+    <cell cellsource="2">GO / 1B if DP Dpth, Crnrs In</cell>
+    <cell cellsource="3">GROUND OUT</cell>
+    <cell cellsource="4">GO/K IF GS</cell>
+    <cell cellsource="5">GO/K IF AS</cell>
+    <cell cellsource="6">GO/K IF FS</cell>
+    <cell cellsource="6">POP OUT / 1B IF DP DEPTH</cell>
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="26"
+    <cell cellsource="1">POP OUT</cell>
+    <cell cellsource="2">GROUND OUT</cell>
+    <cell cellsource="3">GO/K IF SS</cell>
+    <cell cellsource="4">GO/K IF GS</cell>
+    <cell cellsource="5">GO/K IF AS</cell>
+    <cell cellsource="6">GO/FLY O IF SS</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="27"
+    <cell cellsource="1">GO / 1B if DP Dpth, Crnrs In</cell>
+    <cell cellsource="2">GROUND OUT</cell>
+    <cell cellsource="3">GO/K IF GS</cell>
+    <cell cellsource="4">GO/K IF AS</cell>
+    <cell cellsource="5">GO/K IF FS</cell>
+    <cell cellsource="6">GO/FLY O IF GS</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="28"
+    <cell cellsource="1">GROUND OUT</cell>
+    <cell cellsource="2">GO/K IF SS</cell>
+    <cell cellsource="3">GO/K IF GS</cell>
+    <cell cellsource="4">GO/K IF AS</cell>
+    <cell cellsource="5">GO/FLY O IF SS</cell>
+    <cell cellsource="6">GO/FLY O IF GS</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="29"
+    <cell cellsource="1">GROUND OUT</cell>
+    <cell cellsource="2">GO/K IF GS</cell>
+    <cell cellsource="3">GO/K IF AS</cell>
+    <cell cellsource="4">GO/K IF FS</cell>
+    <cell cellsource="5">GO/FLY O IF SS</cell>
+    <cell cellsource="6">GO/FLY O IF AS</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="30"
+    <cell cellsource="1">GO/K IF SS</cell>
+    <cell cellsource="2">GO/K IF GS</cell>
+    <cell cellsource="3">GO/K IF AS</cell>
+    <cell cellsource="4">GO/FLY O IF SS</cell>
+    <cell cellsource="5">GO/FLY O IF GS</cell>
+    <cell cellsource="6">GO/FLY O IF AS</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="31"
+    <cell cellsource="1">GO/K IF GS</cell>
+    <cell cellsource="2">GO/K IF AS</cell>
+    <cell cellsource="3">GO/K IF FS</cell>
+    <cell cellsource="4">GO/FLY O IF SS</cell>
+    <cell cellsource="5">GO/FLY O IF GS</cell>
+    <cell cellsource="6">GO/FLY O IF FS</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="32"
+    <cell cellsource="1">GO/K IF GS</cell>
+    <cell cellsource="2">GO/K IF AS</cell>
+    <cell cellsource="3">GO/FLY O IF SS</cell>
+    <cell cellsource="4">GO/FLY O IF GS</cell>
+    <cell cellsource="5">GO/FLY O IF AS</cell>
+    <cell cellsource="6">GO/FLY O IF FS</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="33"
+    <cell cellsource="1">GO/K IF AS</cell>
+    <cell cellsource="2">GO/K IF FS</cell>
+    <cell cellsource="3">GO/FLY O IF SS</cell>
+    <cell cellsource="4">GO/FLY O IG GS</cell>
+    <cell cellsource="5">GO/FLY O IF AS</cell>
+    <cell cellsource="6">GO/1B UNLESS PF</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="34"
+    <cell cellsource="1">GO/K IF AS</cell>
+    <cell cellsource="2">GO/FLY O IF SS</cell>
+    <cell cellsource="3">GO/FLY O IF GS</cell>
+    <cell cellsource="4">GO/FLY O IF AS</cell>
+    <cell cellsource="5">GO/FLY O IF FS</cell>
+    <cell cellsource="6">GO/1B UNLESS PF</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="35"
+    <cell cellsource="1">GO/K IF FS</cell>
+    <cell cellsource="2">GO/FLY O IF SS</cell>
+    <cell cellsource="3">GO/FLY O IG GS</cell>
+    <cell cellsource="4">GO/FLY O IF AS</cell>
+    <cell cellsource="5">GO/FLY O IF FS</cell>
+    <cell cellsource="6">GO/1B UNLESS FF</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="36"
+    <cell cellsource="1">GO/FLY O IF SS</cell>
+    <cell cellsource="2">GO/FLY O IF GS</cell>
+    <cell cellsource="3">GO/FLY O IF AS</cell>
+    <cell cellsource="4">GO/FLY O IF FS</cell>
+    <cell cellsource="5">GO/1B UNLESS PF</cell>
+    <cell cellsource="6">GO/1B UNLESS FF</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="37"
+    <cell cellsource="1">GO/FLY O IF SS</cell>
+    <cell cellsource="2">GO/FLY O IF GS</cell>
+    <cell cellsource="3">GO/FLY O IF AS</cell>
+    <cell cellsource="4">GO/FLY O IF FS</cell>
+    <cell cellsource="5">GO/1B UNLESS PF</cell>
+    <cell cellsource="6">GO/1B UNLESS AF</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="38"
+    <cell cellsource="1">GO/FLY O IF GS</cell>
+    <cell cellsource="2">GO/FLY O IF AS</cell>
+    <cell cellsource="3">GO/FLY O IF FS</cell>
+    <cell cellsource="4">GO/1B UNLESS PF</cell>
+    <cell cellsource="5">GO/1B UNLESS FF</cell>
+    <cell cellsource="6">GO/1B UNLESS AF</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="39"
+    <cell cellsource="1">GO/FLY O IG GS</cell>
+    <cell cellsource="2">GO/FLY O IF AS</cell>
+    <cell cellsource="3">GO/FLY O IF FS</cell>
+    <cell cellsource="4">GO/1B UNLESS PF</cell>
+    <cell cellsource="5">GO/1B UNLESS FF</cell>
+    <cell cellsource="6">GO/1B UNLESS GF</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="40"
+    <cell cellsource="1">GO/FLY O IF AS</cell>
+    <cell cellsource="2">GO/FLY O IF FS</cell>
+    <cell cellsource="3">GO/1B UNLESS PF</cell>
+    <cell cellsource="4">GO/1B UNLESS FF</cell>
+    <cell cellsource="5">GO/1B UNLESS AF</cell>
+    <cell cellsource="6">GO/1B UNLESS GF</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="41"
+    <cell cellsource="1">GO/FLY O IF AS</cell>
+    <cell cellsource="2">GO/FLY O IF FS</cell>
+    <cell cellsource="3">GO/1B UNLESS PF</cell>
+    <cell cellsource="4">GO/1B UNLESS FF</cell>
+    <cell cellsource="5">GO/1B UNLESS AF</cell>
+    <cell cellsource="6">GO/1B UNLESS SF</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="42"
+    <cell cellsource="1">GO/FLY O IF FS</cell>
+    <cell cellsource="2">GO/1B UNLESS PF</cell>
+    <cell cellsource="3">GO/1B UNLESS FF</cell>
+    <cell cellsource="4">GO/1B UNLESS AF</cell>
+    <cell cellsource="5">GO/1B UNLESS GF</cell>
+    <cell cellsource="6">GO/1B UNLESS SF</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="43"
+    <cell cellsource="1">GO/FLY O IF FS</cell>
+    <cell cellsource="2">GO/1B UNLESS PF</cell>
+    <cell cellsource="3">GO/1B UNLESS FF</cell>
+    <cell cellsource="4">GO/1B UNLESS AF</cell>
+    <cell cellsource="5">GO/1B UNLESS GF</cell>
+    <cell cellsource="6">GO/E IF SR</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="44"
+    <cell cellsource="1">GO/1B UNLESS PF</cell>
+    <cell cellsource="2">GO/1B UNLESS FF</cell>
+    <cell cellsource="3">GO/1B UNLESS AF</cell>
+    <cell cellsource="4">GO/1B UNLESS GF</cell>
+    <cell cellsource="5">GO/1B UNLESS SF</cell>
+    <cell cellsource="6">FLY OUT</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="45"
+    <cell cellsource="1">GO/1B UNLESS PF</cell>
+    <cell cellsource="2">GO/1B UNLESS FF</cell>
+    <cell cellsource="3">GO/1B UNLESS AF</cell>
+    <cell cellsource="4">GO/1B UNLESS GF</cell>
+    <cell cellsource="5">GO/1B UNLESS SF</cell>
+    <cell cellsource="6">FLY OUT, K POWER P</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="46"
+    <cell cellsource="1">GO/1B UNLESS FF</cell>
+    <cell cellsource="2">GO/1B UNLESS AF</cell>
+    <cell cellsource="3">GO/1B UNLESS GF</cell>
+    <cell cellsource="4">GO/1B UNLESS SF</cell>
+    <cell cellsource="5">GO/E IF SR</cell>
+    <cell cellsource="6">FLY OUT, K POWER P</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="47"
+    <cell cellsource="1">GO/1B UNLESS FF</cell>
+    <cell cellsource="2">GO/1B UNLESS AF</cell>
+    <cell cellsource="3">GO/1B UNLESS GF</cell>
+    <cell cellsource="4">GO/1B UNLESS SF</cell>
+    <cell cellsource="5">FLY OUT</cell>
+    <cell cellsource="6">FLY OUT, K FIREBALLER</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="48"
+    <cell cellsource="1">GO/1B UNLESS AF</cell>
+    <cell cellsource="2">GO/1B UNLESS GF</cell>
+    <cell cellsource="3">GO/1B UNLESS SF</cell>
+    <cell cellsource="4">GO/E IF SR</cell>
+    <cell cellsource="5">FLY OUT, K POWER P</cell>
+    <cell cellsource="6">FLY OUT, K FIREBALLER</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="49"
+    <cell cellsource="1">GO/1B UNLESS AF</cell>
+    <cell cellsource="2">GO/1B UNLESS GF</cell>
+    <cell cellsource="3">GO/1B UNLESS SF</cell>
+    <cell cellsource="4">FLY OUT</cell>
+    <cell cellsource="5">FLY OUT, K POWER P</cell>
+    <cell cellsource="6">FLY OUT</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="50"
+    <cell cellsource="1">GO/1B UNLESS GF</cell>
+    <cell cellsource="2">GO/1B UNLESS SF</cell>
+    <cell cellsource="3">GO/E IF SR</cell>
+    <cell cellsource="4">FLY OUT, K POWER P</cell>
+    <cell cellsource="5">FLY OUT, K FIREBALLER</cell>
+    <cell cellsource="6">FLY OUT</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="51"
+    <cell cellsource="1">GO/1B UNLESS GF</cell>
+    <cell cellsource="2">GO/1B UNLESS SF</cell>
+    <cell cellsource="3">FLY OUT</cell>
+    <cell cellsource="4">FLY OUT, K POWER P</cell>
+    <cell cellsource="5">FLY OUT, K FIREBALLER</cell>
+    <cell cellsource="6">FLY OUT</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="52"
+    <cell cellsource="1">GO/1B UNLESS SF</cell>
+    <cell cellsource="2">GO/E IF SR</cell>
+    <cell cellsource="3">FLY OUT, K POWER P</cell>
+    <cell cellsource="4">FLY OUT, K FIREBALLER</cell>
+    <cell cellsource="5">FLY OUT</cell>
+    <cell cellsource="6">FLY OUT</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="53"
+    <cell cellsource="1">GO/1B UNLESS SF</cell>
+    <cell cellsource="2">FLY OUT</cell>
+    <cell cellsource="3">FLY OUT, K POWER P</cell>
+    <cell cellsource="4">FLY OUT, K FIREBALLER</cell>
+    <cell cellsource="5">FLY OUT</cell>
+    <cell cellsource="6">FLY O/BB-SS IF BASER</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="54"
+    <cell cellsource="1">GO/E IF SR</cell>
+    <cell cellsource="2">FLY OUT, K POWER P</cell>
+    <cell cellsource="3">FLY OUT, K FIREBALLER</cell>
+    <cell cellsource="4">FLY OUT</cell>
+    <cell cellsource="5">FLY OUT</cell>
+    <cell cellsource="6">FLY O/BB-GS IF BASER</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="55"
+    <cell cellsource="1">FLY OUT</cell>
+    <cell cellsource="2">FLY OUT, K POWER P</cell>
+    <cell cellsource="3">FLY OUT, K FIREBALLER</cell>
+    <cell cellsource="4">FLY OUT</cell>
+    <cell cellsource="5">FLY O/BB-SS IF BASER</cell>
+    <cell cellsource="6">FLY O/BB-AS IF BASER</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="56"
+    <cell cellsource="1">FLY OUT, K POWER P</cell>
+    <cell cellsource="2">FLY OUT, K FIREBALLER</cell>
+    <cell cellsource="3">FLY OUT</cell>
+    <cell cellsource="4">FLY OUT</cell>
+    <cell cellsource="5">FLY O/BB-GS IF BASER</cell>
+    <cell cellsource="6">FLY O/3B UNLESS PF</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="57"
+    <cell cellsource="1">FLY OUT, K POWER P</cell>
+    <cell cellsource="2">FLY OUT, K FIREBALLER</cell>
+    <cell cellsource="3">FLY OUT</cell>
+    <cell cellsource="4">FLY OUT</cell>
+    <cell cellsource="5">FLY O/BB-AS IF BASER</cell>
+    <cell cellsource="6">FLY O/2B UNLESS FF</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="58"
+    <cell cellsource="1">FLY OUT, K FIREBALLER</cell>
+    <cell cellsource="2">FLY OUT</cell>
+    <cell cellsource="3">FLY OUT</cell>
+    <cell cellsource="4">FLY O/BB-SS IF BASER</cell>
+    <cell cellsource="5">FLY O/3B UNLESS PF</cell>
+    <cell cellsource="6">FLY O/2B UNLESS AF</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="59"
+    <cell cellsource="1">FLY OUT, K FIREBALLER</cell>
+    <cell cellsource="2">FLY OUT</cell>
+    <cell cellsource="3">FLY OUT</cell>
+    <cell cellsource="4">FLY O/BB-GS IF BASER</cell>
+    <cell cellsource="5">FLY O/2B UNLESS FF</cell>
+    <cell cellsource="6">FLY O/1B UNLESS GF</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="60"
+    <cell cellsource="1">FLY OUT</cell>
+    <cell cellsource="2">FLY OUT</cell>
+    <cell cellsource="3">FLY O/BB-SS IF BASER</cell>
+    <cell cellsource="4">FLY O/BB-AS IF BASER</cell>
+    <cell cellsource="5">FLY O/2B UNLESS AF</cell>
+    <cell cellsource="6">FLY O/1B UNLESS SF</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="61"
+    <cell cellsource="1">FLY OUT</cell>
+    <cell cellsource="2">FLY OUT</cell>
+    <cell cellsource="3">FLY O/BB-GS IF BASER</cell>
+    <cell cellsource="4">FLY O/3B UNLESS PF</cell>
+    <cell cellsource="5">FLY O/1B UNLESS GF</cell>
+    <cell cellsource="6">POSSIBLE ERROR</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="62"
+    <cell cellsource="1">FLY OUT</cell>
+    <cell cellsource="2">FLY O/BB-SS IF BASER</cell>
+    <cell cellsource="3">FLY O/BB-AS IF BASER</cell>
+    <cell cellsource="4">FLY O/2B UNLESS FF</cell>
+    <cell cellsource="5">FLY O/1B UNLESS SF</cell>
+    <cell cellsource="6">POSSIBLE ERROR</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="63"
+    <cell cellsource="1">FLY OUT</cell>
+    <cell cellsource="2">FLY O/BB-GS IF BASER</cell>
+    <cell cellsource="3">FLY O/3B UNLESS PF</cell>
+    <cell cellsource="4">FLY O/2B UNLESS AF</cell>
+    <cell cellsource="5">POSSIBLE ERROR</cell>
+    <cell cellsource="6">POSSIBLE ERROR</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="64"
+    <cell cellsource="1">FLY O/BB-SS IF BASER</cell>
+    <cell cellsource="2">FLY O/BB-AS IF BASER</cell>
+    <cell cellsource="3">FLY O/2B UNLESS FF</cell>
+    <cell cellsource="4">FLY O/1B UNLESS GF</cell>
+    <cell cellsource="5">POSSIBLE ERROR</cell>
+    <cell cellsource="6">POSSIBLE ERROR</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="65"
+    <cell cellsource="1">FLY O/BB-GS IF BASER</cell>
+    <cell cellsource="2">FLY O/3B UNLESS PF</cell>
+    <cell cellsource="3">FLY O/2B UNLESS AF</cell>
+    <cell cellsource="4">FLY O/1B UNLESS SF</cell>
+    <cell cellsource="5">POSSIBLE ERROR</cell>
+    <cell cellsource="6">POSSIBLE ERROR</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="66"
+    <cell cellsource="1">FLY O/BB-AS IF BASER</cell>
+    <cell cellsource="2">FLY O/2B UNLESS FF</cell>
+    <cell cellsource="3">FLY O/1B UNLESS GF</cell>
+    <cell cellsource="4">POSSIBLE ERROR</cell>
+    <cell cellsource="5">POSSIBLE ERROR</cell>
+    <cell cellsource="6">BB</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="67"
+    <cell cellsource="1">FLY O/3B UNLESS PF</cell>
+    <cell cellsource="2">FLY O/2B UNLESS AF</cell>
+    <cell cellsource="3">FLY O/1B UNLESS SF</cell>
+    <cell cellsource="4">POSSIBLE ERROR</cell>
+    <cell cellsource="5">POSSIBLE ERROR</cell>
+    <cell cellsource="6">BB</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="68"
+    <cell cellsource="1">FLY O/2B UNLESS FF</cell>
+    <cell cellsource="2">FLY O/1B UNLESS GF</cell>
+    <cell cellsource="3">POSSIBLE ERROR</cell>
+    <cell cellsource="4">POSSIBLE ERROR</cell>
+    <cell cellsource="5">BB</cell>
+    <cell cellsource="6">BB</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="69"
+    <cell cellsource="1">FLY O/2B UNLESS AF</cell>
+    <cell cellsource="2">FLY O/1B UNLESS SF</cell>
+    <cell cellsource="3">POSSIBLE ERROR</cell>
+    <cell cellsource="4">POSSIBLE ERROR</cell>
+    <cell cellsource="5">BB</cell>
+    <cell cellsource="6">BB</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="70"
+    <cell cellsource="1">FLY O/1B UNLESS GF</cell>
+    <cell cellsource="2">POSSIBLE ERROR</cell>
+    <cell cellsource="3">POSSIBLE ERROR</cell>
+    <cell cellsource="4">POSSIBLE ERROR</cell>
+    <cell cellsource="5">BB</cell>
+    <cell cellsource="6">BB</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="71"
+    <cell cellsource="1">FLY O/1B UNLESS SF</cell>
+    <cell cellsource="2">POSSIBLE ERROR</cell>
+    <cell cellsource="3">POSSIBLE ERROR</cell>
+    <cell cellsource="4">BB</cell>
+    <cell cellsource="5">BB</cell>
+    <cell cellsource="6">BB</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="72"
+    <cell cellsource="1">POSSIBLE ERROR</cell>
+    <cell cellsource="2">POSSIBLE ERROR</cell>
+    <cell cellsource="3">POSSIBLE ERROR</cell>
+    <cell cellsource="4">BB</cell>
+    <cell cellsource="5">BB</cell>
+    <cell cellsource="6">BB</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="73"
+    <cell cellsource="1">POSSIBLE ERROR</cell>
+    <cell cellsource="2">POSSIBLE ERROR</cell>
+    <cell cellsource="3">BB</cell>
+    <cell cellsource="4">BB</cell>
+    <cell cellsource="5">BB</cell>
+    <cell cellsource="6">BB</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="74"
+    <cell cellsource="1">POSSIBLE ERROR</cell>
+    <cell cellsource="2">POSSIBLE ERROR</cell>
+    <cell cellsource="3">BB</cell>
+    <cell cellsource="4">BB</cell>
+    <cell cellsource="5">BB</cell>
+    <cell cellsource="6">1B/2B UNLESS PF</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="75"
+    <cell cellsource="1">POSSIBLE ERROR</cell>
+    <cell cellsource="2">BB</cell>
+    <cell cellsource="3">BB</cell>
+    <cell cellsource="4">BB</cell>
+    <cell cellsource="5">BB</cell>
+    <cell cellsource="6">1B/2B UNLESS FF</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="76"
+    <cell cellsource="1">POSSIBLE ERROR</cell>
+    <cell cellsource="2">BB</cell>
+    <cell cellsource="3">BB</cell>
+    <cell cellsource="4">BB</cell>
+    <cell cellsource="5">1B/2B UNLESS PF</cell>
+    <cell cellsource="6">1B/2B UNLESS AF</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="77"
+    <cell cellsource="1">BB</cell>
+    <cell cellsource="2">BB</cell>
+    <cell cellsource="3">BB</cell>
+    <cell cellsource="4">1B/2B UNLESS PF</cell>
+    <cell cellsource="5">1B/2B UNLESS FF</cell>
+    <cell cellsource="6">1B/2B UNLESS GF</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="78"
+    <cell cellsource="1">BB</cell>
+    <cell cellsource="2">BB</cell>
+    <cell cellsource="3">BB</cell>
+    <cell cellsource="4">1B/2B UNLESS FF</cell>
+    <cell cellsource="5">1B/2B UNLESS AF</cell>
+    <cell cellsource="6">1B/2B UNLESS SF</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="79"
+    <cell cellsource="1">BB</cell>
+    <cell cellsource="2">BB</cell>
+    <cell cellsource="3">1B/2B UNLESS PF</cell>
+    <cell cellsource="4">1B/2B UNLESS AF</cell>
+    <cell cellsource="5">1B/2B UNLESS GF</cell>
+    <cell cellsource="6">1B</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="80"
+    <cell cellsource="1">BB</cell>
+    <cell cellsource="2">1B/2B UNLESS PF</cell>
+    <cell cellsource="3">1B/2B UNLESS FF</cell>
+    <cell cellsource="4">1B/2B UNLESS GF</cell>
+    <cell cellsource="5">1B/2B UNLESS SF</cell>
+    <cell cellsource="6">1B</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="81"
+    <cell cellsource="1">BB</cell>
+    <cell cellsource="2">1B/2B UNLESS FF</cell>
+    <cell cellsource="3">1B/2B UNLESS AF</cell>
+    <cell cellsource="4">1B/2B UNLESS SF</cell>
+    <cell cellsource="5">1B</cell>
+    <cell cellsource="6">1B</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="82"
+    <cell cellsource="1">1B/2B UNLESS PF</cell>
+    <cell cellsource="2">1B/2B UNLESS AF</cell>
+    <cell cellsource="3">1B/2B UNLESS GF</cell>
+    <cell cellsource="4">1B</cell>
+    <cell cellsource="5">1B</cell>
+    <cell cellsource="6">1B</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="83"
+    <cell cellsource="1">1B/2B UNLESS FF</cell>
+    <cell cellsource="2">1B/2B UNLESS GF</cell>
+    <cell cellsource="3">1B/2B UNLESS SF</cell>
+    <cell cellsource="4">1B</cell>
+    <cell cellsource="5">1B</cell>
+    <cell cellsource="6">1B</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="84"
+    <cell cellsource="1">1B/2B UNLESS AF</cell>
+    <cell cellsource="2">1B/2B UNLESS SF</cell>
+    <cell cellsource="3">1B</cell>
+    <cell cellsource="4">1B</cell>
+    <cell cellsource="5">1B</cell>
+    <cell cellsource="6">1B</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="85"
+    <cell cellsource="1">1B/2B UNLESS GF</cell>
+    <cell cellsource="2">1B</cell>
+    <cell cellsource="3">1B</cell>
+    <cell cellsource="4">1B</cell>
+    <cell cellsource="5">1B</cell>
+    <cell cellsource="6">1B</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="86"
+    <cell cellsource="1">1B/2B UNLESS SF</cell>
+    <cell cellsource="2">1B</cell>
+    <cell cellsource="3">1B</cell>
+    <cell cellsource="4">1B</cell>
+    <cell cellsource="5">1B</cell>
+    <cell cellsource="6">1B</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="87"
+    <cell cellsource="1">1B</cell>
+    <cell cellsource="2">1B</cell>
+    <cell cellsource="3">1B</cell>
+    <cell cellsource="4">1B</cell>
+    <cell cellsource="5">1B</cell>
+    <cell cellsource="6">1B</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="88"
+    <cell cellsource="1">1B</cell>
+    <cell cellsource="2">1B</cell>
+    <cell cellsource="3">1B</cell>
+    <cell cellsource="4">1B</cell>
+    <cell cellsource="5">1B</cell>
+    <cell cellsource="6">1B</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="89"
+    <cell cellsource="1">1B</cell>
+    <cell cellsource="2">1B</cell>
+    <cell cellsource="3">1B</cell>
+    <cell cellsource="4">1B</cell>
+    <cell cellsource="5">1B</cell>
+    <cell cellsource="6">1/2-SR</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="90"
+    <cell cellsource="1">1B</cell>
+    <cell cellsource="2">1B</cell>
+    <cell cellsource="3">1B</cell>
+    <cell cellsource="4">1B</cell>
+    <cell cellsource="5">1/2-SR</cell>
+    <cell cellsource="6">1/2-GR</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="91"
+    <cell cellsource="1">1B</cell>
+    <cell cellsource="2">1B</cell>
+    <cell cellsource="3">1B</cell>
+    <cell cellsource="4">1/2-SR</cell>
+    <cell cellsource="5">1/2-GR</cell>
+    <cell cellsource="6">1/2-AR</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="92"
+    <cell cellsource="1">1B</cell>
+    <cell cellsource="2">1B</cell>
+    <cell cellsource="3">1/2-SR</cell>
+    <cell cellsource="4">1/2-GR</cell>
+    <cell cellsource="5">1/2-AR</cell>
+    <cell cellsource="6">1/2-FR</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="93"
+    <cell cellsource="1">1B</cell>
+    <cell cellsource="2">1/2-SR</cell>
+    <cell cellsource="3">1/2-GR</cell>
+    <cell cellsource="4">1/2-AR</cell>
+    <cell cellsource="5">1/2-FR</cell>
+    <cell cellsource="6">1/2-PR</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="94"
+    <cell cellsource="1">1/2-SR</cell>
+    <cell cellsource="2">1/2-GR</cell>
+    <cell cellsource="3">1/2-AR</cell>
+    <cell cellsource="4">1/2-FR</cell>
+    <cell cellsource="5">1/2-PR</cell>
+    <cell cellsource="6">2/3-SR</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="95"
+    <cell cellsource="1">1/2-GR</cell>
+    <cell cellsource="2">1/2-AR</cell>
+    <cell cellsource="3">1/2-FR</cell>
+    <cell cellsource="4">1/2-PR</cell>
+    <cell cellsource="5">2/3-SR</cell>
+    <cell cellsource="6">2/3-GR</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="96"
+    <cell cellsource="1">1/2-AR</cell>
+    <cell cellsource="2">1/2-FR</cell>
+    <cell cellsource="3">1/3-SR</cell>
+    <cell cellsource="4">2/3-SR</cell>
+    <cell cellsource="5">2/3-GR</cell>
+    <cell cellsource="6">2/3-R#</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="97"
+    <cell cellsource="1">1/3-SR</cell>
+    <cell cellsource="2">2/3-SR</cell>
+    <cell cellsource="3">2/3-GR</cell>
+    <cell cellsource="4">2/3-GR</cell>
+    <cell cellsource="5">2/3-R#</cell>
+    <cell cellsource="6">2/3-R#</cell>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="98"
+    <cell cellsource="1">2/3-R#</cell>
+    <cell cellsource="2">2/3-R#</cell>
+    <cell cellsource="3">2/3-R#</cell>
+    <cell cellsource="4">2/3-R#</cell>
+    <cell cellsource="5">2/3-R#</cell>
+    <cell cellsource="6">HR</cell>
+
+  </GeneratedNumber>
+  <row row="100">
+    <GeneratedNumber number="99"
+    <cell cellsource="1">1/2/HR%</cell>
+    <cell cellsource="2">1/2/HR%</cell>
+    <cell cellsource="3">1/2/HR%</cell>
+    <cell cellsource="4">1/2/HR%</cell>
+    <cell cellsource="5">1/2/HR%</cell>
+    <cell cellsource="6">1/2/HR%</cell>
+
+  </GeneratedNumber>
+  <row row="101">
+    <GeneratedNumber number="100"
+    <cell cellsource="1">2/H%/H%</cell>
+    <cell cellsource="2">2/H%/H%</cell>
+    <cell cellsource="3">2/H%/H%</cell>
+    <cell cellsource="4">2/H%/H%</cell>
+    <cell cellsource="5">2/H%/H%</cell>
+    <cell cellsource="6">2/H%/H%</cell>
+
+  </GeneratedNumber>
+  <row row="102">
+    <GeneratedNumber number="101"
+    <cell cellsource="1">WP  (Wildness for Pitcher)</cell>
+    <cell cellsource="2">WP  (Wildness for Pitcher)</cell>
+    <cell cellsource="3">WP  (Wildness for Pitcher)</cell>
+    <cell cellsource="4">WP  (Wildness for Pitcher)</cell>
+    <cell cellsource="5">WP  (Wildness for Pitcher)</cell>
+    <cell cellsource="6">WP  (Wildness for Pitcher)</cell>
+
+  </GeneratedNumber>
+  <row row="103">
+    <GeneratedNumber number="102"
+    <cell cellsource="1">WP  (Wildness for Pitcher)</cell>
+    <cell cellsource="2">WP  (Wildness for Pitcher)</cell>
+    <cell cellsource="3">WP  (Wildness for Pitcher)</cell>
+    <cell cellsource="4">WP  (Wildness for Pitcher)</cell>
+    <cell cellsource="5">WP  (Wildness for Pitcher)</cell>
+    <cell cellsource="6">WP  (Wildness for Pitcher)</cell>
+
+  </GeneratedNumber>
+  <row row="104">
+    <GeneratedNumber number="103"
+    <cell cellsource="1">WP  (Wildness for Pitcher)</cell>
+    <cell cellsource="2">WP  (Wildness for Pitcher)</cell>
+    <cell cellsource="3">WP  (Wildness for Pitcher)</cell>
+    <cell cellsource="4">WP  (Wildness for Pitcher)</cell>
+    <cell cellsource="5">WP  (Wildness for Pitcher)</cell>
+    <cell cellsource="6">WP  (Wildness for Pitcher)</cell>
+
+  </GeneratedNumber>
+  <row row="105">
+    <GeneratedNumber number="104"
+    <cell cellsource="1">WP  (Wildness for Pitcher)</cell>
+    <cell cellsource="2">WP  (Wildness for Pitcher)</cell>
+    <cell cellsource="3">WP  (Wildness for Pitcher)</cell>
+    <cell cellsource="4">WP  (Wildness for Pitcher)</cell>
+    <cell cellsource="5">WP  (Wildness for Pitcher)</cell>
+    <cell cellsource="6">WP  (Wildness for Pitcher)</cell>
+
+  </GeneratedNumber>
+  <row row="106">
+    <GeneratedNumber number="105"
+    <cell cellsource="1">HBP (Wildness for Pitcher)</cell>
+    <cell cellsource="2">HBP (Wildness for Pitcher)</cell>
+    <cell cellsource="3">HBP (Wildness for Pitcher)</cell>
+    <cell cellsource="4">HBP (Wildness for Pitcher)</cell>
+    <cell cellsource="5">HBP (Wildness for Pitcher)</cell>
+    <cell cellsource="6">HBP (Wildness for Pitcher)</cell>
+
+  </GeneratedNumber>
+  <row row="107">
+    <GeneratedNumber number="106"
+    <cell cellsource="1">Balk  (AHR for Pitcher)</cell>
+    <cell cellsource="2">Balk  (AHR for Pitcher)</cell>
+    <cell cellsource="3">Balk  (AHR for Pitcher)</cell>
+    <cell cellsource="4">Balk  (AHR for Pitcher)</cell>
+    <cell cellsource="5">Balk  (AHR for Pitcher)</cell>
+    <cell cellsource="6">Balk  (AHR for Pitcher)</cell>
+
+  </GeneratedNumber>
+  <row row="108">
+    <GeneratedNumber number="107"
+    <cell cellsource="1">PO  (see Pick-Off Move chart)</cell>
+    <cell cellsource="2">PO  (see Pick-Off Move chart)</cell>
+    <cell cellsource="3">PO  (see Pick-Off Move chart)</cell>
+    <cell cellsource="4">PO  (see Pick-Off Move chart)</cell>
+    <cell cellsource="5">PO  (see Pick-Off Move chart)</cell>
+    <cell cellsource="6">PO  (see Pick-Off Move chart)</cell>
+
+  </GeneratedNumber>
+  <row row="109">
+    <GeneratedNumber number="108"
+    <cell cellsource="1">PO  (see Pick-Off Move chart)</cell>
+    <cell cellsource="2">PO  (see Pick-Off Move chart)</cell>
+    <cell cellsource="3">PO  (see Pick-Off Move chart)</cell>
+    <cell cellsource="4">PO  (see Pick-Off Move chart)</cell>
+    <cell cellsource="5">PO  (see Pick-Off Move chart)</cell>
+    <cell cellsource="6">PO  (see Pick-Off Move chart)</cell>
+
+  </GeneratedNumber>
+  <row row="110">
+    <GeneratedNumber number="109"
+    <cell cellsource="1">PB (Error chart for catcher)</cell>
+    <cell cellsource="2">PB (Error chart for catcher)</cell>
+    <cell cellsource="3">PB (Error chart for catcher)</cell>
+    <cell cellsource="4">PB (Error chart for catcher)</cell>
+    <cell cellsource="5">PB (Error chart for catcher)</cell>
+    <cell cellsource="6">PB (Error chart for catcher)</cell>
+
+  </GeneratedNumber>
+  <row row="111">
+    <GeneratedNumber number="110"
+    <cell cellsource="1">PB (Error chart for catcher)</cell>
+    <cell cellsource="2">PB (Error chart for catcher)</cell>
+    <cell cellsource="3">PB (Error chart for catcher)</cell>
+    <cell cellsource="4">PB (Error chart for catcher)</cell>
+    <cell cellsource="5">PB (Error chart for catcher)</cell>
+    <cell cellsource="6">PB (Error chart for catcher)</cell>
+
+  </GeneratedNumber>
+  <row row="112">
+    <GeneratedNumber number="111"
+    <cell cellsource="1">PB (Error chart for catcher)</cell>
+    <cell cellsource="2">PB (Error chart for catcher)</cell>
+    <cell cellsource="3">PB (Error chart for catcher)</cell>
+    <cell cellsource="4">PB (Error chart for catcher)</cell>
+    <cell cellsource="5">PB (Error chart for catcher)</cell>
+    <cell cellsource="6">PB (Error chart for catcher)</cell>
+
+  </GeneratedNumber>
+  <row row="113">
+    <GeneratedNumber number="112"
+    <cell cellsource="1">PB (Error chart for catcher)</cell>
+    <cell cellsource="2">PB (Error chart for catcher)</cell>
+    <cell cellsource="3">PB (Error chart for catcher)</cell>
+    <cell cellsource="4">PB (Error chart for catcher)</cell>
+    <cell cellsource="5">PB (Error chart for catcher)</cell>
+    <cell cellsource="6">PB (Error chart for catcher)</cell>
+
+  </GeneratedNumber>
+  <row row="114">
+    <GeneratedNumber number="113"
+    <cell cellsource="1">INJ</cell>
+    <cell cellsource="2">INJ</cell>
+    <cell cellsource="3">INJ</cell>
+    <cell cellsource="4">INJ</cell>
+    <cell cellsource="5">INJ</cell>
+    <cell cellsource="6">INJ</cell>
+
+  </GeneratedNumber>
+  <row row="115">
+    <GeneratedNumber number="114"
+    <cell cellsource="1">Fan interference</cell>
+    <cell cellsource="2">Fan interference</cell>
+    <cell cellsource="3">Fan interference</cell>
+    <cell cellsource="4">Fan interference</cell>
+    <cell cellsource="5">Fan interference</cell>
+    <cell cellsource="6">Fan interference</cell>
+
+  </GeneratedNumber>
+  <row row="116">
+    <GeneratedNumber number="115"
+    <cell cellsource="1">Pitcher's Specialty</cell>
+    <cell cellsource="2">Pitcher's Specialty</cell>
+    <cell cellsource="3">Pitcher's Specialty</cell>
+    <cell cellsource="4">Pitcher's Specialty</cell>
+    <cell cellsource="5">Pitcher's Specialty</cell>
+    <cell cellsource="6">Pitcher's Specialty</cell>
+
+  </GeneratedNumber>
+  <row row="117">
+    <GeneratedNumber number="116"
+    <cell cellsource="1">Pitcher's Specialty</cell>
+    <cell cellsource="2">Pitcher's Specialty</cell>
+    <cell cellsource="3">Pitcher's Specialty</cell>
+    <cell cellsource="4">Pitcher's Specialty</cell>
+    <cell cellsource="5">Pitcher's Specialty</cell>
+    <cell cellsource="6">Pitcher's Specialty</cell>
+
+  </GeneratedNumber>
+  <row row="118">
+    <GeneratedNumber number="117"
+    <cell cellsource="1">K if FB</cell>
+    <cell cellsource="2">K if FB</cell>
+    <cell cellsource="3">K if FB</cell>
+    <cell cellsource="4">K if FB</cell>
+    <cell cellsource="5">K if FB</cell>
+    <cell cellsource="6">K if FB</cell>
+
+  </GeneratedNumber>
+  <row row="119">
+    <GeneratedNumber number="118"
+    <cell cellsource="1">K if FB</cell>
+    <cell cellsource="2">K if FB</cell>
+    <cell cellsource="3">K if FB</cell>
+    <cell cellsource="4">K if FB</cell>
+    <cell cellsource="5">K if FB</cell>
+    <cell cellsource="6">K if FB</cell>
+
+  </GeneratedNumber>
+  <row row="120">
+    <GeneratedNumber number="119"
+    <cell cellsource="1">Batter's Specialty</cell>
+    <cell cellsource="2">Batter's Specialty</cell>
+    <cell cellsource="3">Batter's Specialty</cell>
+    <cell cellsource="4">Batter's Specialty</cell>
+    <cell cellsource="5">Batter's Specialty</cell>
+    <cell cellsource="6">Batter's Specialty</cell>
+
+  </GeneratedNumber>
+  <row row="121">
+    <GeneratedNumber number="120"
+    <cell cellsource="1">Batter's Specialty</cell>
+    <cell cellsource="2">Batter's Specialty</cell>
+    <cell cellsource="3">Batter's Specialty</cell>
+    <cell cellsource="4">Batter's Specialty</cell>
+    <cell cellsource="5">Batter's Specialty</cell>
+    <cell cellsource="6">Batter's Specialty</cell>
+
+  </GeneratedNumber>
+  <row row="122">
+   <GeneratedNumber number="121"
+    <cell cellsource="1">Long ball if fastball hitter</cell>
+    <cell cellsource="2">Long ball if fastball hitter</cell>
+    <cell cellsource="3">Long ball if fastball hitter</cell>
+    <cell cellsource="4">Long ball if fastball hitter</cell>
+    <cell cellsource="5">Long ball if fastball hitter</cell>
+    <cell cellsource="6">Long ball if fastball hitter</cell>
+
+  </GeneratedNumber>
+  <row row="123">
+    <GeneratedNumber number="122"
+    <cell cellsource="1">Long ball if fastball hitter</cell>
+    <cell cellsource="2">Long ball if fastball hitter</cell>
+    <cell cellsource="3">Long ball if fastball hitter</cell>
+    <cell cellsource="4">Long ball if fastball hitter</cell>
+    <cell cellsource="5">Long ball if fastball hitter</cell>
+    <cell cellsource="6">Long ball if fastball hitter</cell>
+
+  </GeneratedNumber>
+</data>

@@ -1,1223 +1,733 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <data>
-  <row row="2">
-    <cell cellsource="A2">1</cell>
-    <cell cellsource="1">G-CON / K-GEN / K-POW</cell>
-    <cell cellsource="2">G-CON / K-GEN / K-POW</cell>
-    <cell cellsource="3">G-CON / K-GEN / K-POW</cell>
-    <cell cellsource="4">G-CON / K-GEN / K-POW</cell>
-    <cell cellsource="5">G-CON / K-GEN / K-POW</cell>
-    <cell cellsource="6">G-CON / K-GEN / K-POW</cell>
-    
-  </row>
-  <row row="3">
-    <cell cellsource="A3">2</cell>
-    <cell cellsource="1">G-CON / K-GEN / K-POW</cell>
-    <cell cellsource="2">G-CON / K-GEN / K-POW</cell>
-    <cell cellsource="3">G-CON / K-GEN / K-POW</cell>
-    <cell cellsource="4">G-CON / K-GEN / K-POW</cell>
-    <cell cellsource="5">G-CON / K-GEN / K-POW</cell>
-    <cell cellsource="6">G-CON / K-GEN / K-POW</cell>
-    
-  </row>
-  <row row="4">
-    <cell cellsource="A4">3</cell>
-    <cell cellsource="1">G-CON / K-GEN / K-POW</cell>
-    <cell cellsource="2">G-CON / K-GEN / K-POW</cell>
-    <cell cellsource="3">G-CON / K-GEN / K-POW</cell>
-    <cell cellsource="4">G-CON / K-GEN / K-POW</cell>
-    <cell cellsource="5">G-CON / K-GEN / K-POW</cell>
-    <cell cellsource="6">G-CON / K-GEN / K-POW</cell>
-    
-  </row>
-  <row row="5">
-    <cell cellsource="A5">4</cell>
-    <cell cellsource="1">G-CON / G-GEN / K-POW</cell>
-    <cell cellsource="2">G-CON / G-GEN / K-POW</cell>
-    <cell cellsource="3">G-CON / G-GEN / K-POW</cell>
-    <cell cellsource="4">G-CON / G-GEN / K-POW</cell>
-    <cell cellsource="5">G-CON / G-GEN / K-POW</cell>
-    <cell cellsource="6">G-CON / G-GEN / K-POW</cell>
-    
-  </row>
-  <row row="6">
-    <cell cellsource="A6">5</cell>
-    <cell cellsource="1">F-CON / G-GEN / K-POW</cell>
-    <cell cellsource="2">F-CON / G-GEN / K-POW</cell>
-    <cell cellsource="3">F-CON / G-GEN / K-POW</cell>
-    <cell cellsource="4">F-CON / G-GEN / K-POW</cell>
-    <cell cellsource="5">F-CON / G-GEN / K-POW</cell>
-    <cell cellsource="6">F-CON / G-GEN / K-POW</cell>
-    
-  </row>
-  <row row="7">
-    <cell cellsource="A7">6</cell>
-    <cell cellsource="1">F-CON / F-GEN / K-POW</cell>
-    <cell cellsource="2">F-CON / F-GEN / K-POW</cell>
-    <cell cellsource="3">F-CON / F-GEN / K-POW</cell>
-    <cell cellsource="4">F-CON / F-GEN / K-POW</cell>
-    <cell cellsource="5">F-CON / F-GEN / K-POW</cell>
-    <cell cellsource="6">F-CON / F-GEN / K-POW</cell>
-    
-  </row>
-  <row row="8">
-    <cell cellsource="A8">7</cell>
-    <cell cellsource="1">1B / BB / BB</cell>
-    <cell cellsource="2">1B / BB / BB</cell>
-    <cell cellsource="3">1B / BB / BB</cell>
-    <cell cellsource="4">1B / BB / BB</cell>
-    <cell cellsource="5">1B / BB / BB</cell>
-    <cell cellsource="6">1B / BB / BB</cell>
-    
-  </row>
-  <row row="9">
-    <cell cellsource="A9">8</cell>
-    <cell cellsource="1">1B / BB / BB</cell>
-    <cell cellsource="2">1B / BB / BB</cell>
-    <cell cellsource="3">1B / BB / BB</cell>
-    <cell cellsource="4">1B / BB / BB</cell>
-    <cell cellsource="5">1B / BB / BB</cell>
-    <cell cellsource="G9">1B / BB / BB</cell>
-    <cell cellsource="H9" />
-  </row>
-  <row row="10">
-    <cell cellsource="A10">9</cell>
-    <cell cellsource="1">1B / 1B / BB</cell>
-    <cell cellsource="2">1B / 1B / BB</cell>
-    <cell cellsource="3">1B / 1B / BB</cell>
-    <cell cellsource="4">1B / 1B / BB</cell>
-    <cell cellsource="5">1B / 1B / BB</cell>
-    <cell cellsource="6">1B / 1B / BB</cell>
-    
-  </row>
-  <row row="11">
-    <cell cellsource="A11">10</cell>
-    <cell cellsource="1">1B / 1B / BB</cell>
-    <cell cellsource="2">1B / 1B / BB</cell>
-    <cell cellsource="3">1B / 1B / BB</cell>
-    <cell cellsource="4">1B / 1B / BB</cell>
-    <cell cellsource="5">1B / 1B / BB</cell>
-    <cell cellsource="6">1B / 1B / BB</cell>
-    
-  </row>
-  <row row="12">
-    <cell cellsource="A12">11</cell>
-    <cell cellsource="1">STRIKEOUT</cell>
-    <cell cellsource="2">STRIKEOUT</cell>
-    <cell cellsource="3">STRIKEOUT</cell>
-    <cell cellsource="4">STRIKEOUT</cell>
-    <cell cellsource="5">IF 20 BF- WP, K</cell>
-    <cell cellsource="6">IF 15 BF- WP, K</cell>
-    
-  </row>
-  <row row="13">
-    <cell cellsource="A13">12</cell>
-    <cell cellsource="1">STRIKEOUT</cell>
-    <cell cellsource="2">STRIKEOUT</cell>
-    <cell cellsource="3">STRIKEOUT</cell>
-    <cell cellsource="4">STRIKEOUT</cell>
-    <cell cellsource="5">IF 25 BF- WP, K</cell>
-    <cell cellsource="6">FOUL OUT</cell>
-    
-  </row>
-  <row row="14">
-    <cell cellsource="A14">13</cell>
-    <cell cellsource="1">STRIKEOUT</cell>
-    <cell cellsource="2">STRIKEOUT</cell>
-    <cell cellsource="3">STRIKEOUT</cell>
-    <cell cellsource="4">IF 20 BF- WP, K</cell>
-    <cell cellsource="5">FOUL OUT</cell>
-    <cell cellsource="6">FOUL OUT</cell>
-    
-  </row>
-  <row row="15">
-    <cell cellsource="A15">14</cell>
-    <cell cellsource="1">STRIKEOUT</cell>
-    <cell cellsource="2">STRIKEOUT</cell>
-    <cell cellsource="3">STRIKEOUT</cell>
-    <cell cellsource="4">IF 25 BF- WP, K</cell>
-    <cell cellsource="5">FOUL OUT</cell>
-    <cell cellsource="6">FOUL OUT</cell>
-    
-  </row>
-  <row row="16">
-    <cell cellsource="A16">15</cell>
-    <cell cellsource="1">STRIKEOUT</cell>
-    <cell cellsource="2">STRIKEOUT</cell>
-    <cell cellsource="3">IF 20 BF- WP, K</cell>
-    <cell cellsource="4">FOUL OUT</cell>
-    <cell cellsource="5">FOUL OUT</cell>
-    <cell cellsource="6">FOUL OUT</cell>
-    
-  </row>
-  <row row="17">
-    <cell cellsource="A17">16</cell>
-    <cell cellsource="1">STRIKEOUT</cell>
-    <cell cellsource="2">STRIKEOUT</cell>
-    <cell cellsource="3">IF 25 BF- WP, K</cell>
-    <cell cellsource="4">FOUL OUT</cell>
-    <cell cellsource="5">FOUL OUT</cell>
-    <cell cellsource="6">POP OUT / 1B IF DP DEPTH</cell>
-    
-  </row>
-  <row row="18">
-    <cell cellsource="A18">17</cell>
-    <cell cellsource="1">STRIKEOUT</cell>
-    <cell cellsource="2">IF 20 BF- WP, K</cell>
-    <cell cellsource="3">FOUL OUT</cell>
-    <cell cellsource="4">FOUL OUT</cell>
-    <cell cellsource="5">POP OUT / 1B IF DP DEPTH</cell>
-    <cell cellsource="6">POP OUT</cell>
-    
-  </row>
-  <row row="19">
-    <cell cellsource="A19">18</cell>
-    <cell cellsource="1">STRIKEOUT</cell>
-    <cell cellsource="2">IF 25 BF- WP, K</cell>
-    <cell cellsource="3">FOUL OUT</cell>
-    <cell cellsource="4">FOUL OUT</cell>
-    <cell cellsource="5">POP OUT</cell>
-    <cell cellsource="6">GO / 1B if DP Dpth, Crnrs In</cell>
-    
-  </row>
-  <row row="20">
-    <cell cellsource="A20">19</cell>
-    <cell cellsource="1">IF 20 BF- WP, K</cell>
-    <cell cellsource="2">FOUL OUT</cell>
-    <cell cellsource="3">FOUL OUT</cell>
-    <cell cellsource="4">POP OUT / 1B IF DP DEPTH</cell>
-    <cell cellsource="5">GO / 1B if DP Dpth, Crnrs In</cell>
-    <cell cellsource="6">GROUND OUT</cell>
-    
-  </row>
-  <row row="21">
-    <cell cellsource="A21">20</cell>
-    <cell cellsource="1">IF 25 BF- WP, K</cell>
-    <cell cellsource="2">FOUL OUT</cell>
-    <cell cellsource="3">FOUL OUT</cell>
-    <cell cellsource="4">POP OUT</cell>
-    <cell cellsource="5">GROUND OUT</cell>
-    <cell cellsource="6">GROUND OUT</cell>
-    
-  </row>
-  <row row="22">
-    <cell cellsource="A22">21</cell>
-    <cell cellsource="1">FOUL OUT</cell>
-    <cell cellsource="2">FOUL OUT</cell>
-    <cell cellsource="3">POP OUT / 1B IF DP DEPTH</cell>
-    <cell cellsource="4">GO / 1B if DP Dpth, Crnrs In</cell>
-    <cell cellsource="5">GROUND OUT</cell>
-    <cell cellsource="6">GO/K IF SS</cell>
-    
-  </row>
-  <row row="23">
-    <cell cellsource="A23">22</cell>
-    <cell cellsource="1">FOUL OUT</cell>
-    <cell cellsource="2">FOUL OUT</cell>
-    <cell cellsource="3">POP OUT</cell>
-    <cell cellsource="4">GROUND OUT</cell>
-    <cell cellsource="5">GO/K IF SS</cell>
-    <cell cellsource="6">GO/K IF GS</cell>
-    
-  </row>
-  <row row="24">
-    <cell cellsource="A24">23</cell>
-    <cell cellsource="1">FOUL OUT</cell>
-    <cell cellsource="2">POP OUT / 1B IF DP DEPTH</cell>
-    <cell cellsource="3">GO / 1B if DP Dpth, Crnrs In</cell>
-    <cell cellsource="4">GROUND OUT</cell>
-    <cell cellsource="5">GO/K IF GS</cell>
-    <cell cellsource="6">GO/K IFGS</cell>
-    
-  </row>
-  <row row="25">
-    <cell cellsource="A25">24</cell>
-    <cell cellsource="1">FOUL OUT</cell>
-    <cell cellsource="2">POP OUT</cell>
-    <cell cellsource="3">GROUND OUT</cell>
-    <cell cellsource="4">GO/K IF SS</cell>
-    <cell cellsource="5">GO/K IFGS</cell>
-    <cell cellsource="6">GO/K IF AS</cell>
-    
-  </row>
-  <row row="26">
-    <cell cellsource="A26">25</cell>
-    <cell cellsource="1">POP OUT / 1B IF DP DEPTH</cell>
-    <cell cellsource="2">GO / 1B if DP Dpth, Crnrs In</cell>
-    <cell cellsource="3">GROUND OUT</cell>
-    <cell cellsource="4">GO/K IF GS</cell>
-    <cell cellsource="5">GO/K IF AS</cell>
-    <cell cellsource="6">GO/K IF FS</cell>
-    <cell cellsource="6">POP OUT / 1B IF DP DEPTH</cell>
-  </row>
-  <row row="27">
-    <cell cellsource="A27">26</cell>
-    <cell cellsource="1">POP OUT</cell>
-    <cell cellsource="2">GROUND OUT</cell>
-    <cell cellsource="3">GO/K IF SS</cell>
-    <cell cellsource="4">GO/K IF GS</cell>
-    <cell cellsource="5">GO/K IF AS</cell>
-    <cell cellsource="6">GO/FLY O IF SS</cell>
-    
-  </row>
-  <row row="28">
-    <cell cellsource="A28">27</cell>
-    <cell cellsource="1">GO / 1B if DP Dpth, Crnrs In</cell>
-    <cell cellsource="2">GROUND OUT</cell>
-    <cell cellsource="3">GO/K IF GS</cell>
-    <cell cellsource="4">GO/K IF AS</cell>
-    <cell cellsource="5">GO/K IF FS</cell>
-    <cell cellsource="6">GO/FLY O IF GS</cell>
-    
-  </row>
-  <row row="29">
-    <cell cellsource="A29">28</cell>
-    <cell cellsource="1">GROUND OUT</cell>
-    <cell cellsource="2">GO/K IF SS</cell>
-    <cell cellsource="3">GO/K IF GS</cell>
-    <cell cellsource="4">GO/K IF AS</cell>
-    <cell cellsource="5">GO/FLY O IF SS</cell>
-    <cell cellsource="6">GO/FLY O IF GS</cell>
-    
-  </row>
-  <row row="30">
-    <cell cellsource="A30">29</cell>
-    <cell cellsource="1">GROUND OUT</cell>
-    <cell cellsource="2">GO/K IF GS</cell>
-    <cell cellsource="3">GO/K IF AS</cell>
-    <cell cellsource="4">GO/K IF FS</cell>
-    <cell cellsource="5">GO/FLY O IF SS</cell>
-    <cell cellsource="6">GO/FLY O IF AS</cell>
-    
-  </row>
-  <row row="31">
-    <cell cellsource="A31">30</cell>
-    <cell cellsource="1">GO/K IF SS</cell>
-    <cell cellsource="2">GO/K IF GS</cell>
-    <cell cellsource="3">GO/K IF AS</cell>
-    <cell cellsource="4">GO/FLY O IF SS</cell>
-    <cell cellsource="5">GO/FLY O IF GS</cell>
-    <cell cellsource="6">GO/FLY O IF AS</cell>
-    
-  </row>
-  <row row="32">
-    <cell cellsource="A32">31</cell>
-    <cell cellsource="1">GO/K IF GS</cell>
-    <cell cellsource="2">GO/K IF AS</cell>
-    <cell cellsource="3">GO/K IF FS</cell>
-    <cell cellsource="4">GO/FLY O IF SS</cell>
-    <cell cellsource="5">GO/FLY O IF GS</cell>
-    <cell cellsource="6">GO/FLY O IF FS</cell>
-    
-  </row>
-  <row row="33">
-    <cell cellsource="A33">32</cell>
-    <cell cellsource="1">GO/K IF GS</cell>
-    <cell cellsource="2">GO/K IF AS</cell>
-    <cell cellsource="3">GO/FLY O IF SS</cell>
-    <cell cellsource="4">GO/FLY O IF GS</cell>
-    <cell cellsource="5">GO/FLY O IF AS</cell>
-    <cell cellsource="6">GO/FLY O IF FS</cell>
-    
-  </row>
-  <row row="34">
-    <cell cellsource="A34">33</cell>
-    <cell cellsource="1">GO/K IF AS</cell>
-    <cell cellsource="2">GO/K IF FS</cell>
-    <cell cellsource="3">GO/FLY O IF SS</cell>
-    <cell cellsource="4">GO/FLY O IG GS</cell>
-    <cell cellsource="5">GO/FLY O IF AS</cell>
-    <cell cellsource="6">GO/1B UNLESS PF</cell>
-    
-  </row>
-  <row row="35">
-    <cell cellsource="A35">34</cell>
-    <cell cellsource="1">GO/K IF AS</cell>
-    <cell cellsource="2">GO/FLY O IF SS</cell>
-    <cell cellsource="3">GO/FLY O IF GS</cell>
-    <cell cellsource="4">GO/FLY O IF AS</cell>
-    <cell cellsource="5">GO/FLY O IF FS</cell>
-    <cell cellsource="6">GO/1B UNLESS PF</cell>
-    
-  </row>
-  <row row="36">
-    <cell cellsource="A36">35</cell>
-    <cell cellsource="1">GO/K IF FS</cell>
-    <cell cellsource="2">GO/FLY O IF SS</cell>
-    <cell cellsource="3">GO/FLY O IG GS</cell>
-    <cell cellsource="4">GO/FLY O IF AS</cell>
-    <cell cellsource="5">GO/FLY O IF FS</cell>
-    <cell cellsource="6">GO/1B UNLESS FF</cell>
-    
-  </row>
-  <row row="37">
-    <cell cellsource="A37">36</cell>
-    <cell cellsource="1">GO/FLY O IF SS</cell>
-    <cell cellsource="2">GO/FLY O IF GS</cell>
-    <cell cellsource="3">GO/FLY O IF AS</cell>
-    <cell cellsource="4">GO/FLY O IF FS</cell>
-    <cell cellsource="5">GO/1B UNLESS PF</cell>
-    <cell cellsource="6">GO/1B UNLESS FF</cell>
-    
-  </row>
-  <row row="38">
-    <cell cellsource="A38">37</cell>
-    <cell cellsource="1">GO/FLY O IF SS</cell>
-    <cell cellsource="2">GO/FLY O IF GS</cell>
-    <cell cellsource="3">GO/FLY O IF AS</cell>
-    <cell cellsource="4">GO/FLY O IF FS</cell>
-    <cell cellsource="5">GO/1B UNLESS PF</cell>
-    <cell cellsource="6">GO/1B UNLESS AF</cell>
-    
-  </row>
-  <row row="39">
-    <cell cellsource="A39">38</cell>
-    <cell cellsource="1">GO/FLY O IF GS</cell>
-    <cell cellsource="2">GO/FLY O IF AS</cell>
-    <cell cellsource="3">GO/FLY O IF FS</cell>
-    <cell cellsource="4">GO/1B UNLESS PF</cell>
-    <cell cellsource="5">GO/1B UNLESS FF</cell>
-    <cell cellsource="6">GO/1B UNLESS AF</cell>
-    
-  </row>
-  <row row="40">
-    <cell cellsource="A40">39</cell>
-    <cell cellsource="1">GO/FLY O IG GS</cell>
-    <cell cellsource="2">GO/FLY O IF AS</cell>
-    <cell cellsource="3">GO/FLY O IF FS</cell>
-    <cell cellsource="4">GO/1B UNLESS PF</cell>
-    <cell cellsource="5">GO/1B UNLESS FF</cell>
-    <cell cellsource="6">GO/1B UNLESS GF</cell>
-    
-  </row>
-  <row row="41">
-    <cell cellsource="A41">40</cell>
-    <cell cellsource="1">GO/FLY O IF AS</cell>
-    <cell cellsource="2">GO/FLY O IF FS</cell>
-    <cell cellsource="3">GO/1B UNLESS PF</cell>
-    <cell cellsource="4">GO/1B UNLESS FF</cell>
-    <cell cellsource="5">GO/1B UNLESS AF</cell>
-    <cell cellsource="6">GO/1B UNLESS GF</cell>
-    
-  </row>
-  <row row="42">
-    <cell cellsource="A42">41</cell>
-    <cell cellsource="1">GO/FLY O IF AS</cell>
-    <cell cellsource="2">GO/FLY O IF FS</cell>
-    <cell cellsource="3">GO/1B UNLESS PF</cell>
-    <cell cellsource="4">GO/1B UNLESS FF</cell>
-    <cell cellsource="5">GO/1B UNLESS AF</cell>
-    <cell cellsource="6">GO/1B UNLESS SF</cell>
-    
-  </row>
-  <row row="43">
-    <cell cellsource="A43">42</cell>
-    <cell cellsource="1">GO/FLY O IF FS</cell>
-    <cell cellsource="2">GO/1B UNLESS PF</cell>
-    <cell cellsource="3">GO/1B UNLESS FF</cell>
-    <cell cellsource="4">GO/1B UNLESS AF</cell>
-    <cell cellsource="5">GO/1B UNLESS GF</cell>
-    <cell cellsource="6">GO/1B UNLESS SF</cell>
-    
-  </row>
-  <row row="44">
-    <cell cellsource="A44">43</cell>
-    <cell cellsource="1">GO/FLY O IF FS</cell>
-    <cell cellsource="2">GO/1B UNLESS PF</cell>
-    <cell cellsource="3">GO/1B UNLESS FF</cell>
-    <cell cellsource="4">GO/1B UNLESS AF</cell>
-    <cell cellsource="5">GO/1B UNLESS GF</cell>
-    <cell cellsource="6">GO/E IF SR</cell>
-    
-  </row>
-  <row row="45">
-    <cell cellsource="A45">44</cell>
-    <cell cellsource="1">GO/1B UNLESS PF</cell>
-    <cell cellsource="2">GO/1B UNLESS FF</cell>
-    <cell cellsource="3">GO/1B UNLESS AF</cell>
-    <cell cellsource="4">GO/1B UNLESS GF</cell>
-    <cell cellsource="5">GO/1B UNLESS SF</cell>
-    <cell cellsource="6">FLY OUT</cell>
-    
-  </row>
-  <row row="46">
-    <cell cellsource="A46">45</cell>
-    <cell cellsource="1">GO/1B UNLESS PF</cell>
-    <cell cellsource="2">GO/1B UNLESS FF</cell>
-    <cell cellsource="3">GO/1B UNLESS AF</cell>
-    <cell cellsource="4">GO/1B UNLESS GF</cell>
-    <cell cellsource="5">GO/1B UNLESS SF</cell>
-    <cell cellsource="6">FLY OUT, K POWER P</cell>
-    
-  </row>
-  <row row="47">
-    <cell cellsource="A47">46</cell>
-    <cell cellsource="1">GO/1B UNLESS FF</cell>
-    <cell cellsource="2">GO/1B UNLESS AF</cell>
-    <cell cellsource="3">GO/1B UNLESS GF</cell>
-    <cell cellsource="4">GO/1B UNLESS SF</cell>
-    <cell cellsource="5">GO/E IF SR</cell>
-    <cell cellsource="6">FLY OUT, K POWER P</cell>
-    
-  </row>
-  <row row="48">
-    <cell cellsource="A48">47</cell>
-    <cell cellsource="1">GO/1B UNLESS FF</cell>
-    <cell cellsource="2">GO/1B UNLESS AF</cell>
-    <cell cellsource="3">GO/1B UNLESS GF</cell>
-    <cell cellsource="4">GO/1B UNLESS SF</cell>
-    <cell cellsource="5">FLY OUT</cell>
-    <cell cellsource="6">FLY OUT, K FIREBALLER</cell>
-    
-  </row>
-  <row row="49">
-    <cell cellsource="A49">48</cell>
-    <cell cellsource="1">GO/1B UNLESS AF</cell>
-    <cell cellsource="2">GO/1B UNLESS GF</cell>
-    <cell cellsource="3">GO/1B UNLESS SF</cell>
-    <cell cellsource="4">GO/E IF SR</cell>
-    <cell cellsource="5">FLY OUT, K POWER P</cell>
-    <cell cellsource="6">FLY OUT, K FIREBALLER</cell>
-    
-  </row>
-  <row row="50">
-    <cell cellsource="A50">49</cell>
-    <cell cellsource="1">GO/1B UNLESS AF</cell>
-    <cell cellsource="2">GO/1B UNLESS GF</cell>
-    <cell cellsource="3">GO/1B UNLESS SF</cell>
-    <cell cellsource="4">FLY OUT</cell>
-    <cell cellsource="5">FLY OUT, K POWER P</cell>
-    <cell cellsource="6">FLY OUT</cell>
-    
-  </row>
-  <row row="51">
-    <cell cellsource="A51">50</cell>
-    <cell cellsource="1">GO/1B UNLESS GF</cell>
-    <cell cellsource="2">GO/1B UNLESS SF</cell>
-    <cell cellsource="3">GO/E IF SR</cell>
-    <cell cellsource="4">FLY OUT, K POWER P</cell>
-    <cell cellsource="5">FLY OUT, K FIREBALLER</cell>
-    <cell cellsource="6">FLY OUT</cell>
-    
-  </row>
-  <row row="52">
-    <cell cellsource="A52">51</cell>
-    <cell cellsource="1">GO/1B UNLESS GF</cell>
-    <cell cellsource="2">GO/1B UNLESS SF</cell>
-    <cell cellsource="3">FLY OUT</cell>
-    <cell cellsource="4">FLY OUT, K POWER P</cell>
-    <cell cellsource="5">FLY OUT, K FIREBALLER</cell>
-    <cell cellsource="6">FLY OUT</cell>
-    
-  </row>
-  <row row="53">
-    <cell cellsource="A53">52</cell>
-    <cell cellsource="1">GO/1B UNLESS SF</cell>
-    <cell cellsource="2">GO/E IF SR</cell>
-    <cell cellsource="3">FLY OUT, K POWER P</cell>
-    <cell cellsource="4">FLY OUT, K FIREBALLER</cell>
-    <cell cellsource="5">FLY OUT</cell>
-    <cell cellsource="6">FLY OUT</cell>
-    
-  </row>
-  <row row="54">
-    <cell cellsource="A54">53</cell>
-    <cell cellsource="1">GO/1B UNLESS SF</cell>
-    <cell cellsource="2">FLY OUT</cell>
-    <cell cellsource="3">FLY OUT, K POWER P</cell>
-    <cell cellsource="4">FLY OUT, K FIREBALLER</cell>
-    <cell cellsource="5">FLY OUT</cell>
-    <cell cellsource="6">FLY O/BB-SS IF BASER</cell>
-    
-  </row>
-  <row row="55">
-    <cell cellsource="A55">54</cell>
-    <cell cellsource="1">GO/E IF SR</cell>
-    <cell cellsource="2">FLY OUT, K POWER P</cell>
-    <cell cellsource="3">FLY OUT, K FIREBALLER</cell>
-    <cell cellsource="4">FLY OUT</cell>
-    <cell cellsource="5">FLY OUT</cell>
-    <cell cellsource="6">FLY O/BB-GS IF BASER</cell>
-    
-  </row>
-  <row row="56">
-    <cell cellsource="A56">55</cell>
-    <cell cellsource="1">FLY OUT</cell>
-    <cell cellsource="2">FLY OUT, K POWER P</cell>
-    <cell cellsource="3">FLY OUT, K FIREBALLER</cell>
-    <cell cellsource="4">FLY OUT</cell>
-    <cell cellsource="5">FLY O/BB-SS IF BASER</cell>
-    <cell cellsource="6">FLY O/BB-AS IF BASER</cell>
-    
-  </row>
-  <row row="57">
-    <cell cellsource="A57">56</cell>
-    <cell cellsource="1">FLY OUT, K POWER P</cell>
-    <cell cellsource="2">FLY OUT, K FIREBALLER</cell>
-    <cell cellsource="3">FLY OUT</cell>
-    <cell cellsource="4">FLY OUT</cell>
-    <cell cellsource="5">FLY O/BB-GS IF BASER</cell>
-    <cell cellsource="6">FLY O/3B UNLESS PF</cell>
-    
-  </row>
-  <row row="58">
-    <cell cellsource="A58">57</cell>
-    <cell cellsource="1">FLY OUT, K POWER P</cell>
-    <cell cellsource="2">FLY OUT, K FIREBALLER</cell>
-    <cell cellsource="3">FLY OUT</cell>
-    <cell cellsource="4">FLY OUT</cell>
-    <cell cellsource="5">FLY O/BB-AS IF BASER</cell>
-    <cell cellsource="6">FLY O/2B UNLESS FF</cell>
-    
-  </row>
-  <row row="59">
-    <cell cellsource="A59">58</cell>
-    <cell cellsource="1">FLY OUT, K FIREBALLER</cell>
-    <cell cellsource="2">FLY OUT</cell>
-    <cell cellsource="3">FLY OUT</cell>
-    <cell cellsource="4">FLY O/BB-SS IF BASER</cell>
-    <cell cellsource="5">FLY O/3B UNLESS PF</cell>
-    <cell cellsource="6">FLY O/2B UNLESS AF</cell>
-    
-  </row>
-  <row row="60">
-    <cell cellsource="A60">59</cell>
-    <cell cellsource="1">FLY OUT, K FIREBALLER</cell>
-    <cell cellsource="2">FLY OUT</cell>
-    <cell cellsource="3">FLY OUT</cell>
-    <cell cellsource="4">FLY O/BB-GS IF BASER</cell>
-    <cell cellsource="5">FLY O/2B UNLESS FF</cell>
-    <cell cellsource="6">FLY O/1B UNLESS GF</cell>
-    
-  </row>
-  <row row="61">
-    <cell cellsource="A61">60</cell>
-    <cell cellsource="1">FLY OUT</cell>
-    <cell cellsource="2">FLY OUT</cell>
-    <cell cellsource="3">FLY O/BB-SS IF BASER</cell>
-    <cell cellsource="4">FLY O/BB-AS IF BASER</cell>
-    <cell cellsource="5">FLY O/2B UNLESS AF</cell>
-    <cell cellsource="6">FLY O/1B UNLESS SF</cell>
-    
-  </row>
-  <row row="62">
-    <cell cellsource="A62">61</cell>
-    <cell cellsource="1">FLY OUT</cell>
-    <cell cellsource="2">FLY OUT</cell>
-    <cell cellsource="3">FLY O/BB-GS IF BASER</cell>
-    <cell cellsource="4">FLY O/3B UNLESS PF</cell>
-    <cell cellsource="5">FLY O/1B UNLESS GF</cell>
-    <cell cellsource="6">POSSIBLE ERROR</cell>
-    
-  </row>
-  <row row="63">
-    <cell cellsource="A63">62</cell>
-    <cell cellsource="1">FLY OUT</cell>
-    <cell cellsource="2">FLY O/BB-SS IF BASER</cell>
-    <cell cellsource="3">FLY O/BB-AS IF BASER</cell>
-    <cell cellsource="4">FLY O/2B UNLESS FF</cell>
-    <cell cellsource="5">FLY O/1B UNLESS SF</cell>
-    <cell cellsource="6">POSSIBLE ERROR</cell>
-    
-  </row>
-  <row row="64">
-    <cell cellsource="A64">63</cell>
-    <cell cellsource="1">FLY OUT</cell>
-    <cell cellsource="2">FLY O/BB-GS IF BASER</cell>
-    <cell cellsource="3">FLY O/3B UNLESS PF</cell>
-    <cell cellsource="4">FLY O/2B UNLESS AF</cell>
-    <cell cellsource="5">POSSIBLE ERROR</cell>
-    <cell cellsource="6">POSSIBLE ERROR</cell>
-    
-  </row>
-  <row row="65">
-    <cell cellsource="A65">64</cell>
-    <cell cellsource="1">FLY O/BB-SS IF BASER</cell>
-    <cell cellsource="2">FLY O/BB-AS IF BASER</cell>
-    <cell cellsource="3">FLY O/2B UNLESS FF</cell>
-    <cell cellsource="4">FLY O/1B UNLESS GF</cell>
-    <cell cellsource="5">POSSIBLE ERROR</cell>
-    <cell cellsource="6">POSSIBLE ERROR</cell>
-    
-  </row>
-  <row row="66">
-    <cell cellsource="A66">65</cell>
-    <cell cellsource="1">FLY O/BB-GS IF BASER</cell>
-    <cell cellsource="2">FLY O/3B UNLESS PF</cell>
-    <cell cellsource="3">FLY O/2B UNLESS AF</cell>
-    <cell cellsource="4">FLY O/1B UNLESS SF</cell>
-    <cell cellsource="5">POSSIBLE ERROR</cell>
-    <cell cellsource="6">POSSIBLE ERROR</cell>
-    
-  </row>
-  <row row="67">
-    <cell cellsource="A67">66</cell>
-    <cell cellsource="1">FLY O/BB-AS IF BASER</cell>
-    <cell cellsource="2">FLY O/2B UNLESS FF</cell>
-    <cell cellsource="3">FLY O/1B UNLESS GF</cell>
-    <cell cellsource="4">POSSIBLE ERROR</cell>
-    <cell cellsource="5">POSSIBLE ERROR</cell>
-    <cell cellsource="6">BB</cell>
-    
-  </row>
-  <row row="68">
-    <cell cellsource="A68">67</cell>
-    <cell cellsource="1">FLY O/3B UNLESS PF</cell>
-    <cell cellsource="2">FLY O/2B UNLESS AF</cell>
-    <cell cellsource="3">FLY O/1B UNLESS SF</cell>
-    <cell cellsource="4">POSSIBLE ERROR</cell>
-    <cell cellsource="5">POSSIBLE ERROR</cell>
-    <cell cellsource="6">BB</cell>
-    
-  </row>
-  <row row="69">
-    <cell cellsource="A69">68</cell>
-    <cell cellsource="1">FLY O/2B UNLESS FF</cell>
-    <cell cellsource="2">FLY O/1B UNLESS GF</cell>
-    <cell cellsource="3">POSSIBLE ERROR</cell>
-    <cell cellsource="4">POSSIBLE ERROR</cell>
-    <cell cellsource="5">BB</cell>
-    <cell cellsource="6">BB</cell>
-    
-  </row>
-  <row row="70">
-    <cell cellsource="A70">69</cell>
-    <cell cellsource="1">FLY O/2B UNLESS AF</cell>
-    <cell cellsource="2">FLY O/1B UNLESS SF</cell>
-    <cell cellsource="3">POSSIBLE ERROR</cell>
-    <cell cellsource="4">POSSIBLE ERROR</cell>
-    <cell cellsource="5">BB</cell>
-    <cell cellsource="6">BB</cell>
-    
-  </row>
-  <row row="71">
-    <cell cellsource="A71">70</cell>
-    <cell cellsource="1">FLY O/1B UNLESS GF</cell>
-    <cell cellsource="2">POSSIBLE ERROR</cell>
-    <cell cellsource="3">POSSIBLE ERROR</cell>
-    <cell cellsource="4">POSSIBLE ERROR</cell>
-    <cell cellsource="5">BB</cell>
-    <cell cellsource="6">BB</cell>
-    
-  </row>
-  <row row="72">
-    <cell cellsource="A72">71</cell>
-    <cell cellsource="1">FLY O/1B UNLESS SF</cell>
-    <cell cellsource="2">POSSIBLE ERROR</cell>
-    <cell cellsource="3">POSSIBLE ERROR</cell>
-    <cell cellsource="4">BB</cell>
-    <cell cellsource="5">BB</cell>
-    <cell cellsource="6">BB</cell>
-    
-  </row>
-  <row row="73">
-    <cell cellsource="A73">72</cell>
-    <cell cellsource="1">POSSIBLE ERROR</cell>
-    <cell cellsource="2">POSSIBLE ERROR</cell>
-    <cell cellsource="3">POSSIBLE ERROR</cell>
-    <cell cellsource="4">BB</cell>
-    <cell cellsource="5">BB</cell>
-    <cell cellsource="6">BB</cell>
-    
-  </row>
-  <row row="74">
-    <cell cellsource="A74">73</cell>
-    <cell cellsource="1">POSSIBLE ERROR</cell>
-    <cell cellsource="2">POSSIBLE ERROR</cell>
-    <cell cellsource="3">BB</cell>
-    <cell cellsource="4">BB</cell>
-    <cell cellsource="5">BB</cell>
-    <cell cellsource="6">BB</cell>
-    
-  </row>
-  <row row="75">
-    <cell cellsource="A75">74</cell>
-    <cell cellsource="1">POSSIBLE ERROR</cell>
-    <cell cellsource="2">POSSIBLE ERROR</cell>
-    <cell cellsource="3">BB</cell>
-    <cell cellsource="4">BB</cell>
-    <cell cellsource="5">BB</cell>
-    <cell cellsource="6">1B/2B UNLESS PF</cell>
-    
-  </row>
-  <row row="76">
-    <cell cellsource="A76">75</cell>
-    <cell cellsource="1">POSSIBLE ERROR</cell>
-    <cell cellsource="2">BB</cell>
-    <cell cellsource="3">BB</cell>
-    <cell cellsource="4">BB</cell>
-    <cell cellsource="5">BB</cell>
-    <cell cellsource="6">1B/2B UNLESS FF</cell>
-    
-  </row>
-  <row row="77">
-    <cell cellsource="A77">76</cell>
-    <cell cellsource="1">POSSIBLE ERROR</cell>
-    <cell cellsource="2">BB</cell>
-    <cell cellsource="3">BB</cell>
-    <cell cellsource="4">BB</cell>
-    <cell cellsource="5">1B/2B UNLESS PF</cell>
-    <cell cellsource="6">1B/2B UNLESS AF</cell>
-    
-  </row>
-  <row row="78">
-    <cell cellsource="A78">77</cell>
-    <cell cellsource="1">BB</cell>
-    <cell cellsource="2">BB</cell>
-    <cell cellsource="3">BB</cell>
-    <cell cellsource="4">1B/2B UNLESS PF</cell>
-    <cell cellsource="5">1B/2B UNLESS FF</cell>
-    <cell cellsource="6">1B/2B UNLESS GF</cell>
-    
-  </row>
-  <row row="79">
-    <cell cellsource="A79">78</cell>
-    <cell cellsource="1">BB</cell>
-    <cell cellsource="2">BB</cell>
-    <cell cellsource="3">BB</cell>
-    <cell cellsource="4">1B/2B UNLESS FF</cell>
-    <cell cellsource="5">1B/2B UNLESS AF</cell>
-    <cell cellsource="6">1B/2B UNLESS SF</cell>
-    
-  </row>
-  <row row="80">
-    <cell cellsource="A80">79</cell>
-    <cell cellsource="1">BB</cell>
-    <cell cellsource="2">BB</cell>
-    <cell cellsource="3">1B/2B UNLESS PF</cell>
-    <cell cellsource="4">1B/2B UNLESS AF</cell>
-    <cell cellsource="5">1B/2B UNLESS GF</cell>
-    <cell cellsource="6">1B</cell>
-    
-  </row>
-  <row row="81">
-    <cell cellsource="A81">80</cell>
-    <cell cellsource="1">BB</cell>
-    <cell cellsource="2">1B/2B UNLESS PF</cell>
-    <cell cellsource="3">1B/2B UNLESS FF</cell>
-    <cell cellsource="4">1B/2B UNLESS GF</cell>
-    <cell cellsource="5">1B/2B UNLESS SF</cell>
-    <cell cellsource="6">1B</cell>
-    
-  </row>
-  <row row="82">
-    <cell cellsource="A82">81</cell>
-    <cell cellsource="1">BB</cell>
-    <cell cellsource="2">1B/2B UNLESS FF</cell>
-    <cell cellsource="3">1B/2B UNLESS AF</cell>
-    <cell cellsource="4">1B/2B UNLESS SF</cell>
-    <cell cellsource="5">1B</cell>
-    <cell cellsource="6">1B</cell>
-    
-  </row>
-  <row row="83">
-    <cell cellsource="A83">82</cell>
-    <cell cellsource="1">1B/2B UNLESS PF</cell>
-    <cell cellsource="2">1B/2B UNLESS AF</cell>
-    <cell cellsource="3">1B/2B UNLESS GF</cell>
-    <cell cellsource="4">1B</cell>
-    <cell cellsource="5">1B</cell>
-    <cell cellsource="6">1B</cell>
-    
-  </row>
-  <row row="84">
-    <cell cellsource="A84">83</cell>
-    <cell cellsource="1">1B/2B UNLESS FF</cell>
-    <cell cellsource="2">1B/2B UNLESS GF</cell>
-    <cell cellsource="3">1B/2B UNLESS SF</cell>
-    <cell cellsource="4">1B</cell>
-    <cell cellsource="5">1B</cell>
-    <cell cellsource="6">1B</cell>
-    
-  </row>
-  <row row="85">
-    <cell cellsource="A85">84</cell>
-    <cell cellsource="1">1B/2B UNLESS AF</cell>
-    <cell cellsource="2">1B/2B UNLESS SF</cell>
-    <cell cellsource="3">1B</cell>
-    <cell cellsource="4">1B</cell>
-    <cell cellsource="5">1B</cell>
-    <cell cellsource="6">1B</cell>
-    
-  </row>
-  <row row="86">
-    <cell cellsource="A86">85</cell>
-    <cell cellsource="1">1B/2B UNLESS GF</cell>
-    <cell cellsource="2">1B</cell>
-    <cell cellsource="3">1B</cell>
-    <cell cellsource="4">1B</cell>
-    <cell cellsource="5">1B</cell>
-    <cell cellsource="6">1B</cell>
-    
-  </row>
-  <row row="87">
-    <cell cellsource="A87">86</cell>
-    <cell cellsource="1">1B/2B UNLESS SF</cell>
-    <cell cellsource="2">1B</cell>
-    <cell cellsource="3">1B</cell>
-    <cell cellsource="4">1B</cell>
-    <cell cellsource="5">1B</cell>
-    <cell cellsource="6">1B</cell>
-    
-  </row>
-  <row row="88">
-    <cell cellsource="A88">87</cell>
-    <cell cellsource="1">1B</cell>
-    <cell cellsource="2">1B</cell>
-    <cell cellsource="3">1B</cell>
-    <cell cellsource="4">1B</cell>
-    <cell cellsource="5">1B</cell>
-    <cell cellsource="6">1B</cell>
-    
-  </row>
-  <row row="89">
-    <cell cellsource="A89">88</cell>
-    <cell cellsource="1">1B</cell>
-    <cell cellsource="2">1B</cell>
-    <cell cellsource="3">1B</cell>
-    <cell cellsource="4">1B</cell>
-    <cell cellsource="5">1B</cell>
-    <cell cellsource="6">1B</cell>
-    
-  </row>
-  <row row="90">
-    <cell cellsource="A90">89</cell>
-    <cell cellsource="1">1B</cell>
-    <cell cellsource="2">1B</cell>
-    <cell cellsource="3">1B</cell>
-    <cell cellsource="4">1B</cell>
-    <cell cellsource="5">1B</cell>
-    <cell cellsource="6">1/2-SR</cell>
-    
-  </row>
-  <row row="91">
-    <cell cellsource="A91">90</cell>
-    <cell cellsource="1">1B</cell>
-    <cell cellsource="2">1B</cell>
-    <cell cellsource="3">1B</cell>
-    <cell cellsource="4">1B</cell>
-    <cell cellsource="5">1/2-SR</cell>
-    <cell cellsource="6">1/2-GR</cell>
-    
-  </row>
-  <row row="92">
-    <cell cellsource="A92">91</cell>
-    <cell cellsource="1">1B</cell>
-    <cell cellsource="2">1B</cell>
-    <cell cellsource="3">1B</cell>
-    <cell cellsource="4">1/2-SR</cell>
-    <cell cellsource="5">1/2-GR</cell>
-    <cell cellsource="6">1/2-AR</cell>
-    
-  </row>
-  <row row="93">
-    <cell cellsource="A93">92</cell>
-    <cell cellsource="1">1B</cell>
-    <cell cellsource="2">1B</cell>
-    <cell cellsource="3">1/2-SR</cell>
-    <cell cellsource="4">1/2-GR</cell>
-    <cell cellsource="5">1/2-AR</cell>
-    <cell cellsource="6">1/2-FR</cell>
-    
-  </row>
-  <row row="94">
-    <cell cellsource="A94">93</cell>
-    <cell cellsource="1">1B</cell>
-    <cell cellsource="2">1/2-SR</cell>
-    <cell cellsource="3">1/2-GR</cell>
-    <cell cellsource="4">1/2-AR</cell>
-    <cell cellsource="5">1/2-FR</cell>
-    <cell cellsource="6">1/2-PR</cell>
-    
-  </row>
-  <row row="95">
-    <cell cellsource="A95">94</cell>
-    <cell cellsource="1">1/2-SR</cell>
-    <cell cellsource="2">1/2-GR</cell>
-    <cell cellsource="3">1/2-AR</cell>
-    <cell cellsource="4">1/2-FR</cell>
-    <cell cellsource="5">1/2-PR</cell>
-    <cell cellsource="6">2/3-SR</cell>
-    
-  </row>
-  <row row="96">
-    <cell cellsource="A96">95</cell>
-    <cell cellsource="1">1/2-GR</cell>
-    <cell cellsource="2">1/2-AR</cell>
-    <cell cellsource="3">1/2-FR</cell>
-    <cell cellsource="4">1/2-PR</cell>
-    <cell cellsource="5">2/3-SR</cell>
-    <cell cellsource="6">2/3-GR</cell>
-    
-  </row>
-  <row row="97">
-    <cell cellsource="A97">96</cell>
-    <cell cellsource="1">1/2-AR</cell>
-    <cell cellsource="2">1/2-FR</cell>
-    <cell cellsource="3">1/3-SR</cell>
-    <cell cellsource="4">2/3-SR</cell>
-    <cell cellsource="5">2/3-GR</cell>
-    <cell cellsource="6">2/3-R#</cell>
-    
-  </row>
-  <row row="98">
-    <cell cellsource="A98">97</cell>
-    <cell cellsource="1">1/3-SR</cell>
-    <cell cellsource="2">2/3-SR</cell>
-    <cell cellsource="3">2/3-GR</cell>
-    <cell cellsource="4">2/3-GR</cell>
-    <cell cellsource="5">2/3-R#</cell>
-    <cell cellsource="6">2/3-R#</cell>
-    
-  </row>
-  <row row="99">
-    <cell cellsource="A99">98</cell>
-    <cell cellsource="1">2/3-R#</cell>
-    <cell cellsource="2">2/3-R#</cell>
-    <cell cellsource="3">2/3-R#</cell>
-    <cell cellsource="4">2/3-R#</cell>
-    <cell cellsource="5">2/3-R#</cell>
-    <cell cellsource="6">HR</cell>
-    
-  </row>
-  <row row="100">
-    <cell cellsource="A100">99</cell>
-    <cell cellsource="1">1/2/HR%</cell>
-    <cell cellsource="2">1/2/HR%</cell>
-    <cell cellsource="3">1/2/HR%</cell>
-    <cell cellsource="4">1/2/HR%</cell>
-    <cell cellsource="5">1/2/HR%</cell>
-    <cell cellsource="6">1/2/HR%</cell>
-    
-  </row>
-  <row row="101">
-    <cell cellsource="A101">100</cell>
-    <cell cellsource="1">2/H%/H%</cell>
-    <cell cellsource="2">2/H%/H%</cell>
-    <cell cellsource="3">2/H%/H%</cell>
-    <cell cellsource="4">2/H%/H%</cell>
-    <cell cellsource="5">2/H%/H%</cell>
-    <cell cellsource="6">2/H%/H%</cell>
-    
-  </row>
-  <row row="102">
-    <cell cellsource="A102">101</cell>
-    <cell cellsource="1">WP  (Wildness for Pitcher)</cell>
-    <cell cellsource="2">WP  (Wildness for Pitcher)</cell>
-    <cell cellsource="3">WP  (Wildness for Pitcher)</cell>
-    <cell cellsource="4">WP  (Wildness for Pitcher)</cell>
-    <cell cellsource="5">WP  (Wildness for Pitcher)</cell>
-    <cell cellsource="6">WP  (Wildness for Pitcher)</cell>
-    
-  </row>
-  <row row="103">
-    <cell cellsource="A103">102</cell>
-    <cell cellsource="1">WP  (Wildness for Pitcher)</cell>
-    <cell cellsource="2">WP  (Wildness for Pitcher)</cell>
-    <cell cellsource="3">WP  (Wildness for Pitcher)</cell>
-    <cell cellsource="4">WP  (Wildness for Pitcher)</cell>
-    <cell cellsource="5">WP  (Wildness for Pitcher)</cell>
-    <cell cellsource="6">WP  (Wildness for Pitcher)</cell>
-    
-  </row>
-  <row row="104">
-    <cell cellsource="A104">103</cell>
-    <cell cellsource="1">WP  (Wildness for Pitcher)</cell>
-    <cell cellsource="2">WP  (Wildness for Pitcher)</cell>
-    <cell cellsource="3">WP  (Wildness for Pitcher)</cell>
-    <cell cellsource="4">WP  (Wildness for Pitcher)</cell>
-    <cell cellsource="5">WP  (Wildness for Pitcher)</cell>
-    <cell cellsource="6">WP  (Wildness for Pitcher)</cell>
-    
-  </row>
-  <row row="105">
-    <cell cellsource="A105">104</cell>
-    <cell cellsource="1">WP  (Wildness for Pitcher)</cell>
-    <cell cellsource="2">WP  (Wildness for Pitcher)</cell>
-    <cell cellsource="3">WP  (Wildness for Pitcher)</cell>
-    <cell cellsource="4">WP  (Wildness for Pitcher)</cell>
-    <cell cellsource="5">WP  (Wildness for Pitcher)</cell>
-    <cell cellsource="6">WP  (Wildness for Pitcher)</cell>
-    
-  </row>
-  <row row="106">
-    <cell cellsource="A106">105</cell>
-    <cell cellsource="1">HBP (Wildness for Pitcher)</cell>
-    <cell cellsource="2">HBP (Wildness for Pitcher)</cell>
-    <cell cellsource="3">HBP (Wildness for Pitcher)</cell>
-    <cell cellsource="4">HBP (Wildness for Pitcher)</cell>
-    <cell cellsource="5">HBP (Wildness for Pitcher)</cell>
-    <cell cellsource="6">HBP (Wildness for Pitcher)</cell>
-    
-  </row>
-  <row row="107">
-    <cell cellsource="A107">106</cell>
-    <cell cellsource="1">Balk  (AHR for Pitcher)</cell>
-    <cell cellsource="2">Balk  (AHR for Pitcher)</cell>
-    <cell cellsource="3">Balk  (AHR for Pitcher)</cell>
-    <cell cellsource="4">Balk  (AHR for Pitcher)</cell>
-    <cell cellsource="5">Balk  (AHR for Pitcher)</cell>
-    <cell cellsource="6">Balk  (AHR for Pitcher)</cell>
-    
-  </row>
-  <row row="108">
-    <cell cellsource="A108">107</cell>
-    <cell cellsource="1">PO  (see Pick-Off Move chart)</cell>
-    <cell cellsource="2">PO  (see Pick-Off Move chart)</cell>
-    <cell cellsource="3">PO  (see Pick-Off Move chart)</cell>
-    <cell cellsource="4">PO  (see Pick-Off Move chart)</cell>
-    <cell cellsource="5">PO  (see Pick-Off Move chart)</cell>
-    <cell cellsource="6">PO  (see Pick-Off Move chart)</cell>
-    
-  </row>
-  <row row="109">
-    <cell cellsource="A109">108</cell>
-    <cell cellsource="1">PO  (see Pick-Off Move chart)</cell>
-    <cell cellsource="2">PO  (see Pick-Off Move chart)</cell>
-    <cell cellsource="3">PO  (see Pick-Off Move chart)</cell>
-    <cell cellsource="4">PO  (see Pick-Off Move chart)</cell>
-    <cell cellsource="5">PO  (see Pick-Off Move chart)</cell>
-    <cell cellsource="6">PO  (see Pick-Off Move chart)</cell>
-    
-  </row>
-  <row row="110">
-    <cell cellsource="A110">109</cell>
-    <cell cellsource="1">PB (Error chart for catcher)</cell>
-    <cell cellsource="2">PB (Error chart for catcher)</cell>
-    <cell cellsource="3">PB (Error chart for catcher)</cell>
-    <cell cellsource="4">PB (Error chart for catcher)</cell>
-    <cell cellsource="5">PB (Error chart for catcher)</cell>
-    <cell cellsource="6">PB (Error chart for catcher)</cell>
-    
-  </row>
-  <row row="111">
-    <cell cellsource="A111">110</cell>
-    <cell cellsource="1">PB (Error chart for catcher)</cell>
-    <cell cellsource="2">PB (Error chart for catcher)</cell>
-    <cell cellsource="3">PB (Error chart for catcher)</cell>
-    <cell cellsource="4">PB (Error chart for catcher)</cell>
-    <cell cellsource="5">PB (Error chart for catcher)</cell>
-    <cell cellsource="6">PB (Error chart for catcher)</cell>
-    
-  </row>
-  <row row="112">
-    <cell cellsource="A112">111</cell>
-    <cell cellsource="1">PB (Error chart for catcher)</cell>
-    <cell cellsource="2">PB (Error chart for catcher)</cell>
-    <cell cellsource="3">PB (Error chart for catcher)</cell>
-    <cell cellsource="4">PB (Error chart for catcher)</cell>
-    <cell cellsource="5">PB (Error chart for catcher)</cell>
-    <cell cellsource="6">PB (Error chart for catcher)</cell>
-    
-  </row>
-  <row row="113">
-    <cell cellsource="A113">112</cell>
-    <cell cellsource="1">PB (Error chart for catcher)</cell>
-    <cell cellsource="2">PB (Error chart for catcher)</cell>
-    <cell cellsource="3">PB (Error chart for catcher)</cell>
-    <cell cellsource="4">PB (Error chart for catcher)</cell>
-    <cell cellsource="5">PB (Error chart for catcher)</cell>
-    <cell cellsource="6">PB (Error chart for catcher)</cell>
-    
-  </row>
-  <row row="114">
-    <cell cellsource="A114">113</cell>
-    <cell cellsource="1">INJ</cell>
-    <cell cellsource="2">INJ</cell>
-    <cell cellsource="3">INJ</cell>
-    <cell cellsource="4">INJ</cell>
-    <cell cellsource="5">INJ</cell>
-    <cell cellsource="6">INJ</cell>
-    
-  </row>
-  <row row="115">
-    <cell cellsource="A115">114</cell>
-    <cell cellsource="1">Fan interference</cell>
-    <cell cellsource="2">Fan interference</cell>
-    <cell cellsource="3">Fan interference</cell>
-    <cell cellsource="4">Fan interference</cell>
-    <cell cellsource="5">Fan interference</cell>
-    <cell cellsource="6">Fan interference</cell>
-    
-  </row>
-  <row row="116">
-    <cell cellsource="A116">115</cell>
-    <cell cellsource="1">Pitcher's Specialty</cell>
-    <cell cellsource="2">Pitcher's Specialty</cell>
-    <cell cellsource="3">Pitcher's Specialty</cell>
-    <cell cellsource="4">Pitcher's Specialty</cell>
-    <cell cellsource="5">Pitcher's Specialty</cell>
-    <cell cellsource="6">Pitcher's Specialty</cell>
-    
-  </row>
-  <row row="117">
-    <cell cellsource="A117">116</cell>
-    <cell cellsource="1">Pitcher's Specialty</cell>
-    <cell cellsource="2">Pitcher's Specialty</cell>
-    <cell cellsource="3">Pitcher's Specialty</cell>
-    <cell cellsource="4">Pitcher's Specialty</cell>
-    <cell cellsource="5">Pitcher's Specialty</cell>
-    <cell cellsource="6">Pitcher's Specialty</cell>
-    
-  </row>
-  <row row="118">
-    <cell cellsource="A118">117</cell>
-    <cell cellsource="1">K if FB</cell>
-    <cell cellsource="2">K if FB</cell>
-    <cell cellsource="3">K if FB</cell>
-    <cell cellsource="4">K if FB</cell>
-    <cell cellsource="5">K if FB</cell>
-    <cell cellsource="6">K if FB</cell>
-    
-  </row>
-  <row row="119">
-    <cell cellsource="A119">118</cell>
-    <cell cellsource="1">K if FB</cell>
-    <cell cellsource="2">K if FB</cell>
-    <cell cellsource="3">K if FB</cell>
-    <cell cellsource="4">K if FB</cell>
-    <cell cellsource="5">K if FB</cell>
-    <cell cellsource="6">K if FB</cell>
-    
-  </row>
-  <row row="120">
-    <cell cellsource="A120">119</cell>
-    <cell cellsource="1">Batter's Specialty</cell>
-    <cell cellsource="2">Batter's Specialty</cell>
-    <cell cellsource="3">Batter's Specialty</cell>
-    <cell cellsource="4">Batter's Specialty</cell>
-    <cell cellsource="5">Batter's Specialty</cell>
-    <cell cellsource="6">Batter's Specialty</cell>
-    
-  </row>
-  <row row="121">
-    <cell cellsource="A121">120</cell>
-    <cell cellsource="1">Batter's Specialty</cell>
-    <cell cellsource="2">Batter's Specialty</cell>
-    <cell cellsource="3">Batter's Specialty</cell>
-    <cell cellsource="4">Batter's Specialty</cell>
-    <cell cellsource="5">Batter's Specialty</cell>
-    <cell cellsource="6">Batter's Specialty</cell>
-    
-  </row>
-  <row row="122">
-    <cell cellsource="A122">121</cell>
-    <cell cellsource="1">Long ball if fastball hitter</cell>
-    <cell cellsource="2">Long ball if fastball hitter</cell>
-    <cell cellsource="3">Long ball if fastball hitter</cell>
-    <cell cellsource="4">Long ball if fastball hitter</cell>
-    <cell cellsource="5">Long ball if fastball hitter</cell>
-    <cell cellsource="6">Long ball if fastball hitter</cell>
-    
-  </row>
-  <row row="123">
-    <cell cellsource="A123">122</cell>
-    <cell cellsource="1">Long ball if fastball hitter</cell>
-    <cell cellsource="2">Long ball if fastball hitter</cell>
-    <cell cellsource="3">Long ball if fastball hitter</cell>
-    <cell cellsource="4">Long ball if fastball hitter</cell>
-    <cell cellsource="5">Long ball if fastball hitter</cell>
-    <cell cellsource="6">Long ball if fastball hitter</cell>
-    
-  </row>
+  
+  <GeneratedNumber number="1">
+	<batResult pitcher1="G-CON / K-GEN / K-POW" pitcher2="G-CON / K-GEN / K-POW" pitcher3="G-CON / K-GEN / K-POW" pitcher4="G-CON / K-GEN / K-POW" pitcher5="G-CON / K-GEN / K-POW" pitcher6="G-CON / K-GEN / K-POW">
+	</batResult>
+
+  </GeneratedNumber>
+  
+   <GeneratedNumber number="2">
+    <batResult pitcher1="G-CON / K-GEN / K-POW" pitcher2="G-CON / K-GEN / K-POW" pitcher3="G-CON / K-GEN / K-POW" pitcher4="G-CON / K-GEN / K-POW" pitcher5="G-CON / K-GEN / K-POW" pitcher6="G-CON / K-GEN / K-POW">
+</batResult>
+
+  </GeneratedNumber>
+  
+   <GeneratedNumber number="3">
+    <batResult pitcher1="G-CON / K-GEN / K-POW" pitcher2="G-CON / K-GEN / K-POW" pitcher3="G-CON / K-GEN / K-POW" pitcher4="G-CON / K-GEN / K-POW" pitcher5="G-CON / K-GEN / K-POW" pitcher6="G-CON / K-GEN / K-POW">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="4">
+    <batResult pitcher1="G-CON / G-GEN / K-POW" pitcher2="G-CON / G-GEN / K-POW" pitcher3="G-CON / G-GEN / K-POW" pitcher4="G-CON / G-GEN / K-POW" pitcher5="G-CON / G-GEN / K-POW" pitcher6="G-CON / G-GEN / K-POW">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="5">
+    <batResult pitcher1="F-CON / G-GEN / K-POW" pitcher2="F-CON / G-GEN / K-POW" pitcher3="F-CON / G-GEN / K-POW" pitcher4="F-CON / G-GEN / K-POW" pitcher5="F-CON / G-GEN / K-POW" pitcher6="F-CON / G-GEN / K-POW">
+	</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="6">
+    <batResult pitcher1="F-CON / F-GEN / K-POW" pitcher2="F-CON / F-GEN / K-POW" pitcher3="F-CON / F-GEN / K-POW" pitcher4="F-CON / F-GEN / K-POW" pitcher5="F-CON / F-GEN / K-POW" pitcher6="F-CON / F-GEN / K-POW">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="7">
+    <batResult pitcher1="1B / BB / BB" pitcher2="1B / BB / BB" pitcher3="1B / BB / BB" pitcher4="1B / BB / BB" pitcher5="1B / BB / BB" pitcher6="1B / BB / BB">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="8">
+		<batResult pitcher1="1B / BB / BB" pitcher2="1B / BB / BB" pitcher3="1B / BB / BB" pitcher4="1B / BB / BB" pitcher5="1B / BB / BB" pitcher6="1B / BB / BB">
+		
+		</batResult>
+	</GeneratedNumber>
+  
+    <GeneratedNumber number="9">
+    <batResult pitcher1="1B / 1B / BB" pitcher2="1B / 1B / BB" pitcher3="1B / 1B / BB" pitcher4="1B / 1B / BB" pitcher5="1B / 1B / BB" pitcher6="1B / 1B / BB">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="10">
+    <batResult pitcher1="1B / 1B / BB" pitcher2="1B / 1B / BB" pitcher3="1B / 1B / BB" pitcher4="1B / 1B / BB" pitcher5="1B / 1B / BB" pitcher6="1B / 1B / BB">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="11">
+    <batResult pitcher1="STRIKEOUT" pitcher2="STRIKEOUT" pitcher3="STRIKEOUT" pitcher4="STRIKEOUT" pitcher5="IF 20 BF- WP, K" pitcher6="IF 15 BF- WP, K">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="12">
+    <batResult pitcher1="STRIKEOUT" pitcher2="STRIKEOUT" pitcher3="STRIKEOUT" pitcher4="STRIKEOUT" pitcher5="IF 25 BF- WP, K" pitcher6="FOUL OUT">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="13">
+    <batResult pitcher1="STRIKEOUT" pitcher2="STRIKEOUT" pitcher3="STRIKEOUT" pitcher4="IF 20 BF- WP, K" pitcher5="FOUL OUT" pitcher6="FOUL OUT">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="14">
+    <batResult pitcher1="STRIKEOUT" pitcher2="STRIKEOUT" pitcher3="STRIKEOUT" pitcher4="IF 25 BF- WP, K" pitcher5="FOUL OUT" pitcher6="FOUL OUT">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="15">
+    <batResult pitcher1="STRIKEOUT" pitcher2="STRIKEOUT" pitcher3="IF 20 BF- WP, K" pitcher4="FOUL OUT" pitcher5="FOUL OUT" pitcher6="FOUL OUT">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="16">
+    <batResult pitcher1="STRIKEOUT" pitcher2="STRIKEOUT" pitcher3="IF 25 BF- WP, K" pitcher4="FOUL OUT" pitcher5="FOUL OUT" pitcher6="POP OUT / 1B IF DP DEPTH">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="17">
+    <batResult pitcher1="STRIKEOUT" pitcher2="IF 20 BF- WP, K" pitcher3="FOUL OUT" pitcher4="FOUL OUT" pitcher5="POP OUT / 1B IF DP DEPTH" pitcher6="POP OUT">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="18">
+    <batResult pitcher1="STRIKEOUT" pitcher2="IF 25 BF- WP, K" pitcher3="FOUL OUT" pitcher4="FOUL OUT" pitcher5="POP OUT" pitcher6="GO / 1B if DP Dpth, Crnrs In">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="19">
+    <batResult pitcher1="IF 20 BF- WP, K" pitcher2="FOUL OUT" pitcher3="FOUL OUT" pitcher4="POP OUT / 1B IF DP DEPTH" pitcher5="GO / 1B if DP Dpth, Crnrs In" pitcher6="GROUND OUT">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="20">
+    <batResult pitcher1="IF 25 BF- WP, K" pitcher2="FOUL OUT" pitcher3="FOUL OUT" pitcher4="POP OUT" pitcher5="GROUND OUT" pitcher6="GROUND OUT">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="21">
+    <batResult pitcher1="FOUL OUT" pitcher2="FOUL OUT" pitcher3="POP OUT / 1B IF DP DEPTH" pitcher4="GO / 1B if DP Dpth, Crnrs In" pitcher5="GROUND OUT" pitcher6="GO/K IF SS">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="22">
+    <batResult pitcher1="FOUL OUT" pitcher2="FOUL OUT" pitcher3="POP OUT" pitcher4="GROUND OUT" pitcher5="GO/K IF SS" pitcher6="GO/K IF GS">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="23">
+    <batResult pitcher1="FOUL OUT" pitcher2="POP OUT / 1B IF DP DEPTH" pitcher3="GO / 1B if DP Dpth, Crnrs In" pitcher4="GROUND OUT" pitcher5="GO/K IF GS" pitcher6="GO/K IFGS">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="24">
+    <batResult pitcher1="FOUL OUT" pitcher2="POP OUT" pitcher3="GROUND OUT" pitcher4="GO/K IF SS" pitcher5="GO/K IFGS" pitcher6="GO/K IF AS">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="25">
+    <batResult pitcher1="POP OUT / 1B IF DP DEPTH" pitcher2="GO / 1B if DP Dpth, Crnrs In" pitcher3="GROUND OUT" pitcher4="GO/K IF GS" pitcher5="GO/K IF AS" pitcher6="GO/K IF FS" pitcher6="POP OUT / 1B IF DP DEPTH">
+</batResult>
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="26">
+    <batResult pitcher1="POP OUT" pitcher2="GROUND OUT" pitcher3="GO/K IF SS" pitcher4="GO/K IF GS" pitcher5="GO/K IF AS" pitcher6="GO/FLY O IF SS">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="27">
+    <batResult pitcher1="GO / 1B if DP Dpth, Crnrs In" pitcher2="GROUND OUT" pitcher3="GO/K IF GS" pitcher4="GO/K IF AS" pitcher5="GO/K IF FS" pitcher6="GO/FLY O IF GS">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="28">
+    <batResult pitcher1="GROUND OUT" pitcher2="GO/K IF SS" pitcher3="GO/K IF GS" pitcher4="GO/K IF AS" pitcher5="GO/FLY O IF SS" pitcher6="GO/FLY O IF GS">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="29">
+    <batResult pitcher1="GROUND OUT" pitcher2="GO/K IF GS" pitcher3="GO/K IF AS" pitcher4="GO/K IF FS" pitcher5="GO/FLY O IF SS" pitcher6="GO/FLY O IF AS">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="30">
+    <batResult pitcher1="GO/K IF SS" pitcher2="GO/K IF GS" pitcher3="GO/K IF AS" pitcher4="GO/FLY O IF SS" pitcher5="GO/FLY O IF GS" pitcher6="GO/FLY O IF AS">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="31">
+    <batResult pitcher1="GO/K IF GS" pitcher2="GO/K IF AS" pitcher3="GO/K IF FS" pitcher4="GO/FLY O IF SS" pitcher5="GO/FLY O IF GS" pitcher6="GO/FLY O IF FS">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="32">
+    <batResult pitcher1="GO/K IF GS" pitcher2="GO/K IF AS" pitcher3="GO/FLY O IF SS" pitcher4="GO/FLY O IF GS" pitcher5="GO/FLY O IF AS" pitcher6="GO/FLY O IF FS">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="33">
+    <batResult pitcher1="GO/K IF AS" pitcher2="GO/K IF FS" pitcher3="GO/FLY O IF SS" pitcher4="GO/FLY O IG GS" pitcher5="GO/FLY O IF AS" pitcher6="GO/1B UNLESS PF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="34">
+    <batResult pitcher1="GO/K IF AS" pitcher2="GO/FLY O IF SS" pitcher3="GO/FLY O IF GS" pitcher4="GO/FLY O IF AS" pitcher5="GO/FLY O IF FS" pitcher6="GO/1B UNLESS PF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="35">
+    <batResult pitcher1="GO/K IF FS" pitcher2="GO/FLY O IF SS" pitcher3="GO/FLY O IG GS" pitcher4="GO/FLY O IF AS" pitcher5="GO/FLY O IF FS" pitcher6="GO/1B UNLESS FF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="36">
+    <batResult pitcher1="GO/FLY O IF SS" pitcher2="GO/FLY O IF GS" pitcher3="GO/FLY O IF AS" pitcher4="GO/FLY O IF FS" pitcher5="GO/1B UNLESS PF" pitcher6="GO/1B UNLESS FF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="37">
+    <batResult pitcher1="GO/FLY O IF SS" pitcher2="GO/FLY O IF GS" pitcher3="GO/FLY O IF AS" pitcher4="GO/FLY O IF FS" pitcher5="GO/1B UNLESS PF" pitcher6="GO/1B UNLESS AF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="38">
+    <batResult pitcher1="GO/FLY O IF GS" pitcher2="GO/FLY O IF AS" pitcher3="GO/FLY O IF FS" pitcher4="GO/1B UNLESS PF" pitcher5="GO/1B UNLESS FF" pitcher6="GO/1B UNLESS AF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="39">
+    <batResult pitcher1="GO/FLY O IG GS" pitcher2="GO/FLY O IF AS" pitcher3="GO/FLY O IF FS" pitcher4="GO/1B UNLESS PF" pitcher5="GO/1B UNLESS FF" pitcher6="GO/1B UNLESS GF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="40">
+    <batResult pitcher1="GO/FLY O IF AS" pitcher2="GO/FLY O IF FS" pitcher3="GO/1B UNLESS PF" pitcher4="GO/1B UNLESS FF" pitcher5="GO/1B UNLESS AF" pitcher6="GO/1B UNLESS GF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="41">
+    <batResult pitcher1="GO/FLY O IF AS" pitcher2="GO/FLY O IF FS" pitcher3="GO/1B UNLESS PF" pitcher4="GO/1B UNLESS FF" pitcher5="GO/1B UNLESS AF" pitcher6="GO/1B UNLESS SF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="42">
+    <batResult pitcher1="GO/FLY O IF FS" pitcher2="GO/1B UNLESS PF" pitcher3="GO/1B UNLESS FF" pitcher4="GO/1B UNLESS AF" pitcher5="GO/1B UNLESS GF" pitcher6="GO/1B UNLESS SF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="43">
+    <batResult pitcher1="GO/FLY O IF FS" pitcher2="GO/1B UNLESS PF" pitcher3="GO/1B UNLESS FF" pitcher4="GO/1B UNLESS AF" pitcher5="GO/1B UNLESS GF" pitcher6="GO/E IF SR">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="44">
+    <batResult pitcher1="GO/1B UNLESS PF" pitcher2="GO/1B UNLESS FF" pitcher3="GO/1B UNLESS AF" pitcher4="GO/1B UNLESS GF" pitcher5="GO/1B UNLESS SF" pitcher6="FLY OUT">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="45">
+    <batResult pitcher1="GO/1B UNLESS PF" pitcher2="GO/1B UNLESS FF" pitcher3="GO/1B UNLESS AF" pitcher4="GO/1B UNLESS GF" pitcher5="GO/1B UNLESS SF" pitcher6="FLY OUT, K POWER P">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="46">
+    <batResult pitcher1="GO/1B UNLESS FF" pitcher2="GO/1B UNLESS AF" pitcher3="GO/1B UNLESS GF" pitcher4="GO/1B UNLESS SF" pitcher5="GO/E IF SR" pitcher6="FLY OUT, K POWER P">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="47">
+    <batResult pitcher1="GO/1B UNLESS FF" pitcher2="GO/1B UNLESS AF" pitcher3="GO/1B UNLESS GF" pitcher4="GO/1B UNLESS SF" pitcher5="FLY OUT" pitcher6="FLY OUT, K FIREBALLER">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="48">
+    <batResult pitcher1="GO/1B UNLESS AF" pitcher2="GO/1B UNLESS GF" pitcher3="GO/1B UNLESS SF" pitcher4="GO/E IF SR" pitcher5="FLY OUT, K POWER P" pitcher6="FLY OUT, K FIREBALLER">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="49">
+    <batResult pitcher1="GO/1B UNLESS AF" pitcher2="GO/1B UNLESS GF" pitcher3="GO/1B UNLESS SF" pitcher4="FLY OUT" pitcher5="FLY OUT, K POWER P" pitcher6="FLY OUT">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="50">
+    <batResult pitcher1="GO/1B UNLESS GF" pitcher2="GO/1B UNLESS SF" pitcher3="GO/E IF SR" pitcher4="FLY OUT, K POWER P" pitcher5="FLY OUT, K FIREBALLER" pitcher6="FLY OUT">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="51">
+    <batResult pitcher1="GO/1B UNLESS GF" pitcher2="GO/1B UNLESS SF" pitcher3="FLY OUT" pitcher4="FLY OUT, K POWER P" pitcher5="FLY OUT, K FIREBALLER" pitcher6="FLY OUT">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="52">
+    <batResult pitcher1="GO/1B UNLESS SF" pitcher2="GO/E IF SR" pitcher3="FLY OUT, K POWER P" pitcher4="FLY OUT, K FIREBALLER" pitcher5="FLY OUT" pitcher6="FLY OUT">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="53">
+    <batResult pitcher1="GO/1B UNLESS SF" pitcher2="FLY OUT" pitcher3="FLY OUT, K POWER P" pitcher4="FLY OUT, K FIREBALLER" pitcher5="FLY OUT" pitcher6="FLY O/BB-SS IF BASER">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="54">
+    <batResult pitcher1="GO/E IF SR" pitcher2="FLY OUT, K POWER P" pitcher3="FLY OUT, K FIREBALLER" pitcher4="FLY OUT" pitcher5="FLY OUT" pitcher6="FLY O/BB-GS IF BASER">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="55">
+    <batResult pitcher1="FLY OUT" pitcher2="FLY OUT, K POWER P" pitcher3="FLY OUT, K FIREBALLER" pitcher4="FLY OUT" pitcher5="FLY O/BB-SS IF BASER" pitcher6="FLY O/BB-AS IF BASER">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="56">
+    <batResult pitcher1="FLY OUT, K POWER P" pitcher2="FLY OUT, K FIREBALLER" pitcher3="FLY OUT" pitcher4="FLY OUT" pitcher5="FLY O/BB-GS IF BASER" pitcher6="FLY O/3B UNLESS PF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="57">
+    <batResult pitcher1="FLY OUT, K POWER P" pitcher2="FLY OUT, K FIREBALLER" pitcher3="FLY OUT" pitcher4="FLY OUT" pitcher5="FLY O/BB-AS IF BASER" pitcher6="FLY O/2B UNLESS FF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="58">
+    <batResult pitcher1="FLY OUT, K FIREBALLER" pitcher2="FLY OUT" pitcher3="FLY OUT" pitcher4="FLY O/BB-SS IF BASER" pitcher5="FLY O/3B UNLESS PF" pitcher6="FLY O/2B UNLESS AF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="59">
+    <batResult pitcher1="FLY OUT, K FIREBALLER" pitcher2="FLY OUT" pitcher3="FLY OUT" pitcher4="FLY O/BB-GS IF BASER" pitcher5="FLY O/2B UNLESS FF" pitcher6="FLY O/1B UNLESS GF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="60">
+    <batResult pitcher1="FLY OUT" pitcher2="FLY OUT" pitcher3="FLY O/BB-SS IF BASER" pitcher4="FLY O/BB-AS IF BASER" pitcher5="FLY O/2B UNLESS AF" pitcher6="FLY O/1B UNLESS SF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="61">
+    <batResult pitcher1="FLY OUT" pitcher2="FLY OUT" pitcher3="FLY O/BB-GS IF BASER" pitcher4="FLY O/3B UNLESS PF" pitcher5="FLY O/1B UNLESS GF" pitcher6="POSSIBLE ERROR">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="62">
+    <batResult pitcher1="FLY OUT" pitcher2="FLY O/BB-SS IF BASER" pitcher3="FLY O/BB-AS IF BASER" pitcher4="FLY O/2B UNLESS FF" pitcher5="FLY O/1B UNLESS SF" pitcher6="POSSIBLE ERROR">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="63">
+    <batResult pitcher1="FLY OUT" pitcher2="FLY O/BB-GS IF BASER" pitcher3="FLY O/3B UNLESS PF" pitcher4="FLY O/2B UNLESS AF" pitcher5="POSSIBLE ERROR" pitcher6="POSSIBLE ERROR">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="64">
+    <batResult pitcher1="FLY O/BB-SS IF BASER" pitcher2="FLY O/BB-AS IF BASER" pitcher3="FLY O/2B UNLESS FF" pitcher4="FLY O/1B UNLESS GF" pitcher5="POSSIBLE ERROR" pitcher6="POSSIBLE ERROR">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="65">
+    <batResult pitcher1="FLY O/BB-GS IF BASER" pitcher2="FLY O/3B UNLESS PF" pitcher3="FLY O/2B UNLESS AF" pitcher4="FLY O/1B UNLESS SF" pitcher5="POSSIBLE ERROR" pitcher6="POSSIBLE ERROR">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="66">
+    <batResult pitcher1="FLY O/BB-AS IF BASER" pitcher2="FLY O/2B UNLESS FF" pitcher3="FLY O/1B UNLESS GF" pitcher4="POSSIBLE ERROR" pitcher5="POSSIBLE ERROR" pitcher6="BB">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="67">
+    <batResult pitcher1="FLY O/3B UNLESS PF" pitcher2="FLY O/2B UNLESS AF" pitcher3="FLY O/1B UNLESS SF" pitcher4="POSSIBLE ERROR" pitcher5="POSSIBLE ERROR" pitcher6="BB">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="68">
+    <batResult pitcher1="FLY O/2B UNLESS FF" pitcher2="FLY O/1B UNLESS GF" pitcher3="POSSIBLE ERROR" pitcher4="POSSIBLE ERROR" pitcher5="BB" pitcher6="BB">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="69">
+    <batResult pitcher1="FLY O/2B UNLESS AF" pitcher2="FLY O/1B UNLESS SF" pitcher3="POSSIBLE ERROR" pitcher4="POSSIBLE ERROR" pitcher5="BB" pitcher6="BB">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="70">
+    <batResult pitcher1="FLY O/1B UNLESS GF" pitcher2="POSSIBLE ERROR" pitcher3="POSSIBLE ERROR" pitcher4="POSSIBLE ERROR" pitcher5="BB" pitcher6="BB">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="71">
+    <batResult pitcher1="FLY O/1B UNLESS SF" pitcher2="POSSIBLE ERROR" pitcher3="POSSIBLE ERROR" pitcher4="BB" pitcher5="BB" pitcher6="BB">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="72">
+    <batResult pitcher1="POSSIBLE ERROR" pitcher2="POSSIBLE ERROR" pitcher3="POSSIBLE ERROR" pitcher4="BB" pitcher5="BB" pitcher6="BB">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="73">
+    <batResult pitcher1="POSSIBLE ERROR" pitcher2="POSSIBLE ERROR" pitcher3="BB" pitcher4="BB" pitcher5="BB" pitcher6="BB">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="74">
+    <batResult pitcher1="POSSIBLE ERROR" pitcher2="POSSIBLE ERROR" pitcher3="BB" pitcher4="BB" pitcher5="BB" pitcher6="1B/2B UNLESS PF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="75">
+    <batResult pitcher1="POSSIBLE ERROR" pitcher2="BB" pitcher3="BB" pitcher4="BB" pitcher5="BB" pitcher6="1B/2B UNLESS FF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="76">
+    <batResult pitcher1="POSSIBLE ERROR" pitcher2="BB" pitcher3="BB" pitcher4="BB" pitcher5="1B/2B UNLESS PF" pitcher6="1B/2B UNLESS AF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="77">
+    <batResult pitcher1="BB" pitcher2="BB" pitcher3="BB" pitcher4="1B/2B UNLESS PF" pitcher5="1B/2B UNLESS FF" pitcher6="1B/2B UNLESS GF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="78">
+    <batResult pitcher1="BB" pitcher2="BB" pitcher3="BB" pitcher4="1B/2B UNLESS FF" pitcher5="1B/2B UNLESS AF" pitcher6="1B/2B UNLESS SF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="79">
+    <batResult pitcher1="BB" pitcher2="BB" pitcher3="1B/2B UNLESS PF" pitcher4="1B/2B UNLESS AF" pitcher5="1B/2B UNLESS GF" pitcher6="1B">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="80">
+    <batResult pitcher1="BB" pitcher2="1B/2B UNLESS PF" pitcher3="1B/2B UNLESS FF" pitcher4="1B/2B UNLESS GF" pitcher5="1B/2B UNLESS SF" pitcher6="1B">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="81">
+    <batResult pitcher1="BB" pitcher2="1B/2B UNLESS FF" pitcher3="1B/2B UNLESS AF" pitcher4="1B/2B UNLESS SF" pitcher5="1B" pitcher6="1B">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="82">
+    <batResult pitcher1="1B/2B UNLESS PF" pitcher2="1B/2B UNLESS AF" pitcher3="1B/2B UNLESS GF" pitcher4="1B" pitcher5="1B" pitcher6="1B">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="83">
+    <batResult pitcher1="1B/2B UNLESS FF" pitcher2="1B/2B UNLESS GF" pitcher3="1B/2B UNLESS SF" pitcher4="1B" pitcher5="1B" pitcher6="1B">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="84">
+    <batResult pitcher1="1B/2B UNLESS AF" pitcher2="1B/2B UNLESS SF" pitcher3="1B" pitcher4="1B" pitcher5="1B" pitcher6="1B">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="85">
+    <batResult pitcher1="1B/2B UNLESS GF" pitcher2="1B" pitcher3="1B" pitcher4="1B" pitcher5="1B" pitcher6="1B">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="86">
+    <batResult pitcher1="1B/2B UNLESS SF" pitcher2="1B" pitcher3="1B" pitcher4="1B" pitcher5="1B" pitcher6="1B">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="87">
+    <batResult pitcher1="1B" pitcher2="1B" pitcher3="1B" pitcher4="1B" pitcher5="1B" pitcher6="1B">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="88">
+    <batResult pitcher1="1B" pitcher2="1B" pitcher3="1B" pitcher4="1B" pitcher5="1B" pitcher6="1B">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="89">
+    <batResult pitcher1="1B" pitcher2="1B" pitcher3="1B" pitcher4="1B" pitcher5="1B" pitcher6="1/2-SR">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="90">
+    <batResult pitcher1="1B" pitcher2="1B" pitcher3="1B" pitcher4="1B" pitcher5="1/2-SR" pitcher6="1/2-GR">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="91">
+    <batResult pitcher1="1B" pitcher2="1B" pitcher3="1B" pitcher4="1/2-SR" pitcher5="1/2-GR" pitcher6="1/2-AR">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="92">
+    <batResult pitcher1="1B" pitcher2="1B" pitcher3="1/2-SR" pitcher4="1/2-GR" pitcher5="1/2-AR" pitcher6="1/2-FR">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="93">
+    <batResult pitcher1="1B" pitcher2="1/2-SR" pitcher3="1/2-GR" pitcher4="1/2-AR" pitcher5="1/2-FR" pitcher6="1/2-PR">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="94">
+    <batResult pitcher1="1/2-SR" pitcher2="1/2-GR" pitcher3="1/2-AR" pitcher4="1/2-FR" pitcher5="1/2-PR" pitcher6="2/3-SR">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="95">
+    <batResult pitcher1="1/2-GR" pitcher2="1/2-AR" pitcher3="1/2-FR" pitcher4="1/2-PR" pitcher5="2/3-SR" pitcher6="2/3-GR">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="96">
+    <batResult pitcher1="1/2-AR" pitcher2="1/2-FR" pitcher3="1/3-SR" pitcher4="2/3-SR" pitcher5="2/3-GR" pitcher6="2/3-R#">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="97">
+    <batResult pitcher1="1/3-SR" pitcher2="2/3-SR" pitcher3="2/3-GR" pitcher4="2/3-GR" pitcher5="2/3-R#" pitcher6="2/3-R#">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="98">
+    <batResult pitcher1="2/3-R#" pitcher2="2/3-R#" pitcher3="2/3-R#" pitcher4="2/3-R#" pitcher5="2/3-R#" pitcher6="HR">
+</batResult>
+
+  </GeneratedNumber>
+  <GeneratedNumber number="99">
+    <batResult pitcher1="1/2/HR%" pitcher2="1/2/HR%" pitcher3="1/2/HR%" pitcher4="1/2/HR%" pitcher5="1/2/HR%" pitcher6="1/2/HR%">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="100">
+    <batResult pitcher1="2/H%/H%" pitcher2="2/H%/H%" pitcher3="2/H%/H%" pitcher4="2/H%/H%" pitcher5="2/H%/H%" pitcher6="2/H%/H%">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="101">
+    <batResult pitcher1="WP  (Wildness for Pitcher)" pitcher2="WP  (Wildness for Pitcher)" pitcher3="WP  (Wildness for Pitcher)" pitcher4="WP  (Wildness for Pitcher)" pitcher5="WP  (Wildness for Pitcher)" pitcher6="WP  (Wildness for Pitcher)">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="102">
+    <batResult pitcher1="WP  (Wildness for Pitcher)" pitcher2="WP  (Wildness for Pitcher)" pitcher3="WP  (Wildness for Pitcher)" pitcher4="WP  (Wildness for Pitcher)" pitcher5="WP  (Wildness for Pitcher)" pitcher6="WP  (Wildness for Pitcher)">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="103">
+    <batResult pitcher1="WP  (Wildness for Pitcher)" pitcher2="WP  (Wildness for Pitcher)" pitcher3="WP  (Wildness for Pitcher)" pitcher4="WP  (Wildness for Pitcher)" pitcher5="WP  (Wildness for Pitcher)" pitcher6="WP  (Wildness for Pitcher)">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="104">
+    <batResult pitcher1="WP  (Wildness for Pitcher)" pitcher2="WP  (Wildness for Pitcher)" pitcher3="WP  (Wildness for Pitcher)" pitcher4="WP  (Wildness for Pitcher)" pitcher5="WP  (Wildness for Pitcher)" pitcher6="WP  (Wildness for Pitcher)">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="105">
+    <batResult pitcher1="HBP (Wildness for Pitcher)" pitcher2="HBP (Wildness for Pitcher)" pitcher3="HBP (Wildness for Pitcher)" pitcher4="HBP (Wildness for Pitcher)" pitcher5="HBP (Wildness for Pitcher)" pitcher6="HBP (Wildness for Pitcher)">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="106">
+    <batResult pitcher1="Balk  (AHR for Pitcher)" pitcher2="Balk  (AHR for Pitcher)" pitcher3="Balk  (AHR for Pitcher)" pitcher4="Balk  (AHR for Pitcher)" pitcher5="Balk  (AHR for Pitcher)" pitcher6="Balk  (AHR for Pitcher)">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="107">
+    <batResult pitcher1="PO  (see Pick-Off Move chart)" pitcher2="PO  (see Pick-Off Move chart)" pitcher3="PO  (see Pick-Off Move chart)" pitcher4="PO  (see Pick-Off Move chart)" pitcher5="PO  (see Pick-Off Move chart)" pitcher6="PO  (see Pick-Off Move chart)">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="108">
+    <batResult pitcher1="PO  (see Pick-Off Move chart)" pitcher2="PO  (see Pick-Off Move chart)" pitcher3="PO  (see Pick-Off Move chart)" pitcher4="PO  (see Pick-Off Move chart)" pitcher5="PO  (see Pick-Off Move chart)" pitcher6="PO  (see Pick-Off Move chart)">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="109">
+    <batResult pitcher1="PB (Error chart for catcher)" pitcher2="PB (Error chart for catcher)" pitcher3="PB (Error chart for catcher)" pitcher4="PB (Error chart for catcher)" pitcher5="PB (Error chart for catcher)" pitcher6="PB (Error chart for catcher)">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="110">
+    <batResult pitcher1="PB (Error chart for catcher)" pitcher2="PB (Error chart for catcher)" pitcher3="PB (Error chart for catcher)" pitcher4="PB (Error chart for catcher)" pitcher5="PB (Error chart for catcher)" pitcher6="PB (Error chart for catcher)">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="111">
+    <batResult pitcher1="PB (Error chart for catcher)" pitcher2="PB (Error chart for catcher)" pitcher3="PB (Error chart for catcher)" pitcher4="PB (Error chart for catcher)" pitcher5="PB (Error chart for catcher)" pitcher6="PB (Error chart for catcher)">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="112">
+    <batResult pitcher1="PB (Error chart for catcher)" pitcher2="PB (Error chart for catcher)" pitcher3="PB (Error chart for catcher)" pitcher4="PB (Error chart for catcher)" pitcher5="PB (Error chart for catcher)" pitcher6="PB (Error chart for catcher)">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="113">
+    <batResult pitcher1="INJ" pitcher2="INJ" pitcher3="INJ" pitcher4="INJ" pitcher5="INJ" pitcher6="INJ">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="114">
+    <batResult pitcher1="Fan interference" pitcher2="Fan interference" pitcher3="Fan interference" pitcher4="Fan interference" pitcher5="Fan interference" pitcher6="Fan interference">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="115">
+    <batResult pitcher1="Pitcher's Specialty" pitcher2="Pitcher's Specialty" pitcher3="Pitcher's Specialty" pitcher4="Pitcher's Specialty" pitcher5="Pitcher's Specialty" pitcher6="Pitcher's Specialty">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="116">
+    <batResult pitcher1="Pitcher's Specialty" pitcher2="Pitcher's Specialty" pitcher3="Pitcher's Specialty" pitcher4="Pitcher's Specialty" pitcher5="Pitcher's Specialty" pitcher6="Pitcher's Specialty">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="117">
+    <batResult pitcher1="K if FB" pitcher2="K if FB" pitcher3="K if FB" pitcher4="K if FB" pitcher5="K if FB" pitcher6="K if FB">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="118">
+    <batResult pitcher1="K if FB" pitcher2="K if FB" pitcher3="K if FB" pitcher4="K if FB" pitcher5="K if FB" pitcher6="K if FB">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="119">
+    <batResult pitcher1="Batter's Specialty" pitcher2="Batter's Specialty" pitcher3="Batter's Specialty" pitcher4="Batter's Specialty" pitcher5="Batter's Specialty" pitcher6="Batter's Specialty">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="120">
+    <batResult pitcher1="Batter's Specialty" pitcher2="Batter's Specialty" pitcher3="Batter's Specialty" pitcher4="Batter's Specialty" pitcher5="Batter's Specialty" pitcher6="Batter's Specialty">
+</batResult>
+
+  </GeneratedNumber>
+  
+   <GeneratedNumber number="121">
+    <batResult pitcher1="Long ball if fastball hitter" pitcher2="Long ball if fastball hitter" pitcher3="Long ball if fastball hitter" pitcher4="Long ball if fastball hitter" pitcher5="Long ball if fastball hitter" pitcher6="Long ball if fastball hitter">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="122">
+    <batResult pitcher1="Long ball if fastball hitter" pitcher2="Long ball if fastball hitter" pitcher3="Long ball if fastball hitter" pitcher4="Long ball if fastball hitter" pitcher5="Long ball if fastball hitter" pitcher6="Long ball if fastball hitter">
+</batResult>
+
+  </GeneratedNumber>
 </data>
