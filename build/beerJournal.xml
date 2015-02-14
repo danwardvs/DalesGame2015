@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <MyBeerJournal>
-    <Brewery name="Founders Brewing Company" location="Grand Rapids, MI">
-        <Beer name="Centennial" description="IPA" rating="A+" dateSampled="01/02/2011">
+    <GeneratedNumber number="1">
+        <Beer pitcher1="G-CON / K-GEN / K-POW" pitcher2="G-CON / K-GEN / K-POW" pitcher3="G-CON / K-GEN / K-POW">
             "What an excellent IPA. This is the most delicious beer I have ever tasted!"
         </Beer>
-    </Brewery>
-    <Brewery name="Brewery Vivant" location="Grand Rapids, MI">
-        <Beer name="Farmhouse Ale" description="Belgian Ale" rating="B" dateSampled="02/07/2015">
+    </GeneratedNumber>
+    <GeneratedNumber number="9">
+        <Beer pitcher1="1B / BB / BB" pitcher2="1B / BB / BB" pitcher3="1B / BB / BB" >
             This beer is not so good... but I am not that big of a fan of english style ales.
         </Beer>
-    </Brewery>
-    <Brewery name="Bells Brewery" location="Kalamazoo, MI">
-        <Beer name="Two Hearted Ale" description="IPA" rating="A" dateSampled="03/15/2012">
+    </GeneratedNumber>
+    <GeneratedNumber number="17">
+        <Beer pitcher1="STRIKEOUT" pitcher2="STRIKEOUT" pitcher3="IF 25 BF- WP, K" >
             Another execllent brew. Two Hearted gives Founders Centennial a run for it's money.
         </Beer>
-    </Brewery>
+    </GeneratedNumber>
 </MyBeerJournal>

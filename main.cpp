@@ -4,6 +4,7 @@
 #include<iostream>
 #include <fstream>
 #include<vector>
+#include<string>
 
 #include "rapidxml.hpp"
 #include "rapidxml_print.hpp"
@@ -43,6 +44,22 @@ void close_button_handler(void){
 }
 END_OF_FUNCTION(close_button_handler)
 
+/*
+//Convert int to string
+string convertInt(int number){
+   stringstream ss;
+   ss << number;
+   return ss.str();
+}
+
+//Convert string to int
+int convertStringToInt(string newString){
+  int result;
+  stringstream(newString) >> result;
+  return result;
+}
+*/
+
 // Random number generator. Use int random(highest,lowest);
 int random(int newLowest, int newHighest)
 {
@@ -76,8 +93,6 @@ void update(){
 }
 void load_xml(){
 
-  textprintf_ex(al_buffer,font,10,30,makecol(0,0,0),makecol(0,0,-1),"Parsing my beer journal...");
-
 	xml_document<> doc;
 	xml_node<> * root_node;
 	// Read the xml file into a vector
@@ -89,26 +104,26 @@ void load_xml(){
 	// Find our root node
 	root_node = doc.first_node("MyBeerJournal");
 	// Iterate over the brewerys
-	int y;
-	for (xml_node<> * brewery_node = root_node->first_node("Brewery"); brewery_node; brewery_node = brewery_node->next_sibling())
+	int y=-60;
+	for (xml_node<> * brewery_node = root_node->first_node("GeneratedNumber"); brewery_node; brewery_node = brewery_node->next_sibling())
 	{
-    y+=40;
-	  textprintf_ex(al_buffer,font,10,30+y,makecol(0,0,0),makecol(0,0,-1),"I have visited %s in %s",
-      brewery_node->first_attribute("name")->value(),
-      brewery_node->first_attribute("location")->value()
-
-    );
+    y+=60;
+    //if(brewery_node->first_attribute("number")->value()=)
+      textprintf_ex(al_buffer,font,10,30+y,makecol(0,0,0),makecol(0,0,-1),"Generated number is %s",
+        brewery_node->first_attribute("number")->value()
+      );
             // Interate over the beers
 	    for(xml_node<> * beer_node = brewery_node->first_node("Beer"); beer_node; beer_node = beer_node->next_sibling())
 	    {
 
-	    	textprintf_ex(al_buffer,font,10,50+y,makecol(0,0,0),makecol(0,0,-1),"On %s, I tried their %s which is a %s. ",
+	    	textprintf_ex(al_buffer,font,10,50+y,makecol(0,0,0),makecol(0,0,-1),"1P:%s", beer_node->first_attribute("pitcher1")->value());
+        textprintf_ex(al_buffer,font,10,60+y,makecol(0,0,0),makecol(0,0,-1),"2P:%s", beer_node->first_attribute("pitcher2")->value());
+        textprintf_ex(al_buffer,font,10,70+y,makecol(0,0,0),makecol(0,0,-1),"3P:%s", beer_node->first_attribute("pitcher3")->value());
 
-	    		beer_node->first_attribute("dateSampled")->value(),
-	    		beer_node->first_attribute("name")->value(),
-	    		beer_node->first_attribute("description")->value());
 
-      textprintf_ex(al_buffer,font,10,40+y,makecol(0,0,0),makecol(0,0,-1),"I gave it the following review: %s", beer_node->value());
+
+
+      //textprintf_ex(al_buffer,font,10,40+y,makecol(0,0,0),makecol(0,0,-1),"I gave it the following review: %s", beer_node->value());
 
 	    }
 
