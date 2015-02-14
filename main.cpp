@@ -19,6 +19,14 @@ bool close_button_pressed;
 int random_number=0;
 
 int step;
+int scrolly;
+
+char* pitcher1="NA";
+char* pitcher2="NA";
+char* pitcher3="NA";
+char* pitcher4="NA";
+char* pitcher5="NA";
+char* pitcher6="NA";
 
 // FPS System
 volatile int ticks = 0;
@@ -84,8 +92,48 @@ void update(){
   if(key[KEY_ENTER] && step>9){
     random_number=random(1,122);
     step=0;
+
+    xml_document<> doc;
+    xml_node<> * root_node;
+    // Read the xml file into a vector
+    ifstream theFile ("1b.xml");
+    vector<char> buffer((istreambuf_iterator<char>(theFile)), istreambuf_iterator<char>());
+    buffer.push_back('\0');
+    // Parse the buffer using the xml file parsing library into doc
+    doc.parse<0>(&buffer[0]);
+    // Find our root node
+    root_node = doc.first_node("data");
+    // Iterate over the brewerys
+    for (xml_node<> * brewery_node = root_node->first_node("GeneratedNumber"); brewery_node; brewery_node = brewery_node->next_sibling())
+    {
+
+      int asdf = atoi(brewery_node->first_attribute("number")->value());
+      if(asdf==random_number){
+
+            // Interate over the beers
+	    for(xml_node<> * beer_node = brewery_node->first_node("batResult"); beer_node; beer_node = beer_node->next_sibling())
+	    {
+
+        pitcher1 = beer_node->first_attribute("pitcher1")->value();
+        pitcher2 = beer_node->first_attribute("pitcher2")->value();
+        pitcher3 = beer_node->first_attribute("pitcher3")->value();
+        pitcher4 = beer_node->first_attribute("pitcher4")->value();
+        pitcher5 = beer_node->first_attribute("pitcher5")->value();
+        pitcher6 = beer_node->first_attribute("pitcher6")->value();
+
+
+
+      //textprintf_ex(al_buffer,font,10,40+y,makecol(0,0,0),makecol(0,0,-1),"I gave it the following review: %s", beer_node->value());
+	    }
+	    }
+
+	}
+
+
   }
 
+  if(key[KEY_UP])scrolly+=10;
+  if(key[KEY_DOWN])scrolly-=10;
   step++;
 
 
@@ -109,19 +157,19 @@ void load_xml(){
 	{
     y+=80;
     //if(brewery_node->first_attribute("number")->value()=)
-      textprintf_ex(al_buffer,font,10,30+y,makecol(0,0,0),makecol(0,0,-1),"Generated number is %s",
+      textprintf_ex(al_buffer,font,10,40+y+scrolly,makecol(0,0,0),makecol(0,0,-1),"Generated number is %s",
         brewery_node->first_attribute("number")->value()
       );
             // Interate over the beers
 	    for(xml_node<> * beer_node = brewery_node->first_node("batResult"); beer_node; beer_node = beer_node->next_sibling())
 	    {
 
-	    	textprintf_ex(al_buffer,font,10,50+y,makecol(0,0,0),makecol(0,0,-1),"1P:%s", beer_node->first_attribute("pitcher1")->value());
-        textprintf_ex(al_buffer,font,10,60+y,makecol(0,0,0),makecol(0,0,-1),"2P:%s", beer_node->first_attribute("pitcher2")->value());
-        textprintf_ex(al_buffer,font,10,70+y,makecol(0,0,0),makecol(0,0,-1),"3P:%s", beer_node->first_attribute("pitcher3")->value());
-        textprintf_ex(al_buffer,font,10,80+y,makecol(0,0,0),makecol(0,0,-1),"4P:%s", beer_node->first_attribute("pitcher4")->value());
-        textprintf_ex(al_buffer,font,10,90+y,makecol(0,0,0),makecol(0,0,-1),"5P:%s", beer_node->first_attribute("pitcher5")->value());
-        textprintf_ex(al_buffer,font,10,100+y,makecol(0,0,0),makecol(0,0,-1),"6P:%s", beer_node->first_attribute("pitcher6")->value());
+	    	textprintf_ex(al_buffer,font,10,50+y+scrolly,makecol(0,0,0),makecol(0,0,-1),"1P:%s", beer_node->first_attribute("pitcher1")->value());
+        textprintf_ex(al_buffer,font,10,60+y+scrolly,makecol(0,0,0),makecol(0,0,-1),"2P:%s", beer_node->first_attribute("pitcher2")->value());
+        textprintf_ex(al_buffer,font,10,70+y+scrolly,makecol(0,0,0),makecol(0,0,-1),"3P:%s", beer_node->first_attribute("pitcher3")->value());
+        textprintf_ex(al_buffer,font,10,80+y+scrolly,makecol(0,0,0),makecol(0,0,-1),"4P:%s", beer_node->first_attribute("pitcher4")->value());
+        textprintf_ex(al_buffer,font,10,90+y+scrolly,makecol(0,0,0),makecol(0,0,-1),"5P:%s", beer_node->first_attribute("pitcher5")->value());
+        textprintf_ex(al_buffer,font,10,100+y+scrolly,makecol(0,0,0),makecol(0,0,-1),"6P:%s", beer_node->first_attribute("pitcher6")->value());
 
 
 
@@ -140,7 +188,15 @@ void draw(){
 
     rectfill(al_buffer,0,0,SCREEN_W,SCREEN_H,makecol(255,255,255));
     textprintf_ex(al_buffer,font,10,10,makecol(0,0,0),makecol(0,0,-1),"%i",random_number);
-    load_xml();
+    //load_xml();
+
+     	textprintf_ex(al_buffer,font,10,50,makecol(0,0,0),makecol(0,0,-1),"1P:%s", pitcher1);
+     textprintf_ex(al_buffer,font,10,60,makecol(0,0,0),makecol(0,0,-1),"2P:%s", pitcher2);
+     textprintf_ex(al_buffer,font,10,70,makecol(0,0,0),makecol(0,0,-1),"3P:%s",pitcher3);
+     textprintf_ex(al_buffer,font,10,80,makecol(0,0,0),makecol(0,0,-1),"4P:%s",pitcher4);
+     textprintf_ex(al_buffer,font,10,90,makecol(0,0,0),makecol(0,0,-1),"5P:%s", pitcher5);
+     textprintf_ex(al_buffer,font,10,100,makecol(0,0,0),makecol(0,0,-1),"6P:%s",pitcher6);
+
     draw_sprite(screen,al_buffer,0,0);
 }
 
