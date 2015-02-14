@@ -22,9 +22,7 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="RapidXmlExample.c">
-			<Option compilerVar="CC" />
-		</Unit>
+		<Unit filename="RapidXmlExample.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

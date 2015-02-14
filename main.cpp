@@ -76,7 +76,7 @@ void update(){
 }
 void load_xml(){
 
-  textprintf_ex(al_buffer,font,10,10,makecol(0,0,0),makecol(0,0,-1),"Parsing my beer journal...");
+  textprintf_ex(al_buffer,font,10,30,makecol(0,0,0),makecol(0,0,-1),"Parsing my beer journal...");
 
 	xml_document<> doc;
 	xml_node<> * root_node;
@@ -89,10 +89,11 @@ void load_xml(){
 	// Find our root node
 	root_node = doc.first_node("MyBeerJournal");
 	// Iterate over the brewerys
+	int y;
 	for (xml_node<> * brewery_node = root_node->first_node("Brewery"); brewery_node; brewery_node = brewery_node->next_sibling())
 	{
-
-	  textprintf_ex(al_buffer,font,10,30,makecol(0,0,0),makecol(0,0,-1),"I have visited %s in %s",
+    y+=40;
+	  textprintf_ex(al_buffer,font,10,30+y,makecol(0,0,0),makecol(0,0,-1),"I have visited %s in %s",
       brewery_node->first_attribute("name")->value(),
       brewery_node->first_attribute("location")->value()
 
@@ -101,13 +102,13 @@ void load_xml(){
 	    for(xml_node<> * beer_node = brewery_node->first_node("Beer"); beer_node; beer_node = beer_node->next_sibling())
 	    {
 
-	    	textprintf_ex(al_buffer,font,10,50,makecol(0,0,0),makecol(0,0,-1),"On %s, I tried their %s which is a %s. ",
+	    	textprintf_ex(al_buffer,font,10,50+y,makecol(0,0,0),makecol(0,0,-1),"On %s, I tried their %s which is a %s. ",
 
 	    		beer_node->first_attribute("dateSampled")->value(),
 	    		beer_node->first_attribute("name")->value(),
 	    		beer_node->first_attribute("description")->value());
 
-      textprintf_ex(al_buffer,font,10,40,makecol(0,0,0),makecol(0,0,-1),"I gave it the following review: %s", beer_node->value());
+      textprintf_ex(al_buffer,font,10,40+y,makecol(0,0,0),makecol(0,0,-1),"I gave it the following review: %s", beer_node->value());
 
 	    }
 
