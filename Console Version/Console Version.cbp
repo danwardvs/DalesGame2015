@@ -2,15 +2,14 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="DalesGame2015" />
+		<Option title="Console Version" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Release">
-				<Option output="build/DalesGame2015" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="build/" />
+				<Option output="build/Console Version" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/" />
-				<Option type="0" />
+				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
@@ -21,15 +20,13 @@
 			</Target>
 		</Build>
 		<Compiler>
-			<Add option="-Wextra" />
 			<Add option="-Wall" />
-			<Add option="-g" />
 		</Compiler>
-		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
 			<debugger />
+			<lib_finder disable_auto="1" />
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>
