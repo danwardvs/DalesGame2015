@@ -14,6 +14,15 @@ using namespace std;
 
 BITMAP* buffer;
 
+
+// Fonts
+FONT* f1;
+FONT* f2;
+FONT* f3;
+FONT* f4;
+FONT* f5;
+FONT* slabo;
+
 bool close_button_pressed;
 
 // FPS System
@@ -78,7 +87,7 @@ void load_xml(){
     xml_document<> doc;
     xml_node<> * root_node;
     // Read the xml file into a vector
-    ifstream theFile ("1b.xml");
+    ifstream theFile ("2b.xml");
     vector<char> xml_buffer((istreambuf_iterator<char>(theFile)), istreambuf_iterator<char>());
     xml_buffer.push_back('\0');
     // Parse the buffer using the xml file parsing library into doc
@@ -117,13 +126,13 @@ void update(){
 
 void draw(){
     rectfill(buffer,0,0,SCREEN_W,SCREEN_H,makecol(255,255,255));
-    textprintf_ex(buffer,font,10,10,makecol(0,0,0),makecol(0,0,-1),"#:%i",random_number);
-    textprintf_ex(buffer,font,10,20,makecol(0,0,0),makecol(0,0,-1),"1P:%s", pitcher1.c_str());
-    textprintf_ex(buffer,font,10,30,makecol(0,0,0),makecol(0,0,-1),"2P:%s", pitcher2.c_str());
-    textprintf_ex(buffer,font,10,40,makecol(0,0,0),makecol(0,0,-1),"3P:%s", pitcher3.c_str());
-    textprintf_ex(buffer,font,10,50,makecol(0,0,0),makecol(0,0,-1),"4P:%s", pitcher4.c_str());
-    textprintf_ex(buffer,font,10,60,makecol(0,0,0),makecol(0,0,-1),"5P:%s", pitcher5.c_str());
-    textprintf_ex(buffer,font,10,70,makecol(0,0,0),makecol(0,0,-1),"6P:%s", pitcher6.c_str());
+    textprintf_ex(buffer,slabo,10,10,makecol(0,0,0),makecol(0,0,-1),"#:%i",random_number);
+    textprintf_ex(buffer,slabo,10,100,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher1.c_str());
+    textprintf_ex(buffer,slabo,10,200,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher2.c_str());
+    textprintf_ex(buffer,slabo,10,300,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher3.c_str());
+    textprintf_ex(buffer,slabo,10,400,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher4.c_str());
+    textprintf_ex(buffer,slabo,10,500,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher5.c_str());
+    textprintf_ex(buffer,slabo,10,600,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher6.c_str());
     draw_sprite(screen,buffer,0,0);
 }
 
@@ -136,6 +145,20 @@ void draw(){
 void setup(){
     buffer=create_bitmap(1024,768);
 
+
+    // Load fonts
+    f1 = load_font("slabo.pcx", NULL, NULL);
+    f2 = extract_font_range(f1, ' ', 'A'-1);
+    f3 = extract_font_range(f1, 'A', 'Z');
+    f4 = extract_font_range(f1, 'Z'+1, 'z');
+    slabo = merge_fonts(f4, f5 = merge_fonts(f2, f3));
+
+    // Destroy temporary fonts
+    destroy_font(f1);
+    destroy_font(f2);
+    destroy_font(f3);
+    destroy_font(f4);
+    destroy_font(f5);
 
     srand(time(NULL));
 
