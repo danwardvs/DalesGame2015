@@ -70,11 +70,7 @@ void abort_on_error(const char *message){
 }
 
 
-void update(){
 
-
-
-}
 void load_xml(){
 
 
@@ -112,18 +108,22 @@ void load_xml(){
     }
 
 }
+void update(){
 
+    if(key[KEY_ENTER])load_xml();
+
+
+}
 
 void draw(){
     rectfill(buffer,0,0,SCREEN_W,SCREEN_H,makecol(255,255,255));
-    if(key[KEY_ENTER])load_xml();
-    textprintf_ex(buffer,font,10,10,makecol(0,0,0),makecol(0,0,-1),"1P:%i",random_number);
+    textprintf_ex(buffer,font,10,10,makecol(0,0,0),makecol(0,0,-1),"#:%i",random_number);
     textprintf_ex(buffer,font,10,20,makecol(0,0,0),makecol(0,0,-1),"1P:%s", pitcher1.c_str());
-    textprintf_ex(buffer,font,10,30,makecol(0,0,0),makecol(0,0,-1),"1P:%s", pitcher2.c_str());
-    textprintf_ex(buffer,font,10,40,makecol(0,0,0),makecol(0,0,-1),"1P:%s", pitcher3.c_str());
-    textprintf_ex(buffer,font,10,50,makecol(0,0,0),makecol(0,0,-1),"1P:%s", pitcher4.c_str());
-    textprintf_ex(buffer,font,10,60,makecol(0,0,0),makecol(0,0,-1),"1P:%s", pitcher5.c_str());
-    textprintf_ex(buffer,font,10,70,makecol(0,0,0),makecol(0,0,-1),"1P:%s", pitcher6.c_str());
+    textprintf_ex(buffer,font,10,30,makecol(0,0,0),makecol(0,0,-1),"2P:%s", pitcher2.c_str());
+    textprintf_ex(buffer,font,10,40,makecol(0,0,0),makecol(0,0,-1),"3P:%s", pitcher3.c_str());
+    textprintf_ex(buffer,font,10,50,makecol(0,0,0),makecol(0,0,-1),"4P:%s", pitcher4.c_str());
+    textprintf_ex(buffer,font,10,60,makecol(0,0,0),makecol(0,0,-1),"5P:%s", pitcher5.c_str());
+    textprintf_ex(buffer,font,10,70,makecol(0,0,0),makecol(0,0,-1),"6P:%s", pitcher6.c_str());
     draw_sprite(screen,buffer,0,0);
 }
 
