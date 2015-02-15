@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1412374746 source:c:\users\danward\documents\github\dalesgame2015\version 2\dalesgame2\main.cpp
+	<allegro.h>
+	<alpng.h>
+	<time.h>
+

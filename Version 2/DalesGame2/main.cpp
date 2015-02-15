@@ -1,32 +1,10 @@
 #include<allegro.h>
 #include<alpng.h>
 #include<time.h>
-#include<iostream>
-#include <fstream>
-#include<vector>
-#include<string>
 
-#include "rapidxml.hpp"
-#include "rapidxml_print.hpp"
-
-using namespace rapidxml;
-using namespace std;
-
-BITMAP* al_buffer;
+BITMAP* buffer;
 
 bool close_button_pressed;
-
-int random_number=0;
-
-int step;
-int scrolly;
-
-char* pitcher1="NA";
-char* pitcher2="NA";
-char* pitcher3="NA";
-char* pitcher4="NA";
-char* pitcher5="NA";
-char* pitcher6="NA";
 
 // FPS System
 volatile int ticks = 0;
@@ -52,22 +30,6 @@ void close_button_handler(void){
 }
 END_OF_FUNCTION(close_button_handler)
 
-/*
-//Convert int to string
-string convertInt(int number){
-   stringstream ss;
-   ss << number;
-   return ss.str();
-}
-
-//Convert string to int
-int convertStringToInt(string newString){
-  int result;
-  stringstream(newString) >> result;
-  return result;
-}
-*/
-
 // Random number generator. Use int random(highest,lowest);
 int random(int newLowest, int newHighest)
 {
@@ -89,39 +51,14 @@ void abort_on_error(const char *message){
 }
 
 void update(){
-  if(step>-1){
-    random_number++;
-    if(random_number==68)random_number=1;
-    step=0;
-
-
-
-
-  }
-  step++;
 
 
 
 }
 
-
-
 void draw(){
 
-
-
-    rectfill(al_buffer,0,0,SCREEN_W,SCREEN_H,makecol(255,255,255));
-    textprintf_ex(al_buffer,font,10,10,makecol(0,0,0),makecol(0,0,-1),"%i",random_number);
-    //load_xml();
-
-    textprintf_ex(al_buffer,font,10,50,makecol(0,0,0),makecol(0,0,-1),"1P:%s", pitcher1);
-     textprintf_ex(al_buffer,font,10,60,makecol(0,0,0),makecol(0,0,-1),"2P:%s", pitcher2);
-     textprintf_ex(al_buffer,font,10,70,makecol(0,0,0),makecol(0,0,-1),"3P:%s",pitcher3);
-     textprintf_ex(al_buffer,font,10,80,makecol(0,0,0),makecol(0,0,-1),"4P:%s",pitcher4);
-     textprintf_ex(al_buffer,font,10,90,makecol(0,0,0),makecol(0,0,-1),"5P:%s", pitcher5);
-     textprintf_ex(al_buffer,font,10,100,makecol(0,0,0),makecol(0,0,-1),"6P:%s",pitcher6);
-
-    draw_sprite(screen,al_buffer,0,0);
+    draw_sprite(screen,buffer,0,0);
 }
 
 
@@ -131,7 +68,7 @@ void draw(){
 
 
 void setup(){
-    al_buffer=create_bitmap(1024,768);
+    buffer=create_bitmap(1024,768);
 
 
     srand(time(NULL));
