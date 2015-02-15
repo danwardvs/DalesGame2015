@@ -1,6 +1,16 @@
 #include<allegro.h>
 #include<alpng.h>
 #include<time.h>
+#include <iostream>
+#include <fstream>
+#include <vector>
+#include<string>
+
+#include "rapidxml.hpp"
+#include "rapidxml_print.hpp"
+
+using namespace rapidxml;
+using namespace std;
 
 BITMAP* buffer;
 
@@ -14,6 +24,15 @@ volatile int game_time = 0;
 int fps;
 int frames_done;
 int old_time;
+
+int random_number;
+
+string pitcher1;
+string pitcher2;
+string pitcher3;
+string pitcher4;
+string pitcher5;
+string pitcher6;
 
 void ticker(){
   ticks++;
@@ -50,14 +69,61 @@ void abort_on_error(const char *message){
 	 exit(-1);
 }
 
+
 void update(){
 
 
 
 }
+void load_xml(){
+
+
+    random_number=random(1,122);
+    xml_document<> doc;
+    xml_node<> * root_node;
+    // Read the xml file into a vector
+    ifstream theFile ("1b.xml");
+    vector<char> xml_buffer((istreambuf_iterator<char>(theFile)), istreambuf_iterator<char>());
+    xml_buffer.push_back('\0');
+    // Parse the buffer using the xml file parsing library into doc
+    doc.parse<0>(&xml_buffer[0]);
+    // Find our root node
+    root_node = doc.first_node("data");
+    // Iterate over the brewerys
+
+    for (xml_node<> * brewery_node = root_node->first_node("GeneratedNumber"); brewery_node; brewery_node = brewery_node->next_sibling())
+    {
+
+            // Interate over the beers
+      int generatedNumberResult = atoi(brewery_node->first_attribute("number")->value());
+      if(generatedNumberResult==random_number){
+
+        for(xml_node<> * beer_node = brewery_node->first_node("batResult"); beer_node; beer_node = beer_node->next_sibling())
+        {
+          pitcher1 = beer_node->first_attribute("pitcher1")->value();
+          pitcher2 = beer_node->first_attribute("pitcher2")->value();
+          pitcher3 = beer_node->first_attribute("pitcher3")->value();
+          pitcher4 = beer_node->first_attribute("pitcher4")->value();
+          pitcher5 = beer_node->first_attribute("pitcher5")->value();
+          pitcher6 = beer_node->first_attribute("pitcher6")->value();
+        }
+
+      }
+    }
+
+}
+
 
 void draw(){
-
+    rectfill(buffer,0,0,SCREEN_W,SCREEN_H,makecol(255,255,255));
+    if(key[KEY_ENTER])load_xml();
+    textprintf_ex(buffer,font,10,10,makecol(0,0,0),makecol(0,0,-1),"1P:%i",random_number);
+    textprintf_ex(buffer,font,10,20,makecol(0,0,0),makecol(0,0,-1),"1P:%s", pitcher1.c_str());
+    textprintf_ex(buffer,font,10,30,makecol(0,0,0),makecol(0,0,-1),"1P:%s", pitcher2.c_str());
+    textprintf_ex(buffer,font,10,40,makecol(0,0,0),makecol(0,0,-1),"1P:%s", pitcher3.c_str());
+    textprintf_ex(buffer,font,10,50,makecol(0,0,0),makecol(0,0,-1),"1P:%s", pitcher4.c_str());
+    textprintf_ex(buffer,font,10,60,makecol(0,0,0),makecol(0,0,-1),"1P:%s", pitcher5.c_str());
+    textprintf_ex(buffer,font,10,70,makecol(0,0,0),makecol(0,0,-1),"1P:%s", pitcher6.c_str());
     draw_sprite(screen,buffer,0,0);
 }
 

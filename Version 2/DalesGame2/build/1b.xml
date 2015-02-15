@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+  
+  <GeneratedNumber number="1">
+	<batResult pitcher1="G-CON / K-GEN / K-POW" pitcher2="G-CON / K-GEN / K-POW" pitcher3="G-CON / K-GEN / K-POW" pitcher4="G-CON / K-GEN / K-POW" pitcher5="G-CON / K-GEN / K-POW" pitcher6="G-CON / K-GEN / K-POW">
+	</batResult>
+
+  </GeneratedNumber>
+  
+   <GeneratedNumber number="2">
+    <batResult pitcher1="G-CON / K-GEN / K-POW" pitcher2="G-CON / K-GEN / K-POW" pitcher3="G-CON / K-GEN / K-POW" pitcher4="G-CON / K-GEN / K-POW" pitcher5="G-CON / K-GEN / K-POW" pitcher6="G-CON / K-GEN / K-POW">
+</batResult>
+
+  </GeneratedNumber>
+  
+   <GeneratedNumber number="3">
+    <batResult pitcher1="G-CON / K-GEN / K-POW" pitcher2="G-CON / K-GEN / K-POW" pitcher3="G-CON / K-GEN / K-POW" pitcher4="G-CON / K-GEN / K-POW" pitcher5="G-CON / K-GEN / K-POW" pitcher6="G-CON / K-GEN / K-POW">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="4">
+    <batResult pitcher1="G-CON / G-GEN / K-POW" pitcher2="G-CON / G-GEN / K-POW" pitcher3="G-CON / G-GEN / K-POW" pitcher4="G-CON / G-GEN / K-POW" pitcher5="G-CON / G-GEN / K-POW" pitcher6="G-CON / G-GEN / K-POW">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="5">
+    <batResult pitcher1="F-CON / G-GEN / K-POW" pitcher2="F-CON / G-GEN / K-POW" pitcher3="F-CON / G-GEN / K-POW" pitcher4="F-CON / G-GEN / K-POW" pitcher5="F-CON / G-GEN / K-POW" pitcher6="F-CON / G-GEN / K-POW">
+	</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="6">
+    <batResult pitcher1="F-CON / F-GEN / K-POW" pitcher2="F-CON / F-GEN / K-POW" pitcher3="F-CON / F-GEN / K-POW" pitcher4="F-CON / F-GEN / K-POW" pitcher5="F-CON / F-GEN / K-POW" pitcher6="F-CON / F-GEN / K-POW">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="7">
+    <batResult pitcher1="1B / BB / BB" pitcher2="1B / BB / BB" pitcher3="1B / BB / BB" pitcher4="1B / BB / BB" pitcher5="1B / BB / BB" pitcher6="1B / BB / BB">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="8">
+		<batResult pitcher1="1B / BB / BB" pitcher2="1B / BB / BB" pitcher3="1B / BB / BB" pitcher4="1B / BB / BB" pitcher5="1B / BB / BB" pitcher6="1B / BB / BB">
+		
+		</batResult>
+	</GeneratedNumber>
+  
+    <GeneratedNumber number="9">
+    <batResult pitcher1="1B / 1B / BB" pitcher2="1B / 1B / BB" pitcher3="1B / 1B / BB" pitcher4="1B / 1B / BB" pitcher5="1B / 1B / BB" pitcher6="1B / 1B / BB">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="10">
+    <batResult pitcher1="1B / 1B / BB" pitcher2="1B / 1B / BB" pitcher3="1B / 1B / BB" pitcher4="1B / 1B / BB" pitcher5="1B / 1B / BB" pitcher6="1B / 1B / BB">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="11">
+    <batResult pitcher1="STRIKEOUT" pitcher2="STRIKEOUT" pitcher3="STRIKEOUT" pitcher4="STRIKEOUT" pitcher5="IF 20 BF- WP, K" pitcher6="IF 15 BF- WP, K">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="12">
+    <batResult pitcher1="STRIKEOUT" pitcher2="STRIKEOUT" pitcher3="STRIKEOUT" pitcher4="STRIKEOUT" pitcher5="IF 25 BF- WP, K" pitcher6="FOUL OUT">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="13">
+    <batResult pitcher1="STRIKEOUT" pitcher2="STRIKEOUT" pitcher3="STRIKEOUT" pitcher4="IF 20 BF- WP, K" pitcher5="FOUL OUT" pitcher6="FOUL OUT">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="14">
+    <batResult pitcher1="STRIKEOUT" pitcher2="STRIKEOUT" pitcher3="STRIKEOUT" pitcher4="IF 25 BF- WP, K" pitcher5="FOUL OUT" pitcher6="FOUL OUT">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="15">
+    <batResult pitcher1="STRIKEOUT" pitcher2="STRIKEOUT" pitcher3="IF 20 BF- WP, K" pitcher4="FOUL OUT" pitcher5="FOUL OUT" pitcher6="FOUL OUT">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="16">
+    <batResult pitcher1="STRIKEOUT" pitcher2="STRIKEOUT" pitcher3="IF 25 BF- WP, K" pitcher4="FOUL OUT" pitcher5="FOUL OUT" pitcher6="POP OUT / 1B IF DP DEPTH">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="17">
+    <batResult pitcher1="STRIKEOUT" pitcher2="IF 20 BF- WP, K" pitcher3="FOUL OUT" pitcher4="FOUL OUT" pitcher5="POP OUT / 1B IF DP DEPTH" pitcher6="POP OUT">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="18">
+    <batResult pitcher1="STRIKEOUT" pitcher2="IF 25 BF- WP, K" pitcher3="FOUL OUT" pitcher4="FOUL OUT" pitcher5="POP OUT" pitcher6="GO / 1B if DP Dpth, Crnrs In">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="19">
+    <batResult pitcher1="IF 20 BF- WP, K" pitcher2="FOUL OUT" pitcher3="FOUL OUT" pitcher4="POP OUT / 1B IF DP DEPTH" pitcher5="GO / 1B if DP Dpth, Crnrs In" pitcher6="GROUND OUT">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="20">
+    <batResult pitcher1="IF 25 BF- WP, K" pitcher2="FOUL OUT" pitcher3="FOUL OUT" pitcher4="POP OUT" pitcher5="GROUND OUT" pitcher6="GROUND OUT">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="21">
+    <batResult pitcher1="FOUL OUT" pitcher2="FOUL OUT" pitcher3="POP OUT / 1B IF DP DEPTH" pitcher4="GO / 1B if DP Dpth, Crnrs In" pitcher5="GROUND OUT" pitcher6="GO/K IF SS">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="22">
+    <batResult pitcher1="FOUL OUT" pitcher2="FOUL OUT" pitcher3="POP OUT" pitcher4="GROUND OUT" pitcher5="GO/K IF SS" pitcher6="GO/K IF GS">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="23">
+    <batResult pitcher1="FOUL OUT" pitcher2="POP OUT / 1B IF DP DEPTH" pitcher3="GO / 1B if DP Dpth, Crnrs In" pitcher4="GROUND OUT" pitcher5="GO/K IF GS" pitcher6="GO/K IFGS">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="24">
+    <batResult pitcher1="FOUL OUT" pitcher2="POP OUT" pitcher3="GROUND OUT" pitcher4="GO/K IF SS" pitcher5="GO/K IFGS" pitcher6="GO/K IF AS">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="25">
+    <batResult pitcher1="POP OUT / 1B IF DP DEPTH" pitcher2="GO / 1B if DP Dpth, Crnrs In" pitcher3="GROUND OUT" pitcher4="GO/K IF GS" pitcher5="GO/K IF AS" pitcher6="GO/K IF FS" pitcher6="POP OUT / 1B IF DP DEPTH">
+</batResult>
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="26">
+    <batResult pitcher1="POP OUT" pitcher2="GROUND OUT" pitcher3="GO/K IF SS" pitcher4="GO/K IF GS" pitcher5="GO/K IF AS" pitcher6="GO/FLY O IF SS">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="27">
+    <batResult pitcher1="GO / 1B if DP Dpth, Crnrs In" pitcher2="GROUND OUT" pitcher3="GO/K IF GS" pitcher4="GO/K IF AS" pitcher5="GO/K IF FS" pitcher6="GO/FLY O IF GS">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="28">
+    <batResult pitcher1="GROUND OUT" pitcher2="GO/K IF SS" pitcher3="GO/K IF GS" pitcher4="GO/K IF AS" pitcher5="GO/FLY O IF SS" pitcher6="GO/FLY O IF GS">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="29">
+    <batResult pitcher1="GROUND OUT" pitcher2="GO/K IF GS" pitcher3="GO/K IF AS" pitcher4="GO/K IF FS" pitcher5="GO/FLY O IF SS" pitcher6="GO/FLY O IF AS">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="30">
+    <batResult pitcher1="GO/K IF SS" pitcher2="GO/K IF GS" pitcher3="GO/K IF AS" pitcher4="GO/FLY O IF SS" pitcher5="GO/FLY O IF GS" pitcher6="GO/FLY O IF AS">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="31">
+    <batResult pitcher1="GO/K IF GS" pitcher2="GO/K IF AS" pitcher3="GO/K IF FS" pitcher4="GO/FLY O IF SS" pitcher5="GO/FLY O IF GS" pitcher6="GO/FLY O IF FS">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="32">
+    <batResult pitcher1="GO/K IF GS" pitcher2="GO/K IF AS" pitcher3="GO/FLY O IF SS" pitcher4="GO/FLY O IF GS" pitcher5="GO/FLY O IF AS" pitcher6="GO/FLY O IF FS">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="33">
+    <batResult pitcher1="GO/K IF AS" pitcher2="GO/K IF FS" pitcher3="GO/FLY O IF SS" pitcher4="GO/FLY O IG GS" pitcher5="GO/FLY O IF AS" pitcher6="GO/1B UNLESS PF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="34">
+    <batResult pitcher1="GO/K IF AS" pitcher2="GO/FLY O IF SS" pitcher3="GO/FLY O IF GS" pitcher4="GO/FLY O IF AS" pitcher5="GO/FLY O IF FS" pitcher6="GO/1B UNLESS PF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="35">
+    <batResult pitcher1="GO/K IF FS" pitcher2="GO/FLY O IF SS" pitcher3="GO/FLY O IG GS" pitcher4="GO/FLY O IF AS" pitcher5="GO/FLY O IF FS" pitcher6="GO/1B UNLESS FF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="36">
+    <batResult pitcher1="GO/FLY O IF SS" pitcher2="GO/FLY O IF GS" pitcher3="GO/FLY O IF AS" pitcher4="GO/FLY O IF FS" pitcher5="GO/1B UNLESS PF" pitcher6="GO/1B UNLESS FF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="37">
+    <batResult pitcher1="GO/FLY O IF SS" pitcher2="GO/FLY O IF GS" pitcher3="GO/FLY O IF AS" pitcher4="GO/FLY O IF FS" pitcher5="GO/1B UNLESS PF" pitcher6="GO/1B UNLESS AF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="38">
+    <batResult pitcher1="GO/FLY O IF GS" pitcher2="GO/FLY O IF AS" pitcher3="GO/FLY O IF FS" pitcher4="GO/1B UNLESS PF" pitcher5="GO/1B UNLESS FF" pitcher6="GO/1B UNLESS AF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="39">
+    <batResult pitcher1="GO/FLY O IG GS" pitcher2="GO/FLY O IF AS" pitcher3="GO/FLY O IF FS" pitcher4="GO/1B UNLESS PF" pitcher5="GO/1B UNLESS FF" pitcher6="GO/1B UNLESS GF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="40">
+    <batResult pitcher1="GO/FLY O IF AS" pitcher2="GO/FLY O IF FS" pitcher3="GO/1B UNLESS PF" pitcher4="GO/1B UNLESS FF" pitcher5="GO/1B UNLESS AF" pitcher6="GO/1B UNLESS GF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="41">
+    <batResult pitcher1="GO/FLY O IF AS" pitcher2="GO/FLY O IF FS" pitcher3="GO/1B UNLESS PF" pitcher4="GO/1B UNLESS FF" pitcher5="GO/1B UNLESS AF" pitcher6="GO/1B UNLESS SF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="42">
+    <batResult pitcher1="GO/FLY O IF FS" pitcher2="GO/1B UNLESS PF" pitcher3="GO/1B UNLESS FF" pitcher4="GO/1B UNLESS AF" pitcher5="GO/1B UNLESS GF" pitcher6="GO/1B UNLESS SF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="43">
+    <batResult pitcher1="GO/FLY O IF FS" pitcher2="GO/1B UNLESS PF" pitcher3="GO/1B UNLESS FF" pitcher4="GO/1B UNLESS AF" pitcher5="GO/1B UNLESS GF" pitcher6="GO/E IF SR">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="44">
+    <batResult pitcher1="GO/1B UNLESS PF" pitcher2="GO/1B UNLESS FF" pitcher3="GO/1B UNLESS AF" pitcher4="GO/1B UNLESS GF" pitcher5="GO/1B UNLESS SF" pitcher6="FLY OUT">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="45">
+    <batResult pitcher1="GO/1B UNLESS PF" pitcher2="GO/1B UNLESS FF" pitcher3="GO/1B UNLESS AF" pitcher4="GO/1B UNLESS GF" pitcher5="GO/1B UNLESS SF" pitcher6="FLY OUT, K POWER P">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="46">
+    <batResult pitcher1="GO/1B UNLESS FF" pitcher2="GO/1B UNLESS AF" pitcher3="GO/1B UNLESS GF" pitcher4="GO/1B UNLESS SF" pitcher5="GO/E IF SR" pitcher6="FLY OUT, K POWER P">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="47">
+    <batResult pitcher1="GO/1B UNLESS FF" pitcher2="GO/1B UNLESS AF" pitcher3="GO/1B UNLESS GF" pitcher4="GO/1B UNLESS SF" pitcher5="FLY OUT" pitcher6="FLY OUT, K FIREBALLER">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="48">
+    <batResult pitcher1="GO/1B UNLESS AF" pitcher2="GO/1B UNLESS GF" pitcher3="GO/1B UNLESS SF" pitcher4="GO/E IF SR" pitcher5="FLY OUT, K POWER P" pitcher6="FLY OUT, K FIREBALLER">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="49">
+    <batResult pitcher1="GO/1B UNLESS AF" pitcher2="GO/1B UNLESS GF" pitcher3="GO/1B UNLESS SF" pitcher4="FLY OUT" pitcher5="FLY OUT, K POWER P" pitcher6="FLY OUT">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="50">
+    <batResult pitcher1="GO/1B UNLESS GF" pitcher2="GO/1B UNLESS SF" pitcher3="GO/E IF SR" pitcher4="FLY OUT, K POWER P" pitcher5="FLY OUT, K FIREBALLER" pitcher6="FLY OUT">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="51">
+    <batResult pitcher1="GO/1B UNLESS GF" pitcher2="GO/1B UNLESS SF" pitcher3="FLY OUT" pitcher4="FLY OUT, K POWER P" pitcher5="FLY OUT, K FIREBALLER" pitcher6="FLY OUT">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="52">
+    <batResult pitcher1="GO/1B UNLESS SF" pitcher2="GO/E IF SR" pitcher3="FLY OUT, K POWER P" pitcher4="FLY OUT, K FIREBALLER" pitcher5="FLY OUT" pitcher6="FLY OUT">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="53">
+    <batResult pitcher1="GO/1B UNLESS SF" pitcher2="FLY OUT" pitcher3="FLY OUT, K POWER P" pitcher4="FLY OUT, K FIREBALLER" pitcher5="FLY OUT" pitcher6="FLY O/BB-SS IF BASER">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="54">
+    <batResult pitcher1="GO/E IF SR" pitcher2="FLY OUT, K POWER P" pitcher3="FLY OUT, K FIREBALLER" pitcher4="FLY OUT" pitcher5="FLY OUT" pitcher6="FLY O/BB-GS IF BASER">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="55">
+    <batResult pitcher1="FLY OUT" pitcher2="FLY OUT, K POWER P" pitcher3="FLY OUT, K FIREBALLER" pitcher4="FLY OUT" pitcher5="FLY O/BB-SS IF BASER" pitcher6="FLY O/BB-AS IF BASER">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="56">
+    <batResult pitcher1="FLY OUT, K POWER P" pitcher2="FLY OUT, K FIREBALLER" pitcher3="FLY OUT" pitcher4="FLY OUT" pitcher5="FLY O/BB-GS IF BASER" pitcher6="FLY O/3B UNLESS PF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="57">
+    <batResult pitcher1="FLY OUT, K POWER P" pitcher2="FLY OUT, K FIREBALLER" pitcher3="FLY OUT" pitcher4="FLY OUT" pitcher5="FLY O/BB-AS IF BASER" pitcher6="FLY O/2B UNLESS FF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="58">
+    <batResult pitcher1="FLY OUT, K FIREBALLER" pitcher2="FLY OUT" pitcher3="FLY OUT" pitcher4="FLY O/BB-SS IF BASER" pitcher5="FLY O/3B UNLESS PF" pitcher6="FLY O/2B UNLESS AF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="59">
+    <batResult pitcher1="FLY OUT, K FIREBALLER" pitcher2="FLY OUT" pitcher3="FLY OUT" pitcher4="FLY O/BB-GS IF BASER" pitcher5="FLY O/2B UNLESS FF" pitcher6="FLY O/1B UNLESS GF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="60">
+    <batResult pitcher1="FLY OUT" pitcher2="FLY OUT" pitcher3="FLY O/BB-SS IF BASER" pitcher4="FLY O/BB-AS IF BASER" pitcher5="FLY O/2B UNLESS AF" pitcher6="FLY O/1B UNLESS SF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="61">
+    <batResult pitcher1="FLY OUT" pitcher2="FLY OUT" pitcher3="FLY O/BB-GS IF BASER" pitcher4="FLY O/3B UNLESS PF" pitcher5="FLY O/1B UNLESS GF" pitcher6="POSSIBLE ERROR">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="62">
+    <batResult pitcher1="FLY OUT" pitcher2="FLY O/BB-SS IF BASER" pitcher3="FLY O/BB-AS IF BASER" pitcher4="FLY O/2B UNLESS FF" pitcher5="FLY O/1B UNLESS SF" pitcher6="POSSIBLE ERROR">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="63">
+    <batResult pitcher1="FLY OUT" pitcher2="FLY O/BB-GS IF BASER" pitcher3="FLY O/3B UNLESS PF" pitcher4="FLY O/2B UNLESS AF" pitcher5="POSSIBLE ERROR" pitcher6="POSSIBLE ERROR">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="64">
+    <batResult pitcher1="FLY O/BB-SS IF BASER" pitcher2="FLY O/BB-AS IF BASER" pitcher3="FLY O/2B UNLESS FF" pitcher4="FLY O/1B UNLESS GF" pitcher5="POSSIBLE ERROR" pitcher6="POSSIBLE ERROR">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="65">
+    <batResult pitcher1="FLY O/BB-GS IF BASER" pitcher2="FLY O/3B UNLESS PF" pitcher3="FLY O/2B UNLESS AF" pitcher4="FLY O/1B UNLESS SF" pitcher5="POSSIBLE ERROR" pitcher6="POSSIBLE ERROR">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="66">
+    <batResult pitcher1="FLY O/BB-AS IF BASER" pitcher2="FLY O/2B UNLESS FF" pitcher3="FLY O/1B UNLESS GF" pitcher4="POSSIBLE ERROR" pitcher5="POSSIBLE ERROR" pitcher6="BB">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="67">
+    <batResult pitcher1="FLY O/3B UNLESS PF" pitcher2="FLY O/2B UNLESS AF" pitcher3="FLY O/1B UNLESS SF" pitcher4="POSSIBLE ERROR" pitcher5="POSSIBLE ERROR" pitcher6="BB">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="68">
+    <batResult pitcher1="FLY O/2B UNLESS FF" pitcher2="FLY O/1B UNLESS GF" pitcher3="POSSIBLE ERROR" pitcher4="POSSIBLE ERROR" pitcher5="BB" pitcher6="BB">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="69">
+    <batResult pitcher1="FLY O/2B UNLESS AF" pitcher2="FLY O/1B UNLESS SF" pitcher3="POSSIBLE ERROR" pitcher4="POSSIBLE ERROR" pitcher5="BB" pitcher6="BB">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="70">
+    <batResult pitcher1="FLY O/1B UNLESS GF" pitcher2="POSSIBLE ERROR" pitcher3="POSSIBLE ERROR" pitcher4="POSSIBLE ERROR" pitcher5="BB" pitcher6="BB">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="71">
+    <batResult pitcher1="FLY O/1B UNLESS SF" pitcher2="POSSIBLE ERROR" pitcher3="POSSIBLE ERROR" pitcher4="BB" pitcher5="BB" pitcher6="BB">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="72">
+    <batResult pitcher1="POSSIBLE ERROR" pitcher2="POSSIBLE ERROR" pitcher3="POSSIBLE ERROR" pitcher4="BB" pitcher5="BB" pitcher6="BB">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="73">
+    <batResult pitcher1="POSSIBLE ERROR" pitcher2="POSSIBLE ERROR" pitcher3="BB" pitcher4="BB" pitcher5="BB" pitcher6="BB">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="74">
+    <batResult pitcher1="POSSIBLE ERROR" pitcher2="POSSIBLE ERROR" pitcher3="BB" pitcher4="BB" pitcher5="BB" pitcher6="1B/2B UNLESS PF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="75">
+    <batResult pitcher1="POSSIBLE ERROR" pitcher2="BB" pitcher3="BB" pitcher4="BB" pitcher5="BB" pitcher6="1B/2B UNLESS FF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="76">
+    <batResult pitcher1="POSSIBLE ERROR" pitcher2="BB" pitcher3="BB" pitcher4="BB" pitcher5="1B/2B UNLESS PF" pitcher6="1B/2B UNLESS AF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="77">
+    <batResult pitcher1="BB" pitcher2="BB" pitcher3="BB" pitcher4="1B/2B UNLESS PF" pitcher5="1B/2B UNLESS FF" pitcher6="1B/2B UNLESS GF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="78">
+    <batResult pitcher1="BB" pitcher2="BB" pitcher3="BB" pitcher4="1B/2B UNLESS FF" pitcher5="1B/2B UNLESS AF" pitcher6="1B/2B UNLESS SF">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="79">
+    <batResult pitcher1="BB" pitcher2="BB" pitcher3="1B/2B UNLESS PF" pitcher4="1B/2B UNLESS AF" pitcher5="1B/2B UNLESS GF" pitcher6="1B">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="80">
+    <batResult pitcher1="BB" pitcher2="1B/2B UNLESS PF" pitcher3="1B/2B UNLESS FF" pitcher4="1B/2B UNLESS GF" pitcher5="1B/2B UNLESS SF" pitcher6="1B">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="81">
+    <batResult pitcher1="BB" pitcher2="1B/2B UNLESS FF" pitcher3="1B/2B UNLESS AF" pitcher4="1B/2B UNLESS SF" pitcher5="1B" pitcher6="1B">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="82">
+    <batResult pitcher1="1B/2B UNLESS PF" pitcher2="1B/2B UNLESS AF" pitcher3="1B/2B UNLESS GF" pitcher4="1B" pitcher5="1B" pitcher6="1B">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="83">
+    <batResult pitcher1="1B/2B UNLESS FF" pitcher2="1B/2B UNLESS GF" pitcher3="1B/2B UNLESS SF" pitcher4="1B" pitcher5="1B" pitcher6="1B">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="84">
+    <batResult pitcher1="1B/2B UNLESS AF" pitcher2="1B/2B UNLESS SF" pitcher3="1B" pitcher4="1B" pitcher5="1B" pitcher6="1B">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="85">
+    <batResult pitcher1="1B/2B UNLESS GF" pitcher2="1B" pitcher3="1B" pitcher4="1B" pitcher5="1B" pitcher6="1B">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="86">
+    <batResult pitcher1="1B/2B UNLESS SF" pitcher2="1B" pitcher3="1B" pitcher4="1B" pitcher5="1B" pitcher6="1B">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="87">
+    <batResult pitcher1="1B" pitcher2="1B" pitcher3="1B" pitcher4="1B" pitcher5="1B" pitcher6="1B">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="88">
+    <batResult pitcher1="1B" pitcher2="1B" pitcher3="1B" pitcher4="1B" pitcher5="1B" pitcher6="1B">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="89">
+    <batResult pitcher1="1B" pitcher2="1B" pitcher3="1B" pitcher4="1B" pitcher5="1B" pitcher6="1/2-SR">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="90">
+    <batResult pitcher1="1B" pitcher2="1B" pitcher3="1B" pitcher4="1B" pitcher5="1/2-SR" pitcher6="1/2-GR">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="91">
+    <batResult pitcher1="1B" pitcher2="1B" pitcher3="1B" pitcher4="1/2-SR" pitcher5="1/2-GR" pitcher6="1/2-AR">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="92">
+    <batResult pitcher1="1B" pitcher2="1B" pitcher3="1/2-SR" pitcher4="1/2-GR" pitcher5="1/2-AR" pitcher6="1/2-FR">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="93">
+    <batResult pitcher1="1B" pitcher2="1/2-SR" pitcher3="1/2-GR" pitcher4="1/2-AR" pitcher5="1/2-FR" pitcher6="1/2-PR">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="94">
+    <batResult pitcher1="1/2-SR" pitcher2="1/2-GR" pitcher3="1/2-AR" pitcher4="1/2-FR" pitcher5="1/2-PR" pitcher6="2/3-SR">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="95">
+    <batResult pitcher1="1/2-GR" pitcher2="1/2-AR" pitcher3="1/2-FR" pitcher4="1/2-PR" pitcher5="2/3-SR" pitcher6="2/3-GR">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="96">
+    <batResult pitcher1="1/2-AR" pitcher2="1/2-FR" pitcher3="1/3-SR" pitcher4="2/3-SR" pitcher5="2/3-GR" pitcher6="2/3-R#">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="97">
+    <batResult pitcher1="1/3-SR" pitcher2="2/3-SR" pitcher3="2/3-GR" pitcher4="2/3-GR" pitcher5="2/3-R#" pitcher6="2/3-R#">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="98">
+    <batResult pitcher1="2/3-R#" pitcher2="2/3-R#" pitcher3="2/3-R#" pitcher4="2/3-R#" pitcher5="2/3-R#" pitcher6="HR">
+</batResult>
+
+  </GeneratedNumber>
+  <GeneratedNumber number="99">
+    <batResult pitcher1="1/2/HR%" pitcher2="1/2/HR%" pitcher3="1/2/HR%" pitcher4="1/2/HR%" pitcher5="1/2/HR%" pitcher6="1/2/HR%">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="100">
+    <batResult pitcher1="2/H%/H%" pitcher2="2/H%/H%" pitcher3="2/H%/H%" pitcher4="2/H%/H%" pitcher5="2/H%/H%" pitcher6="2/H%/H%">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="101">
+    <batResult pitcher1="WP  (Wildness for Pitcher)" pitcher2="WP  (Wildness for Pitcher)" pitcher3="WP  (Wildness for Pitcher)" pitcher4="WP  (Wildness for Pitcher)" pitcher5="WP  (Wildness for Pitcher)" pitcher6="WP  (Wildness for Pitcher)">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="102">
+    <batResult pitcher1="WP  (Wildness for Pitcher)" pitcher2="WP  (Wildness for Pitcher)" pitcher3="WP  (Wildness for Pitcher)" pitcher4="WP  (Wildness for Pitcher)" pitcher5="WP  (Wildness for Pitcher)" pitcher6="WP  (Wildness for Pitcher)">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="103">
+    <batResult pitcher1="WP  (Wildness for Pitcher)" pitcher2="WP  (Wildness for Pitcher)" pitcher3="WP  (Wildness for Pitcher)" pitcher4="WP  (Wildness for Pitcher)" pitcher5="WP  (Wildness for Pitcher)" pitcher6="WP  (Wildness for Pitcher)">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="104">
+    <batResult pitcher1="WP  (Wildness for Pitcher)" pitcher2="WP  (Wildness for Pitcher)" pitcher3="WP  (Wildness for Pitcher)" pitcher4="WP  (Wildness for Pitcher)" pitcher5="WP  (Wildness for Pitcher)" pitcher6="WP  (Wildness for Pitcher)">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="105">
+    <batResult pitcher1="HBP (Wildness for Pitcher)" pitcher2="HBP (Wildness for Pitcher)" pitcher3="HBP (Wildness for Pitcher)" pitcher4="HBP (Wildness for Pitcher)" pitcher5="HBP (Wildness for Pitcher)" pitcher6="HBP (Wildness for Pitcher)">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="106">
+    <batResult pitcher1="Balk  (AHR for Pitcher)" pitcher2="Balk  (AHR for Pitcher)" pitcher3="Balk  (AHR for Pitcher)" pitcher4="Balk  (AHR for Pitcher)" pitcher5="Balk  (AHR for Pitcher)" pitcher6="Balk  (AHR for Pitcher)">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="107">
+    <batResult pitcher1="PO  (see Pick-Off Move chart)" pitcher2="PO  (see Pick-Off Move chart)" pitcher3="PO  (see Pick-Off Move chart)" pitcher4="PO  (see Pick-Off Move chart)" pitcher5="PO  (see Pick-Off Move chart)" pitcher6="PO  (see Pick-Off Move chart)">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="108">
+    <batResult pitcher1="PO  (see Pick-Off Move chart)" pitcher2="PO  (see Pick-Off Move chart)" pitcher3="PO  (see Pick-Off Move chart)" pitcher4="PO  (see Pick-Off Move chart)" pitcher5="PO  (see Pick-Off Move chart)" pitcher6="PO  (see Pick-Off Move chart)">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="109">
+    <batResult pitcher1="PB (Error chart for catcher)" pitcher2="PB (Error chart for catcher)" pitcher3="PB (Error chart for catcher)" pitcher4="PB (Error chart for catcher)" pitcher5="PB (Error chart for catcher)" pitcher6="PB (Error chart for catcher)">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="110">
+    <batResult pitcher1="PB (Error chart for catcher)" pitcher2="PB (Error chart for catcher)" pitcher3="PB (Error chart for catcher)" pitcher4="PB (Error chart for catcher)" pitcher5="PB (Error chart for catcher)" pitcher6="PB (Error chart for catcher)">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="111">
+    <batResult pitcher1="PB (Error chart for catcher)" pitcher2="PB (Error chart for catcher)" pitcher3="PB (Error chart for catcher)" pitcher4="PB (Error chart for catcher)" pitcher5="PB (Error chart for catcher)" pitcher6="PB (Error chart for catcher)">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="112">
+    <batResult pitcher1="PB (Error chart for catcher)" pitcher2="PB (Error chart for catcher)" pitcher3="PB (Error chart for catcher)" pitcher4="PB (Error chart for catcher)" pitcher5="PB (Error chart for catcher)" pitcher6="PB (Error chart for catcher)">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="113">
+    <batResult pitcher1="INJ" pitcher2="INJ" pitcher3="INJ" pitcher4="INJ" pitcher5="INJ" pitcher6="INJ">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="114">
+    <batResult pitcher1="Fan interference" pitcher2="Fan interference" pitcher3="Fan interference" pitcher4="Fan interference" pitcher5="Fan interference" pitcher6="Fan interference">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="115">
+    <batResult pitcher1="Pitcher's Specialty" pitcher2="Pitcher's Specialty" pitcher3="Pitcher's Specialty" pitcher4="Pitcher's Specialty" pitcher5="Pitcher's Specialty" pitcher6="Pitcher's Specialty">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="116">
+    <batResult pitcher1="Pitcher's Specialty" pitcher2="Pitcher's Specialty" pitcher3="Pitcher's Specialty" pitcher4="Pitcher's Specialty" pitcher5="Pitcher's Specialty" pitcher6="Pitcher's Specialty">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="117">
+    <batResult pitcher1="K if FB" pitcher2="K if FB" pitcher3="K if FB" pitcher4="K if FB" pitcher5="K if FB" pitcher6="K if FB">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="118">
+    <batResult pitcher1="K if FB" pitcher2="K if FB" pitcher3="K if FB" pitcher4="K if FB" pitcher5="K if FB" pitcher6="K if FB">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="119">
+    <batResult pitcher1="Batter's Specialty" pitcher2="Batter's Specialty" pitcher3="Batter's Specialty" pitcher4="Batter's Specialty" pitcher5="Batter's Specialty" pitcher6="Batter's Specialty">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="120">
+    <batResult pitcher1="Batter's Specialty" pitcher2="Batter's Specialty" pitcher3="Batter's Specialty" pitcher4="Batter's Specialty" pitcher5="Batter's Specialty" pitcher6="Batter's Specialty">
+</batResult>
+
+  </GeneratedNumber>
+  
+   <GeneratedNumber number="121">
+    <batResult pitcher1="Long ball if fastball hitter" pitcher2="Long ball if fastball hitter" pitcher3="Long ball if fastball hitter" pitcher4="Long ball if fastball hitter" pitcher5="Long ball if fastball hitter" pitcher6="Long ball if fastball hitter">
+</batResult>
+
+  </GeneratedNumber>
+  
+    <GeneratedNumber number="122">
+    <batResult pitcher1="Long ball if fastball hitter" pitcher2="Long ball if fastball hitter" pitcher3="Long ball if fastball hitter" pitcher4="Long ball if fastball hitter" pitcher5="Long ball if fastball hitter" pitcher6="Long ball if fastball hitter">
+</batResult>
+
+  </GeneratedNumber>
+</data>
