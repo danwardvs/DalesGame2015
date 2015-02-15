@@ -21,12 +21,12 @@ int random_number=0;
 int step;
 int scrolly;
 
-char* pitcher1;
-char* pitcher2;
-char* pitcher3;
-char* pitcher4;
-char* pitcher5;
-char* pitcher6;
+char* pitcher1="NA";
+char* pitcher2="NA";
+char* pitcher3="NA";
+char* pitcher4="NA";
+char* pitcher5="NA";
+char* pitcher6="NA";
 
 // FPS System
 volatile int ticks = 0;
@@ -91,7 +91,7 @@ void abort_on_error(const char *message){
 void update(){
   if(step>-1){
     random_number++;
-    if(random_number==123)random_number=1;
+    if(random_number==68)random_number=1;
     step=0;
 
     xml_document<> doc;
@@ -124,6 +124,7 @@ void update(){
 
 
 
+      //textprintf_ex(al_buffer,font,10,40+y,makecol(0,0,0),makecol(0,0,-1),"I gave it the following review: %s", beer_node->value());
 	    }
 	    }
 
