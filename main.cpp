@@ -21,12 +21,12 @@ int random_number=0;
 int step;
 int scrolly;
 
-char* pitcher1="NA";
-char* pitcher2="NA";
-char* pitcher3="NA";
-char* pitcher4="NA";
-char* pitcher5="NA";
-char* pitcher6="NA";
+char* pitcher1;
+char* pitcher2;
+char* pitcher3;
+char* pitcher4;
+char* pitcher5;
+char* pitcher6;
 
 // FPS System
 volatile int ticks = 0;
@@ -89,8 +89,9 @@ void abort_on_error(const char *message){
 }
 
 void update(){
-  if(key[KEY_ENTER] && step>9){
-    random_number=random(1,122);
+  if(step>-1){
+    random_number++;
+    if(random_number==123)random_number=1;
     step=0;
 
     xml_document<> doc;
@@ -107,23 +108,22 @@ void update(){
     for (xml_node<> * brewery_node = root_node->first_node("GeneratedNumber"); brewery_node; brewery_node = brewery_node->next_sibling())
     {
 
-      int asdf = atoi(brewery_node->first_attribute("number")->value());
-      if(asdf==random_number){
+      int generatedNumberResult = atoi(brewery_node->first_attribute("number")->value());
+      if(generatedNumberResult==random_number){
 
             // Interate over the beers
 	    for(xml_node<> * beer_node = brewery_node->first_node("batResult"); beer_node; beer_node = beer_node->next_sibling())
 	    {
 
         pitcher1 = beer_node->first_attribute("pitcher1")->value();
-        pitcher2 = beer_node->first_attribute("pitcher2")->value();
+       pitcher2 = beer_node->first_attribute("pitcher2")->value();
         pitcher3 = beer_node->first_attribute("pitcher3")->value();
-        pitcher4 = beer_node->first_attribute("pitcher4")->value();
-        pitcher5 = beer_node->first_attribute("pitcher5")->value();
+         pitcher4 = beer_node->first_attribute("pitcher4")->value();
+       pitcher5 = beer_node->first_attribute("pitcher5")->value();
         pitcher6 = beer_node->first_attribute("pitcher6")->value();
 
 
 
-      //textprintf_ex(al_buffer,font,10,40+y,makecol(0,0,0),makecol(0,0,-1),"I gave it the following review: %s", beer_node->value());
 	    }
 	    }
 
@@ -131,9 +131,6 @@ void update(){
 
 
   }
-
-  if(key[KEY_UP])scrolly+=10;
-  if(key[KEY_DOWN])scrolly-=10;
   step++;
 
 
@@ -190,7 +187,7 @@ void draw(){
     textprintf_ex(al_buffer,font,10,10,makecol(0,0,0),makecol(0,0,-1),"%i",random_number);
     //load_xml();
 
-     	textprintf_ex(al_buffer,font,10,50,makecol(0,0,0),makecol(0,0,-1),"1P:%s", pitcher1);
+    textprintf_ex(al_buffer,font,10,50,makecol(0,0,0),makecol(0,0,-1),"1P:%s", pitcher1);
      textprintf_ex(al_buffer,font,10,60,makecol(0,0,0),makecol(0,0,-1),"2P:%s", pitcher2);
      textprintf_ex(al_buffer,font,10,70,makecol(0,0,0),makecol(0,0,-1),"3P:%s",pitcher3);
      textprintf_ex(al_buffer,font,10,80,makecol(0,0,0),makecol(0,0,-1),"4P:%s",pitcher4);
