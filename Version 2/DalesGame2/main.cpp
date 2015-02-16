@@ -132,7 +132,7 @@ void load_xml(){
 }
 void update(){
 
-    if(key[KEY_ENTER] && step>9){
+    if((key[KEY_ENTER] || key[KEY_ENTER_PAD] || key[KEY_DEL] || key[KEY_SPACE] ||key[KEY_DEL_PAD] ) && step>9){
         load_xml();
         step=0;
     }
