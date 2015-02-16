@@ -95,6 +95,11 @@ void load_xml(){
     // Read the xml file into a vector
     if(batter_number==1)xml_file="1b.xml";
     if(batter_number==2)xml_file="2b.xml";
+    if(batter_number==3)xml_file="3b.xml";
+    if(batter_number==4)xml_file="4b.xml";
+    if(batter_number==5)xml_file="5b.xml";
+    if(batter_number==6)xml_file="6b.xml";
+
     ifstream theFile (xml_file.c_str());
     vector<char> xml_buffer((istreambuf_iterator<char>(theFile)), istreambuf_iterator<char>());
     xml_buffer.push_back('\0');
@@ -133,6 +138,11 @@ void update(){
     }
     if(key[KEY_1] || key[KEY_1_PAD])batter_number=1;
     if(key[KEY_2] || key[KEY_2_PAD])batter_number=2;
+    if(key[KEY_3] || key[KEY_3_PAD])batter_number=3;
+    if(key[KEY_4] || key[KEY_4_PAD])batter_number=4;
+    if(key[KEY_5] || key[KEY_5_PAD])batter_number=5;
+    if(key[KEY_6] || key[KEY_6_PAD])batter_number=6;
+
     step++;
 }
 
