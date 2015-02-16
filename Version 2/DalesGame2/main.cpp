@@ -16,6 +16,8 @@ BITMAP* buffer;
 
 int step;
 
+int batter_number=1;
+
 // Fonts
 FONT* f1;
 FONT* f2;
@@ -44,6 +46,8 @@ string pitcher3;
 string pitcher4;
 string pitcher5;
 string pitcher6;
+
+string xml_file;
 
 void ticker(){
   ticks++;
@@ -89,7 +93,9 @@ void load_xml(){
     xml_document<> doc;
     xml_node<> * root_node;
     // Read the xml file into a vector
-    ifstream theFile ("2b.xml");
+    if(batter_number==1)xml_file="1b.xml";
+    if(batter_number==2)xml_file="2b.xml";
+    ifstream theFile (xml_file.c_str());
     vector<char> xml_buffer((istreambuf_iterator<char>(theFile)), istreambuf_iterator<char>());
     xml_buffer.push_back('\0');
     // Parse the buffer using the xml file parsing library into doc
@@ -125,6 +131,8 @@ void update(){
         load_xml();
         step=0;
     }
+    if(key[KEY_1] || key[KEY_1_PAD])batter_number=1;
+    if(key[KEY_2] || key[KEY_2_PAD])batter_number=2;
     step++;
 }
 
@@ -133,6 +141,7 @@ void draw(){
 
     rectfill(buffer,200,20,340,120,makecol(0,0,0));
     textprintf_ex(buffer,ptsans_big,210,8,makecol(255,0,0),makecol(0,0,-1),"%i",random_number);
+    textprintf_ex(buffer,ptsans_big,20,8,makecol(0,0,0),makecol(0,0,-1),"%i",batter_number);
 
 
     rectfill(buffer,0,148,190,168,makecol(0,0,200));
