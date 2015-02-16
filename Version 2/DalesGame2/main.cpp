@@ -14,6 +14,7 @@ using namespace std;
 
 BITMAP* buffer;
 
+int step;
 
 // Fonts
 FONT* f1;
@@ -21,7 +22,8 @@ FONT* f2;
 FONT* f3;
 FONT* f4;
 FONT* f5;
-FONT* slabo;
+FONT* ptsans;
+FONT* ptsans_big;
 
 bool close_button_pressed;
 
@@ -119,20 +121,32 @@ void load_xml(){
 }
 void update(){
 
-    if(key[KEY_ENTER])load_xml();
-
-
+    if(key[KEY_ENTER] && step>9){
+        load_xml();
+        step=0;
+    }
+    step++;
 }
 
 void draw(){
     rectfill(buffer,0,0,SCREEN_W,SCREEN_H,makecol(255,255,255));
-    textprintf_ex(buffer,slabo,10,10,makecol(0,0,0),makecol(0,0,-1),"#:%i",random_number);
-    textprintf_ex(buffer,slabo,10,100,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher1.c_str());
-    textprintf_ex(buffer,slabo,10,200,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher2.c_str());
-    textprintf_ex(buffer,slabo,10,300,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher3.c_str());
-    textprintf_ex(buffer,slabo,10,400,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher4.c_str());
-    textprintf_ex(buffer,slabo,10,500,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher5.c_str());
-    textprintf_ex(buffer,slabo,10,600,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher6.c_str());
+
+    rectfill(buffer,200,20,340,120,makecol(0,0,0));
+    textprintf_ex(buffer,ptsans_big,210,10,makecol(255,0,0),makecol(0,0,-1),"%i",random_number);
+
+    rect(buffer,0,148,190,172,makecol(0,0,0));
+    rect(buffer,190,148,390,172,makecol(0,0,0));
+    rect(buffer,390,148,590,172,makecol(0,0,0));
+    rect(buffer,590,148,790,172,makecol(0,0,0));
+    rect(buffer,790,148,990,172,makecol(0,0,0));
+    rect(buffer,990,148,1200,172,makecol(0,0,0));
+
+    textprintf_ex(buffer,ptsans,10,150,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher1.c_str());
+    textprintf_ex(buffer,ptsans,200,150,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher2.c_str());
+    textprintf_ex(buffer,ptsans,400,150,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher3.c_str());
+    textprintf_ex(buffer,ptsans,600,150,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher4.c_str());
+    textprintf_ex(buffer,ptsans,800,150,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher5.c_str());
+    textprintf_ex(buffer,ptsans,1000,150,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher6.c_str());
     draw_sprite(screen,buffer,0,0);
 }
 
@@ -143,15 +157,22 @@ void draw(){
 
 
 void setup(){
-    buffer=create_bitmap(1024,768);
+    buffer=create_bitmap(1200,768);
 
 
     // Load fonts
-    f1 = load_font("slabo.pcx", NULL, NULL);
+    f1 = load_font("ptsans.pcx", NULL, NULL);
     f2 = extract_font_range(f1, ' ', 'A'-1);
     f3 = extract_font_range(f1, 'A', 'Z');
     f4 = extract_font_range(f1, 'Z'+1, 'z');
-    slabo = merge_fonts(f4, f5 = merge_fonts(f2, f3));
+    ptsans = merge_fonts(f4, f5 = merge_fonts(f2, f3));
+
+    f1 = load_font("ptsans_big.pcx", NULL, NULL);
+    f2 = extract_font_range(f1, ' ', 'A'-1);
+    f3 = extract_font_range(f1, 'A', 'Z');
+    f4 = extract_font_range(f1, 'Z'+1, 'z');
+    ptsans_big = merge_fonts(f4, f5 = merge_fonts(f2, f3));
+
 
     // Destroy temporary fonts
     destroy_font(f1);
@@ -194,7 +215,7 @@ int main(){
   set_color_depth(32);
 
 
-  set_gfx_mode(GFX_AUTODETECT_WINDOWED,1024,768, 0, 0);
+  set_gfx_mode(GFX_AUTODETECT_WINDOWED,1200,768, 0, 0);
   install_sound(DIGI_AUTODETECT,MIDI_AUTODETECT,".");
 
 
