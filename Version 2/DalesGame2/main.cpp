@@ -132,21 +132,45 @@ void draw(){
     rectfill(buffer,0,0,SCREEN_W,SCREEN_H,makecol(255,255,255));
 
     rectfill(buffer,200,20,340,120,makecol(0,0,0));
-    textprintf_ex(buffer,ptsans_big,210,10,makecol(255,0,0),makecol(0,0,-1),"%i",random_number);
+    textprintf_ex(buffer,ptsans_big,210,8,makecol(255,0,0),makecol(0,0,-1),"%i",random_number);
 
-    rect(buffer,0,148,190,172,makecol(0,0,0));
-    rect(buffer,190,148,390,172,makecol(0,0,0));
-    rect(buffer,390,148,590,172,makecol(0,0,0));
-    rect(buffer,590,148,790,172,makecol(0,0,0));
-    rect(buffer,790,148,990,172,makecol(0,0,0));
-    rect(buffer,990,148,1200,172,makecol(0,0,0));
 
-    textprintf_ex(buffer,ptsans,10,150,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher1.c_str());
-    textprintf_ex(buffer,ptsans,200,150,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher2.c_str());
-    textprintf_ex(buffer,ptsans,400,150,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher3.c_str());
-    textprintf_ex(buffer,ptsans,600,150,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher4.c_str());
-    textprintf_ex(buffer,ptsans,800,150,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher5.c_str());
-    textprintf_ex(buffer,ptsans,1000,150,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher6.c_str());
+    rectfill(buffer,0,148,190,168,makecol(0,0,200));
+    rectfill(buffer,190,148,390,168,makecol(0,0,200));
+    rectfill(buffer,390,148,590,168,makecol(0,0,200));
+    rectfill(buffer,590,148,790,168,makecol(0,0,200));
+    rectfill(buffer,790,148,990,168,makecol(0,0,200));
+    rectfill(buffer,990,148,1200,168,makecol(0,0,200));
+
+    rect(buffer,0,168,190,192,makecol(0,0,0));
+    rect(buffer,190,168,390,192,makecol(0,0,0));
+    rect(buffer,390,168,590,192,makecol(0,0,0));
+    rect(buffer,590,168,790,192,makecol(0,0,0));
+    rect(buffer,790,168,990,192,makecol(0,0,0));
+    rect(buffer,990,168,1200,192,makecol(0,0,0));
+
+
+    rect(buffer,0,148,190,168,makecol(0,0,0));
+    rect(buffer,190,148,390,168,makecol(0,0,0));
+    rect(buffer,390,148,590,168,makecol(0,0,0));
+    rect(buffer,590,148,790,168,makecol(0,0,0));
+    rect(buffer,790,148,990,168,makecol(0,0,0));
+    rect(buffer,990,148,1200,168,makecol(0,0,0));
+
+    textprintf_ex(buffer,ptsans,10,170,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher1.c_str());
+    textprintf_ex(buffer,ptsans,200,170,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher2.c_str());
+    textprintf_ex(buffer,ptsans,400,170,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher3.c_str());
+    textprintf_ex(buffer,ptsans,600,170,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher4.c_str());
+    textprintf_ex(buffer,ptsans,800,170,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher5.c_str());
+    textprintf_ex(buffer,ptsans,1000,170,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher6.c_str());
+
+    textprintf_ex(buffer,ptsans,10,150,makecol(255,255,255),makecol(0,0,-1),"Pitcher #1");
+    textprintf_ex(buffer,ptsans,200,150,makecol(255,255,255),makecol(0,0,-1),"Pitcher #2");
+    textprintf_ex(buffer,ptsans,400,150,makecol(255,255,255),makecol(0,0,-1),"Pitcher #3");
+    textprintf_ex(buffer,ptsans,600,150,makecol(255,255,255),makecol(0,0,-1),"Pitcher #4");
+    textprintf_ex(buffer,ptsans,800,150,makecol(255,255,255),makecol(0,0,-1),"Pitcher #5");
+    textprintf_ex(buffer,ptsans,1000,150,makecol(255,255,255),makecol(0,0,-1),"Pitcher #6");
+
     draw_sprite(screen,buffer,0,0);
 }
 
