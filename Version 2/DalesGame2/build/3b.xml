@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data>
   
-     <GeneratedNumber number="1">
-    <batResult pitcher1="G-CON / K-GEN / K-POW">
-    <cell cellsource="C2">G-CON / K-GEN / K-POW" pitcher3="G-CON / K-GEN / K-POW" pitcher4="G-CON / K-GEN / K-POW" pitcher5="G-CON / K-GEN / K-POW" pitcher6="G-CON / K-GEN / K-POW">
+	<GeneratedNumber number="1">
+    <batResult pitcher1="G-CON / K-GEN / K-POW" pitcher2="G-CON / K-GEN / K-POW" pitcher3="G-CON / K-GEN / K-POW" pitcher4="G-CON / K-GEN / K-POW" pitcher5="G-CON / K-GEN / K-POW" pitcher6="G-CON / K-GEN / K-POW">
   </GeneratedNumber>
 </batResult>
   
@@ -21,7 +20,7 @@
     <batResult pitcher1="G-CON / G-GEN / K-POW" pitcher2="G-CON / G-GEN / K-POW" pitcher3="G-CON / G-GEN / K-POW" pitcher4="G-CON / G-GEN / K-POW" pitcher5="G-CON / G-GEN / K-POW" pitcher6="G-CON / G-GEN / K-POW">
   </GeneratedNumber>
 </batResult>
-  <row row="6">
+ 
      <GeneratedNumber number="5">
     <batResult pitcher1="F-CON / G-GEN / K-POW" pitcher2="F-CON / G-GEN / K-POW" pitcher3="F-CON / G-GEN / K-POW" pitcher4="F-CON / G-GEN / K-POW" pitcher5="F-CON / G-GEN / K-POW" pitcher6="F-CON / G-GEN / K-POW">
   </GeneratedNumber>
