@@ -214,6 +214,9 @@ void load_slugging_xml(string new_xml_file){
 
 void update(){
 
+    if(key[KEY_F1])set_gfx_mode(GFX_AUTODETECT_WINDOWED,1200,399, 0, 0);
+    if(key[KEY_F2])set_gfx_mode(GFX_AUTODETECT_WINDOWED,1200,800, 0, 0);
+
 
     if((key[KEY_ENTER] || key[KEY_ENTER_PAD] || key[KEY_DEL] || key[KEY_SPACE] ||key[KEY_DEL_PAD] ) && step>9){
 
@@ -391,7 +394,7 @@ void draw(){
 
 
 void setup(){
-    buffer=create_bitmap(1200,768);
+    buffer=create_bitmap(1200,800);
 
 
     // Load fonts
@@ -461,7 +464,7 @@ int main(){
   set_color_depth(32);
 
 
-  set_gfx_mode(GFX_AUTODETECT_WINDOWED,1200,768, 0, 0);
+  set_gfx_mode(GFX_AUTODETECT_WINDOWED,1200,800, 0, 0);
   install_sound(DIGI_AUTODETECT,MIDI_AUTODETECT,".");
 
 
