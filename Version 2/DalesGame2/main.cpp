@@ -47,6 +47,13 @@ string pitcher4;
 string pitcher5;
 string pitcher6;
 
+string pitcher1_ss;
+string pitcher2_ss;
+string pitcher3_ss;
+string pitcher4_ss;
+string pitcher5_ss;
+string pitcher6_ss;
+
 string xml_file;
 
 void ticker(){
@@ -130,10 +137,66 @@ void load_xml(){
     }
 
 }
+void load_super_slugger_xml(){
+
+
+    xml_document<> doc;
+    xml_node<> * root_node;
+    // Read the xml file into a vector
+
+
+    ifstream theFile ("ss.xml");
+    vector<char> xml_buffer((istreambuf_iterator<char>(theFile)), istreambuf_iterator<char>());
+    xml_buffer.push_back('\0');
+    // Parse the buffer using the xml file parsing library into doc
+    doc.parse<0>(&xml_buffer[0]);
+    // Find our root node
+    root_node = doc.first_node("data");
+    // Iterate over the brewerys
+
+    for (xml_node<> * brewery_node = root_node->first_node("GeneratedNumber"); brewery_node; brewery_node = brewery_node->next_sibling())
+    {
+
+            // Interate over the beers
+      int generatedNumberResult = atoi(brewery_node->first_attribute("number")->value());
+
+      if(generatedNumberResult>84 && generatedNumberResult<101){
+      if(generatedNumberResult==random_number){
+
+        for(xml_node<> * beer_node = brewery_node->first_node("batResult"); beer_node; beer_node = beer_node->next_sibling())
+        {
+          pitcher1_ss = beer_node->first_attribute("pitcher1")->value();
+          pitcher2_ss = beer_node->first_attribute("pitcher2")->value();
+          pitcher3_ss = beer_node->first_attribute("pitcher3")->value();
+          pitcher4_ss = beer_node->first_attribute("pitcher4")->value();
+          pitcher5_ss = beer_node->first_attribute("pitcher5")->value();
+          pitcher6_ss = beer_node->first_attribute("pitcher6")->value();
+
+
+        }
+
+      }
+
+      }else{
+
+        pitcher1_ss=" ";
+        pitcher2_ss=" ";
+        pitcher3_ss=" ";
+        pitcher4_ss=" ";
+        pitcher5_ss=" ";
+        pitcher6_ss=" ";
+
+
+      }
+    }
+
+}
+
 void update(){
 
     if((key[KEY_ENTER] || key[KEY_ENTER_PAD] || key[KEY_DEL] || key[KEY_SPACE] ||key[KEY_DEL_PAD] ) && step>9){
         load_xml();
+        load_super_slugger_xml();
         step=0;
     }
     if(key[KEY_1] || key[KEY_1_PAD])batter_number=1;
@@ -182,6 +245,13 @@ void draw(){
     textprintf_ex(buffer,ptsans,600,170,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher4.c_str());
     textprintf_ex(buffer,ptsans,800,170,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher5.c_str());
     textprintf_ex(buffer,ptsans,1000,170,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher6.c_str());
+
+    textprintf_ex(buffer,ptsans,10,190,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher1_ss.c_str());
+    textprintf_ex(buffer,ptsans,200,190,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher2_ss.c_str());
+    textprintf_ex(buffer,ptsans,400,190,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher3_ss.c_str());
+    textprintf_ex(buffer,ptsans,600,190,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher4_ss.c_str());
+    textprintf_ex(buffer,ptsans,800,190,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher5_ss.c_str());
+    textprintf_ex(buffer,ptsans,1000,190,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher6_ss.c_str());
 
     textprintf_ex(buffer,ptsans,10,150,makecol(255,255,255),makecol(0,0,-1),"Pitcher #1");
     textprintf_ex(buffer,ptsans,200,150,makecol(255,255,255),makecol(0,0,-1),"Pitcher #2");
