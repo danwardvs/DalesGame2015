@@ -41,6 +41,7 @@ int frames_done;
 int old_time;
 
 int random_number;
+int random_number_steals_throws;
 int other_random_numbers[6];
 
 string pitcher1;
@@ -225,6 +226,7 @@ void update(){
         }
 
         random_number=random(1,122);
+        random_number_steals_throws=random(1,122);
         load_xml();
         load_slugging_xml("ss.xml");
         load_slugging_xml("gs.xml");
@@ -252,11 +254,28 @@ void draw(){
 
 
 
-    rectfill(buffer,391,10,500,77,makecol(255,255,0));
-    rect(buffer,391,10,500,77,makecol(0,0,0));
-    rect(buffer,391,77,500,135,makecol(0,0,0));
+    rectfill(buffer,391,10,640,77,makecol(255,255,0));
+    rect(buffer,391,10,515,77,makecol(0,0,0));
+    rect(buffer,391,77,515,135,makecol(0,0,0));
 
-    textprintf_ex(buffer,ptsans_48,404,4,makecol(0,0,0),makecol(0,0,-1),"%i",other_random_numbers[0]);
+    rectfill(buffer,516,77,640,135,makecol(0,255,0));
+    rect(buffer,515,10,640,77,makecol(0,0,0));
+    rect(buffer,515,77,640,135,makecol(0,0,0));
+
+    rectfill(buffer,641,10,765,135,makecol(51,51,153));
+    rect(buffer,640,10,765,135,makecol(0,0,0));
+    rect(buffer,640,77,765,135,makecol(0,0,0));
+
+
+    textprintf_ex(buffer,ptsans_48,420,4,makecol(0,0,0),makecol(0,0,-1),"%i",other_random_numbers[0]);
+    textprintf_ex(buffer,ptsans_48,544,4,makecol(0,0,0),makecol(0,0,-1),"%i",other_random_numbers[1]);
+    textprintf_ex(buffer,ptsans_48,668,65,makecol(255,255,255),makecol(0,0,-1),"%i",other_random_numbers[2]);
+    textprintf_ex(buffer,ptsans_48,668,4,makecol(255,255,255),makecol(0,0,-1),"%i",other_random_numbers[3]);
+
+    textprintf_ex(buffer,ptsans_48,544,65,makecol(0,0,0),makecol(0,0,-1),"%i",random_number_steals_throws);
+
+    textprintf_ex(buffer,ptsans,398,100,makecol(0,0,0),makecol(0,0,-1),"Steals and throws>");
+
 
     rectfill(buffer,0,148,1199,168,makecol(0,0,200));
     rectfill(buffer,0,188,1199,208,makecol(51,204,204));
@@ -436,7 +455,7 @@ int main(){
 
 
 
-  set_window_title("Dale's Game 2015");
+  set_window_title("SPBL Official Number Generator 1.0");
   setup();
 
 
