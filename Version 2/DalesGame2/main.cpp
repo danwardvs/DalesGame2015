@@ -40,6 +40,8 @@ int fps;
 int frames_done;
 int old_time;
 
+int color=1;
+
 int random_number;
 int random_number_steals_throws;
 int other_random_numbers[6];
@@ -215,6 +217,9 @@ void update(){
 
     if((key[KEY_ENTER] || key[KEY_ENTER_PAD] || key[KEY_DEL] || key[KEY_SPACE] ||key[KEY_DEL_PAD] ) && step>9){
 
+        color++;
+        if(color==4)color=1;
+
         for(int i; i<6; i++){
           pitcher_ss[i]="";
           pitcher_gs[i]="";
@@ -246,6 +251,12 @@ void update(){
 
 void draw(){
     rectfill(buffer,0,0,SCREEN_W,SCREEN_H,makecol(255,255,255));
+
+    if(color==1)rectfill(buffer,0,348,1199,398,makecol(255,255,0));
+    if(color==2)rectfill(buffer,0,348,1199,398,makecol(255,0,0));
+    if(color==3)rectfill(buffer,0,348,1199,398,makecol(0,0,255));
+
+    rect(buffer,0,348,1199,398,makecol(0,0,0));
 
     rectfill(buffer,205,10,390,135,makecol(0,0,0));
     textprintf_ex(buffer,ptsans_108,210,-25,makecol(255,0,0),makecol(0,0,-1),"%i",random_number);
