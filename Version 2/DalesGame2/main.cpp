@@ -26,6 +26,8 @@ FONT* f4;
 FONT* f5;
 FONT* ptsans;
 FONT* ptsans_big;
+FONT* ptsans_108;
+FONT* ptsans_48;
 
 bool close_button_pressed;
 
@@ -38,7 +40,8 @@ int fps;
 int frames_done;
 int old_time;
 
-int random_number=84;
+int random_number;
+int other_random_numbers[6];
 
 string pitcher1;
 string pitcher2;
@@ -217,8 +220,11 @@ void update(){
           pitcher_as[i]="";
           pitcher_fs[i]="";
         }
+        for(int i; i<5; i++){
+          other_random_numbers[i]=random(1,100);
+        }
 
-        random_number++;
+        random_number=random(1,122);
         load_xml();
         load_slugging_xml("ss.xml");
         load_slugging_xml("gs.xml");
@@ -239,10 +245,18 @@ void update(){
 void draw(){
     rectfill(buffer,0,0,SCREEN_W,SCREEN_H,makecol(255,255,255));
 
-    rectfill(buffer,200,20,340,120,makecol(0,0,0));
-    textprintf_ex(buffer,ptsans_big,210,8,makecol(255,0,0),makecol(0,0,-1),"%i",random_number);
-    textprintf_ex(buffer,ptsans_big,20,8,makecol(0,0,0),makecol(0,0,-1),"%i",batter_number);
+    rectfill(buffer,205,10,390,135,makecol(0,0,0));
+    textprintf_ex(buffer,ptsans_108,210,-25,makecol(255,0,0),makecol(0,0,-1),"%i",random_number);
+    textprintf_ex(buffer,ptsans_big,25,13,makecol(0,0,0),makecol(0,0,-1),"%i",batter_number);
+    textprintf_ex(buffer,ptsans,10,10,makecol(0,0,0),makecol(0,0,-1),"Batter Number");
 
+
+
+    rectfill(buffer,391,10,500,77,makecol(255,255,0));
+    rect(buffer,391,10,500,77,makecol(0,0,0));
+    rect(buffer,391,77,500,135,makecol(0,0,0));
+
+    textprintf_ex(buffer,ptsans_48,404,4,makecol(0,0,0),makecol(0,0,-1),"%i",other_random_numbers[0]);
 
     rectfill(buffer,0,148,1199,168,makecol(0,0,200));
     rectfill(buffer,0,188,1199,208,makecol(51,204,204));
@@ -362,6 +376,18 @@ void setup(){
     f3 = extract_font_range(f1, 'A', 'Z');
     f4 = extract_font_range(f1, 'Z'+1, 'z');
     ptsans_big = merge_fonts(f4, f5 = merge_fonts(f2, f3));
+
+    f1 = load_font("ptsans_108.pcx", NULL, NULL);
+    f2 = extract_font_range(f1, ' ', 'A'-1);
+    f3 = extract_font_range(f1, 'A', 'Z');
+    f4 = extract_font_range(f1, 'Z'+1, 'z');
+    ptsans_108 = merge_fonts(f4, f5 = merge_fonts(f2, f3));
+
+    f1 = load_font("ptsans_48.pcx", NULL, NULL);
+    f2 = extract_font_range(f1, ' ', 'A'-1);
+    f3 = extract_font_range(f1, 'A', 'Z');
+    f4 = extract_font_range(f1, 'Z'+1, 'z');
+    ptsans_48 = merge_fonts(f4, f5 = merge_fonts(f2, f3));
 
 
     // Destroy temporary fonts
