@@ -38,7 +38,7 @@ int fps;
 int frames_done;
 int old_time;
 
-int random_number;
+int random_number=84;
 
 string pitcher1;
 string pitcher2;
@@ -47,12 +47,10 @@ string pitcher4;
 string pitcher5;
 string pitcher6;
 
-string pitcher1_ss;
-string pitcher2_ss;
-string pitcher3_ss;
-string pitcher4_ss;
-string pitcher5_ss;
-string pitcher6_ss;
+string pitcher_ss[6];
+string pitcher_gs[6];
+string pitcher_as[6];
+string pitcher_fs[6];
 
 string xml_file;
 
@@ -95,8 +93,6 @@ void abort_on_error(const char *message){
 
 void load_xml(){
 
-
-    random_number=random(1,122);
     xml_document<> doc;
     xml_node<> * root_node;
     // Read the xml file into a vector
@@ -137,15 +133,16 @@ void load_xml(){
     }
 
 }
-void load_super_slugger_xml(){
+void load_slugging_xml(string new_xml_file){
 
+    if(random_number>84 && random_number<101){
 
     xml_document<> doc;
     xml_node<> * root_node;
     // Read the xml file into a vector
 
 
-    ifstream theFile ("ss.xml");
+    ifstream theFile (new_xml_file.c_str());
     vector<char> xml_buffer((istreambuf_iterator<char>(theFile)), istreambuf_iterator<char>());
     xml_buffer.push_back('\0');
     // Parse the buffer using the xml file parsing library into doc
@@ -154,38 +151,55 @@ void load_super_slugger_xml(){
     root_node = doc.first_node("data");
     // Iterate over the brewerys
 
+
     for (xml_node<> * brewery_node = root_node->first_node("GeneratedNumber"); brewery_node; brewery_node = brewery_node->next_sibling())
     {
 
             // Interate over the beers
       int generatedNumberResult = atoi(brewery_node->first_attribute("number")->value());
 
-      if(generatedNumberResult>84 && generatedNumberResult<101){
+
       if(generatedNumberResult==random_number){
 
         for(xml_node<> * beer_node = brewery_node->first_node("batResult"); beer_node; beer_node = beer_node->next_sibling())
         {
-          pitcher1_ss = beer_node->first_attribute("pitcher1")->value();
-          pitcher2_ss = beer_node->first_attribute("pitcher2")->value();
-          pitcher3_ss = beer_node->first_attribute("pitcher3")->value();
-          pitcher4_ss = beer_node->first_attribute("pitcher4")->value();
-          pitcher5_ss = beer_node->first_attribute("pitcher5")->value();
-          pitcher6_ss = beer_node->first_attribute("pitcher6")->value();
+          if(new_xml_file=="ss.xml"){
+          pitcher_ss[0] = beer_node->first_attribute("pitcher1")->value();
+          pitcher_ss[1] = beer_node->first_attribute("pitcher2")->value();
+          pitcher_ss[2] = beer_node->first_attribute("pitcher3")->value();
+          pitcher_ss[3] = beer_node->first_attribute("pitcher4")->value();
+          pitcher_ss[4] = beer_node->first_attribute("pitcher5")->value();
+          pitcher_ss[5] = beer_node->first_attribute("pitcher6")->value();
+          }
+          if(new_xml_file=="gs.xml"){
+          pitcher_gs[0] = beer_node->first_attribute("pitcher1")->value();
+          pitcher_gs[1] = beer_node->first_attribute("pitcher2")->value();
+          pitcher_gs[2] = beer_node->first_attribute("pitcher3")->value();
+          pitcher_gs[3] = beer_node->first_attribute("pitcher4")->value();
+          pitcher_gs[4] = beer_node->first_attribute("pitcher5")->value();
+          pitcher_gs[5] = beer_node->first_attribute("pitcher6")->value();
+          }
+          if(new_xml_file=="as.xml"){
+          pitcher_as[0] = beer_node->first_attribute("pitcher1")->value();
+          pitcher_as[1] = beer_node->first_attribute("pitcher2")->value();
+          pitcher_as[2] = beer_node->first_attribute("pitcher3")->value();
+          pitcher_as[3] = beer_node->first_attribute("pitcher4")->value();
+          pitcher_as[4] = beer_node->first_attribute("pitcher5")->value();
+          pitcher_as[5] = beer_node->first_attribute("pitcher6")->value();
+          }
+          if(new_xml_file=="fs.xml"){
+          pitcher_fs[0] = beer_node->first_attribute("pitcher1")->value();
+          pitcher_fs[1] = beer_node->first_attribute("pitcher2")->value();
+          pitcher_fs[2] = beer_node->first_attribute("pitcher3")->value();
+          pitcher_fs[3] = beer_node->first_attribute("pitcher4")->value();
+          pitcher_fs[4] = beer_node->first_attribute("pitcher5")->value();
+          pitcher_fs[5] = beer_node->first_attribute("pitcher6")->value();
+          }
 
 
         }
 
       }
-
-      }else{
-
-        pitcher1_ss=" ";
-        pitcher2_ss=" ";
-        pitcher3_ss=" ";
-        pitcher4_ss=" ";
-        pitcher5_ss=" ";
-        pitcher6_ss=" ";
-
 
       }
     }
@@ -194,9 +208,22 @@ void load_super_slugger_xml(){
 
 void update(){
 
+
     if((key[KEY_ENTER] || key[KEY_ENTER_PAD] || key[KEY_DEL] || key[KEY_SPACE] ||key[KEY_DEL_PAD] ) && step>9){
+
+        for(int i; i<6; i++){
+          pitcher_ss[i]="";
+          pitcher_gs[i]="";
+          pitcher_as[i]="";
+          pitcher_fs[i]="";
+        }
+
+        random_number++;
         load_xml();
-        load_super_slugger_xml();
+        load_slugging_xml("ss.xml");
+        load_slugging_xml("gs.xml");
+        load_slugging_xml("as.xml");
+        load_slugging_xml("fs.xml");
         step=0;
     }
     if(key[KEY_1] || key[KEY_1_PAD])batter_number=1;
@@ -217,27 +244,27 @@ void draw(){
     textprintf_ex(buffer,ptsans_big,20,8,makecol(0,0,0),makecol(0,0,-1),"%i",batter_number);
 
 
-    rectfill(buffer,0,148,190,168,makecol(0,0,200));
-    rectfill(buffer,190,148,390,168,makecol(0,0,200));
-    rectfill(buffer,390,148,590,168,makecol(0,0,200));
-    rectfill(buffer,590,148,790,168,makecol(0,0,200));
-    rectfill(buffer,790,148,990,168,makecol(0,0,200));
-    rectfill(buffer,990,148,1200,168,makecol(0,0,200));
+    rectfill(buffer,0,148,1199,168,makecol(0,0,200));
+    rectfill(buffer,0,188,1199,208,makecol(51,204,204));
+    rectfill(buffer,0,228,1199,248,makecol(0,255,0));
+    rectfill(buffer,0,268,1199,288,makecol(255,204,0));
+    rectfill(buffer,0,308,1199,328,makecol(255,102,0));
 
-    rect(buffer,0,168,190,192,makecol(0,0,0));
-    rect(buffer,190,168,390,192,makecol(0,0,0));
-    rect(buffer,390,168,590,192,makecol(0,0,0));
-    rect(buffer,590,168,790,192,makecol(0,0,0));
-    rect(buffer,790,168,990,192,makecol(0,0,0));
-    rect(buffer,990,168,1200,192,makecol(0,0,0));
+    rect(buffer,0,188,1199,208,makecol(0,0,0));
+    rect(buffer,0,228,1199,248,makecol(0,0,0));
+    rect(buffer,0,268,1199,288,makecol(0,0,0));
+    rect(buffer,0,308,1199,328,makecol(0,0,0));
 
 
-    rect(buffer,0,148,190,168,makecol(0,0,0));
-    rect(buffer,190,148,390,168,makecol(0,0,0));
-    rect(buffer,390,148,590,168,makecol(0,0,0));
-    rect(buffer,590,148,790,168,makecol(0,0,0));
-    rect(buffer,790,148,990,168,makecol(0,0,0));
-    rect(buffer,990,148,1200,168,makecol(0,0,0));
+
+    rect(buffer,0,148,1199,168,makecol(0,0,0));
+
+    rect(buffer,0,148,1199,348,makecol(0,0,0));
+
+    rect(buffer,190,148,390,348,makecol(0,0,0));
+    rect(buffer,590,148,790,348,makecol(0,0,0));
+    rect(buffer,990,148,1199,348,makecol(0,0,0));
+
 
     textprintf_ex(buffer,ptsans,10,170,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher1.c_str());
     textprintf_ex(buffer,ptsans,200,170,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher2.c_str());
@@ -246,12 +273,34 @@ void draw(){
     textprintf_ex(buffer,ptsans,800,170,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher5.c_str());
     textprintf_ex(buffer,ptsans,1000,170,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher6.c_str());
 
-    textprintf_ex(buffer,ptsans,10,190,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher1_ss.c_str());
-    textprintf_ex(buffer,ptsans,200,190,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher2_ss.c_str());
-    textprintf_ex(buffer,ptsans,400,190,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher3_ss.c_str());
-    textprintf_ex(buffer,ptsans,600,190,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher4_ss.c_str());
-    textprintf_ex(buffer,ptsans,800,190,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher5_ss.c_str());
-    textprintf_ex(buffer,ptsans,1000,190,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher6_ss.c_str());
+    textprintf_ex(buffer,ptsans,10,210,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_fs[0].c_str());
+    textprintf_ex(buffer,ptsans,200,210,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_fs[1].c_str());
+    textprintf_ex(buffer,ptsans,400,210,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_fs[2].c_str());
+    textprintf_ex(buffer,ptsans,600,210,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_fs[3].c_str());
+    textprintf_ex(buffer,ptsans,800,210,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_fs[4].c_str());
+    textprintf_ex(buffer,ptsans,1000,210,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_fs[5].c_str());
+
+    textprintf_ex(buffer,ptsans,10,250,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_as[0].c_str());
+    textprintf_ex(buffer,ptsans,200,250,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_as[1].c_str());
+    textprintf_ex(buffer,ptsans,400,250,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_as[2].c_str());
+    textprintf_ex(buffer,ptsans,600,250,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_as[3].c_str());
+    textprintf_ex(buffer,ptsans,800,250,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_as[4].c_str());
+    textprintf_ex(buffer,ptsans,1000,250,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_as[5].c_str());
+
+    textprintf_ex(buffer,ptsans,10,290,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_gs[0].c_str());
+    textprintf_ex(buffer,ptsans,200,290,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_gs[1].c_str());
+    textprintf_ex(buffer,ptsans,400,290,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_gs[2].c_str());
+    textprintf_ex(buffer,ptsans,600,290,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_gs[3].c_str());
+    textprintf_ex(buffer,ptsans,800,290,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_gs[4].c_str());
+    textprintf_ex(buffer,ptsans,1000,290,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_gs[5].c_str());
+
+    textprintf_ex(buffer,ptsans,10,330,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_ss[0].c_str());
+    textprintf_ex(buffer,ptsans,200,330,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_ss[1].c_str());
+    textprintf_ex(buffer,ptsans,400,330,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_ss[2].c_str());
+    textprintf_ex(buffer,ptsans,600,330,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_ss[3].c_str());
+    textprintf_ex(buffer,ptsans,800,330,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_ss[4].c_str());
+    textprintf_ex(buffer,ptsans,1000,330,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_ss[5].c_str());
+
 
     textprintf_ex(buffer,ptsans,10,150,makecol(255,255,255),makecol(0,0,-1),"Pitcher #1");
     textprintf_ex(buffer,ptsans,200,150,makecol(255,255,255),makecol(0,0,-1),"Pitcher #2");
@@ -259,6 +308,34 @@ void draw(){
     textprintf_ex(buffer,ptsans,600,150,makecol(255,255,255),makecol(0,0,-1),"Pitcher #4");
     textprintf_ex(buffer,ptsans,800,150,makecol(255,255,255),makecol(0,0,-1),"Pitcher #5");
     textprintf_ex(buffer,ptsans,1000,150,makecol(255,255,255),makecol(0,0,-1),"Pitcher #6");
+
+    textprintf_ex(buffer,ptsans,10,188,makecol(0,0,0),makecol(0,0,-1),"Fair Slugger");
+    textprintf_ex(buffer,ptsans,200,188,makecol(0,0,0),makecol(0,0,-1),"Fair Slugger");
+    textprintf_ex(buffer,ptsans,400,188,makecol(0,0,0),makecol(0,0,-1),"Fair Slugger");
+    textprintf_ex(buffer,ptsans,600,188,makecol(0,0,0),makecol(0,0,-1),"Fair Slugger");
+    textprintf_ex(buffer,ptsans,800,188,makecol(0,0,0),makecol(0,0,-1),"Fair Slugger");
+    textprintf_ex(buffer,ptsans,1000,188,makecol(0,0,0),makecol(0,0,-1),"Fair Slugger");
+
+    textprintf_ex(buffer,ptsans,10,228,makecol(0,0,0),makecol(0,0,-1),"Average Slugger");
+    textprintf_ex(buffer,ptsans,200,228,makecol(0,0,0),makecol(0,0,-1),"Average Slugger");
+    textprintf_ex(buffer,ptsans,400,228,makecol(0,0,0),makecol(0,0,-1),"Average Slugger");
+    textprintf_ex(buffer,ptsans,600,228,makecol(0,0,0),makecol(0,0,-1),"Average Slugger");
+    textprintf_ex(buffer,ptsans,800,228,makecol(0,0,0),makecol(0,0,-1),"Average Slugger");
+    textprintf_ex(buffer,ptsans,1000,228,makecol(0,0,0),makecol(0,0,-1),"Average Slugger");
+
+    textprintf_ex(buffer,ptsans,10,268,makecol(0,0,0),makecol(0,0,-1),"Good Slugger");
+    textprintf_ex(buffer,ptsans,200,268,makecol(0,0,0),makecol(0,0,-1),"Good Slugger");
+    textprintf_ex(buffer,ptsans,400,268,makecol(0,0,0),makecol(0,0,-1),"Good Slugger");
+    textprintf_ex(buffer,ptsans,600,268,makecol(0,0,0),makecol(0,0,-1),"Good Slugger");
+    textprintf_ex(buffer,ptsans,800,268,makecol(0,0,0),makecol(0,0,-1),"Good Slugger");
+    textprintf_ex(buffer,ptsans,1000,268,makecol(0,0,0),makecol(0,0,-1),"Good Slugger");
+
+    textprintf_ex(buffer,ptsans,10,308,makecol(0,0,0),makecol(0,0,-1),"Super Slugger");
+    textprintf_ex(buffer,ptsans,200,308,makecol(0,0,0),makecol(0,0,-1),"Super Slugger");
+    textprintf_ex(buffer,ptsans,400,308,makecol(0,0,0),makecol(0,0,-1),"Super Slugger");
+    textprintf_ex(buffer,ptsans,600,308,makecol(0,0,0),makecol(0,0,-1),"Super Slugger");
+    textprintf_ex(buffer,ptsans,800,308,makecol(0,0,0),makecol(0,0,-1),"Super Slugger");
+    textprintf_ex(buffer,ptsans,1000,308,makecol(0,0,0),makecol(0,0,-1),"Super Slugger");
 
     draw_sprite(screen,buffer,0,0);
 }
