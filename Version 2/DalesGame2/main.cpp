@@ -63,6 +63,8 @@ string xml_file;
 int get_width;
 int get_height;
 
+int box_scale;
+
 void ticker(){
   ticks++;
 }
@@ -217,8 +219,14 @@ void load_slugging_xml(string new_xml_file){
 
 void update(){
 
-    if(key[KEY_F1])set_gfx_mode(GFX_AUTODETECT_WINDOWED,1200,399, 0, 0);
-    if(key[KEY_F2])set_gfx_mode(GFX_AUTODETECT_WINDOWED,1200,800, 0, 0);
+    if(key[KEY_F1]){
+        set_gfx_mode(GFX_AUTODETECT_WINDOWED,1200,399, 0, 0);
+        box_scale = SCREEN_W/6;
+    }
+    if(key[KEY_F2]){
+        set_gfx_mode(GFX_AUTODETECT,get_width,get_height, 0, 0);
+        box_scale = SCREEN_W/6;
+    }
 
 
     if((key[KEY_ENTER] || key[KEY_ENTER_PAD] || key[KEY_DEL] || key[KEY_SPACE] ||key[KEY_DEL_PAD] ) && step>9){
@@ -258,11 +266,11 @@ void update(){
 void draw(){
     rectfill(buffer,0,0,SCREEN_W,SCREEN_H,makecol(255,255,255));
 
-    if(color==1)rectfill(buffer,0,348,SCREEN_W-1,398,makecol(255,255,0));
-    if(color==2)rectfill(buffer,0,348,SCREEN_W-1,398,makecol(255,0,0));
-    if(color==3)rectfill(buffer,0,348,SCREEN_W-1,398,makecol(0,0,255));
+    if(color==1)rectfill(buffer,0,348,SCREEN_W,398,makecol(255,255,0));
+    if(color==2)rectfill(buffer,0,348,SCREEN_W,398,makecol(255,0,0));
+    if(color==3)rectfill(buffer,0,348,SCREEN_W,398,makecol(0,0,255));
 
-    rect(buffer,0,348,SCREEN_W,398,makecol(0,0,0));
+    rect(buffer,0,348,SCREEN_W-1,398,makecol(0,0,0));
 
     rectfill(buffer,205,10,390,135,makecol(0,0,0));
     textprintf_ex(buffer,ptsans_108,210,-25,makecol(255,0,0),makecol(0,0,-1),"%i",random_number);
@@ -294,98 +302,98 @@ void draw(){
     textprintf_ex(buffer,ptsans,398,100,makecol(0,0,0),makecol(0,0,-1),"Steals and throws>");
 
 
-    rectfill(buffer,0,148,1199,168,makecol(0,0,200));
-    rectfill(buffer,0,188,1199,208,makecol(51,204,204));
-    rectfill(buffer,0,228,1199,248,makecol(0,255,0));
-    rectfill(buffer,0,268,1199,288,makecol(255,204,0));
-    rectfill(buffer,0,308,1199,328,makecol(255,102,0));
+    rectfill(buffer,0,148,SCREEN_W-1,168,makecol(0,0,200));
+    rectfill(buffer,0,188,SCREEN_W-1,208,makecol(51,204,204));
+    rectfill(buffer,0,228,SCREEN_W-1,248,makecol(0,255,0));
+    rectfill(buffer,0,268,SCREEN_W-1,288,makecol(255,204,0));
+    rectfill(buffer,0,308,SCREEN_W-1,328,makecol(255,102,0));
 
-    rect(buffer,0,188,1199,208,makecol(0,0,0));
-    rect(buffer,0,228,1199,248,makecol(0,0,0));
-    rect(buffer,0,268,1199,288,makecol(0,0,0));
-    rect(buffer,0,308,1199,328,makecol(0,0,0));
+    rect(buffer,0,188,SCREEN_W-1,208,makecol(0,0,0));
+    rect(buffer,0,228,SCREEN_W-1,248,makecol(0,0,0));
+    rect(buffer,0,268,SCREEN_W-1,288,makecol(0,0,0));
+    rect(buffer,0,308,SCREEN_W-1,328,makecol(0,0,0));
 
 
 
-    rect(buffer,0,148,1199,168,makecol(0,0,0));
+    rect(buffer,0,148,SCREEN_W-1,168,makecol(0,0,0));
+    rect(buffer,0,148,SCREEN_W-1,348,makecol(0,0,0));
 
-    rect(buffer,0,148,1199,348,makecol(0,0,0));
-
-    rect(buffer,190,148,390,348,makecol(0,0,0));
-    rect(buffer,590,148,790,348,makecol(0,0,0));
-    rect(buffer,990,148,1199,348,makecol(0,0,0));
+    //Vertical lines
+    rect(buffer,box_scale-10,148,(box_scale*2)-10,348,makecol(0,0,0));
+    rect(buffer,(box_scale*3)-10,148,(box_scale*4)-10,348,makecol(0,0,0));
+    rect(buffer,(box_scale*5)-10,148,SCREEN_W-1,348,makecol(0,0,0));
 
 
     textprintf_ex(buffer,ptsans,10,170,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher1.c_str());
-    textprintf_ex(buffer,ptsans,200,170,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher2.c_str());
-    textprintf_ex(buffer,ptsans,400,170,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher3.c_str());
-    textprintf_ex(buffer,ptsans,600,170,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher4.c_str());
-    textprintf_ex(buffer,ptsans,800,170,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher5.c_str());
-    textprintf_ex(buffer,ptsans,1000,170,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher6.c_str());
+    textprintf_ex(buffer,ptsans,box_scale,170,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher2.c_str());
+    textprintf_ex(buffer,ptsans,box_scale*2,170,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher3.c_str());
+    textprintf_ex(buffer,ptsans,box_scale*3,170,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher4.c_str());
+    textprintf_ex(buffer,ptsans,box_scale*4,170,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher5.c_str());
+    textprintf_ex(buffer,ptsans,box_scale*5,170,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher6.c_str());
 
     textprintf_ex(buffer,ptsans,10,210,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_fs[0].c_str());
-    textprintf_ex(buffer,ptsans,200,210,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_fs[1].c_str());
-    textprintf_ex(buffer,ptsans,400,210,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_fs[2].c_str());
-    textprintf_ex(buffer,ptsans,600,210,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_fs[3].c_str());
-    textprintf_ex(buffer,ptsans,800,210,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_fs[4].c_str());
-    textprintf_ex(buffer,ptsans,1000,210,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_fs[5].c_str());
+    textprintf_ex(buffer,ptsans,box_scale,210,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_fs[1].c_str());
+    textprintf_ex(buffer,ptsans,box_scale*2,210,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_fs[2].c_str());
+    textprintf_ex(buffer,ptsans,box_scale*3,210,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_fs[3].c_str());
+    textprintf_ex(buffer,ptsans,box_scale*4,210,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_fs[4].c_str());
+    textprintf_ex(buffer,ptsans,box_scale*5,210,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_fs[5].c_str());
 
     textprintf_ex(buffer,ptsans,10,250,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_as[0].c_str());
-    textprintf_ex(buffer,ptsans,200,250,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_as[1].c_str());
-    textprintf_ex(buffer,ptsans,400,250,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_as[2].c_str());
-    textprintf_ex(buffer,ptsans,600,250,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_as[3].c_str());
-    textprintf_ex(buffer,ptsans,800,250,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_as[4].c_str());
-    textprintf_ex(buffer,ptsans,1000,250,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_as[5].c_str());
+    textprintf_ex(buffer,ptsans,box_scale,250,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_as[1].c_str());
+    textprintf_ex(buffer,ptsans,box_scale*2,250,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_as[2].c_str());
+    textprintf_ex(buffer,ptsans,box_scale*3,250,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_as[3].c_str());
+    textprintf_ex(buffer,ptsans,box_scale*4,250,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_as[4].c_str());
+    textprintf_ex(buffer,ptsans,box_scale*5,250,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_as[5].c_str());
 
     textprintf_ex(buffer,ptsans,10,290,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_gs[0].c_str());
-    textprintf_ex(buffer,ptsans,200,290,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_gs[1].c_str());
-    textprintf_ex(buffer,ptsans,400,290,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_gs[2].c_str());
-    textprintf_ex(buffer,ptsans,600,290,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_gs[3].c_str());
-    textprintf_ex(buffer,ptsans,800,290,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_gs[4].c_str());
-    textprintf_ex(buffer,ptsans,1000,290,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_gs[5].c_str());
+    textprintf_ex(buffer,ptsans,box_scale,290,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_gs[1].c_str());
+    textprintf_ex(buffer,ptsans,box_scale*2,290,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_gs[2].c_str());
+    textprintf_ex(buffer,ptsans,box_scale*3,290,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_gs[3].c_str());
+    textprintf_ex(buffer,ptsans,box_scale*4,290,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_gs[4].c_str());
+    textprintf_ex(buffer,ptsans,box_scale*5,290,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_gs[5].c_str());
 
     textprintf_ex(buffer,ptsans,10,330,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_ss[0].c_str());
-    textprintf_ex(buffer,ptsans,200,330,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_ss[1].c_str());
-    textprintf_ex(buffer,ptsans,400,330,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_ss[2].c_str());
-    textprintf_ex(buffer,ptsans,600,330,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_ss[3].c_str());
-    textprintf_ex(buffer,ptsans,800,330,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_ss[4].c_str());
-    textprintf_ex(buffer,ptsans,1000,330,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_ss[5].c_str());
+    textprintf_ex(buffer,ptsans,box_scale,330,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_ss[1].c_str());
+    textprintf_ex(buffer,ptsans,box_scale*2,330,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_ss[2].c_str());
+    textprintf_ex(buffer,ptsans,box_scale*3,330,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_ss[3].c_str());
+    textprintf_ex(buffer,ptsans,box_scale*4,330,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_ss[4].c_str());
+    textprintf_ex(buffer,ptsans,box_scale*5,330,makecol(0,0,0),makecol(0,0,-1),"%s", pitcher_ss[5].c_str());
 
 
     textprintf_ex(buffer,ptsans,10,150,makecol(255,255,255),makecol(0,0,-1),"Pitcher #1");
-    textprintf_ex(buffer,ptsans,200,150,makecol(255,255,255),makecol(0,0,-1),"Pitcher #2");
-    textprintf_ex(buffer,ptsans,400,150,makecol(255,255,255),makecol(0,0,-1),"Pitcher #3");
-    textprintf_ex(buffer,ptsans,600,150,makecol(255,255,255),makecol(0,0,-1),"Pitcher #4");
-    textprintf_ex(buffer,ptsans,800,150,makecol(255,255,255),makecol(0,0,-1),"Pitcher #5");
-    textprintf_ex(buffer,ptsans,1000,150,makecol(255,255,255),makecol(0,0,-1),"Pitcher #6");
+    textprintf_ex(buffer,ptsans,box_scale,150,makecol(255,255,255),makecol(0,0,-1),"Pitcher #2");
+    textprintf_ex(buffer,ptsans,box_scale*2,150,makecol(255,255,255),makecol(0,0,-1),"Pitcher #3");
+    textprintf_ex(buffer,ptsans,box_scale*3,150,makecol(255,255,255),makecol(0,0,-1),"Pitcher #4");
+    textprintf_ex(buffer,ptsans,box_scale*4,150,makecol(255,255,255),makecol(0,0,-1),"Pitcher #5");
+    textprintf_ex(buffer,ptsans,box_scale*5,150,makecol(255,255,255),makecol(0,0,-1),"Pitcher #6");
 
     textprintf_ex(buffer,ptsans,10,188,makecol(0,0,0),makecol(0,0,-1),"Fair Slugger");
-    textprintf_ex(buffer,ptsans,200,188,makecol(0,0,0),makecol(0,0,-1),"Fair Slugger");
-    textprintf_ex(buffer,ptsans,400,188,makecol(0,0,0),makecol(0,0,-1),"Fair Slugger");
-    textprintf_ex(buffer,ptsans,600,188,makecol(0,0,0),makecol(0,0,-1),"Fair Slugger");
-    textprintf_ex(buffer,ptsans,800,188,makecol(0,0,0),makecol(0,0,-1),"Fair Slugger");
-    textprintf_ex(buffer,ptsans,1000,188,makecol(0,0,0),makecol(0,0,-1),"Fair Slugger");
+    textprintf_ex(buffer,ptsans,box_scale,188,makecol(0,0,0),makecol(0,0,-1),"Fair Slugger");
+    textprintf_ex(buffer,ptsans,box_scale*2,188,makecol(0,0,0),makecol(0,0,-1),"Fair Slugger");
+    textprintf_ex(buffer,ptsans,box_scale*3,188,makecol(0,0,0),makecol(0,0,-1),"Fair Slugger");
+    textprintf_ex(buffer,ptsans,box_scale*4,188,makecol(0,0,0),makecol(0,0,-1),"Fair Slugger");
+    textprintf_ex(buffer,ptsans,box_scale*5,188,makecol(0,0,0),makecol(0,0,-1),"Fair Slugger");
 
     textprintf_ex(buffer,ptsans,10,228,makecol(0,0,0),makecol(0,0,-1),"Average Slugger");
-    textprintf_ex(buffer,ptsans,200,228,makecol(0,0,0),makecol(0,0,-1),"Average Slugger");
-    textprintf_ex(buffer,ptsans,400,228,makecol(0,0,0),makecol(0,0,-1),"Average Slugger");
-    textprintf_ex(buffer,ptsans,600,228,makecol(0,0,0),makecol(0,0,-1),"Average Slugger");
-    textprintf_ex(buffer,ptsans,800,228,makecol(0,0,0),makecol(0,0,-1),"Average Slugger");
-    textprintf_ex(buffer,ptsans,1000,228,makecol(0,0,0),makecol(0,0,-1),"Average Slugger");
+    textprintf_ex(buffer,ptsans,box_scale,228,makecol(0,0,0),makecol(0,0,-1),"Average Slugger");
+    textprintf_ex(buffer,ptsans,box_scale*2,228,makecol(0,0,0),makecol(0,0,-1),"Average Slugger");
+    textprintf_ex(buffer,ptsans,box_scale*3,228,makecol(0,0,0),makecol(0,0,-1),"Average Slugger");
+    textprintf_ex(buffer,ptsans,box_scale*4,228,makecol(0,0,0),makecol(0,0,-1),"Average Slugger");
+    textprintf_ex(buffer,ptsans,box_scale*5,228,makecol(0,0,0),makecol(0,0,-1),"Average Slugger");
 
     textprintf_ex(buffer,ptsans,10,268,makecol(0,0,0),makecol(0,0,-1),"Good Slugger");
-    textprintf_ex(buffer,ptsans,200,268,makecol(0,0,0),makecol(0,0,-1),"Good Slugger");
-    textprintf_ex(buffer,ptsans,400,268,makecol(0,0,0),makecol(0,0,-1),"Good Slugger");
-    textprintf_ex(buffer,ptsans,600,268,makecol(0,0,0),makecol(0,0,-1),"Good Slugger");
-    textprintf_ex(buffer,ptsans,800,268,makecol(0,0,0),makecol(0,0,-1),"Good Slugger");
-    textprintf_ex(buffer,ptsans,1000,268,makecol(0,0,0),makecol(0,0,-1),"Good Slugger");
+    textprintf_ex(buffer,ptsans,box_scale,268,makecol(0,0,0),makecol(0,0,-1),"Good Slugger");
+    textprintf_ex(buffer,ptsans,box_scale*2,268,makecol(0,0,0),makecol(0,0,-1),"Good Slugger");
+    textprintf_ex(buffer,ptsans,box_scale*3,268,makecol(0,0,0),makecol(0,0,-1),"Good Slugger");
+    textprintf_ex(buffer,ptsans,box_scale*4,268,makecol(0,0,0),makecol(0,0,-1),"Good Slugger");
+    textprintf_ex(buffer,ptsans,box_scale*5,268,makecol(0,0,0),makecol(0,0,-1),"Good Slugger");
 
     textprintf_ex(buffer,ptsans,10,308,makecol(0,0,0),makecol(0,0,-1),"Super Slugger");
-    textprintf_ex(buffer,ptsans,200,308,makecol(0,0,0),makecol(0,0,-1),"Super Slugger");
-    textprintf_ex(buffer,ptsans,400,308,makecol(0,0,0),makecol(0,0,-1),"Super Slugger");
-    textprintf_ex(buffer,ptsans,600,308,makecol(0,0,0),makecol(0,0,-1),"Super Slugger");
-    textprintf_ex(buffer,ptsans,800,308,makecol(0,0,0),makecol(0,0,-1),"Super Slugger");
-    textprintf_ex(buffer,ptsans,1000,308,makecol(0,0,0),makecol(0,0,-1),"Super Slugger");
+    textprintf_ex(buffer,ptsans,box_scale,308,makecol(0,0,0),makecol(0,0,-1),"Super Slugger");
+    textprintf_ex(buffer,ptsans,box_scale*2,308,makecol(0,0,0),makecol(0,0,-1),"Super Slugger");
+    textprintf_ex(buffer,ptsans,box_scale*3,308,makecol(0,0,0),makecol(0,0,-1),"Super Slugger");
+    textprintf_ex(buffer,ptsans,box_scale*4,308,makecol(0,0,0),makecol(0,0,-1),"Super Slugger");
+    textprintf_ex(buffer,ptsans,box_scale*5,308,makecol(0,0,0),makecol(0,0,-1),"Super Slugger");
 
     draw_sprite(screen,buffer,0,0);
 }
@@ -469,7 +477,7 @@ int main(){
 
   set_gfx_mode(GFX_AUTODETECT,get_width,get_height, 0, 0);
   install_sound(DIGI_AUTODETECT,MIDI_AUTODETECT,".");
-
+  box_scale=SCREEN_W/6;
 
 
   set_window_title("SPBL Official Number Generator 1.0");
