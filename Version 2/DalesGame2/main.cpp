@@ -60,6 +60,9 @@ string pitcher_fs[6];
 
 string xml_file;
 
+int get_width;
+int get_height;
+
 void ticker(){
   ticks++;
 }
@@ -255,11 +258,11 @@ void update(){
 void draw(){
     rectfill(buffer,0,0,SCREEN_W,SCREEN_H,makecol(255,255,255));
 
-    if(color==1)rectfill(buffer,0,348,1199,398,makecol(255,255,0));
-    if(color==2)rectfill(buffer,0,348,1199,398,makecol(255,0,0));
-    if(color==3)rectfill(buffer,0,348,1199,398,makecol(0,0,255));
+    if(color==1)rectfill(buffer,0,348,SCREEN_W-1,398,makecol(255,255,0));
+    if(color==2)rectfill(buffer,0,348,SCREEN_W-1,398,makecol(255,0,0));
+    if(color==3)rectfill(buffer,0,348,SCREEN_W-1,398,makecol(0,0,255));
 
-    rect(buffer,0,348,1199,398,makecol(0,0,0));
+    rect(buffer,0,348,SCREEN_W,398,makecol(0,0,0));
 
     rectfill(buffer,205,10,390,135,makecol(0,0,0));
     textprintf_ex(buffer,ptsans_108,210,-25,makecol(255,0,0),makecol(0,0,-1),"%i",random_number);
@@ -394,7 +397,7 @@ void draw(){
 
 
 void setup(){
-    buffer=create_bitmap(1200,800);
+    buffer=create_bitmap(get_width,get_height);
 
 
     // Load fonts
@@ -462,9 +465,9 @@ int main(){
   install_keyboard();
   install_mouse();
   set_color_depth(32);
+  get_desktop_resolution(&get_width,&get_height);
 
-
-  set_gfx_mode(GFX_AUTODETECT_WINDOWED,1200,800, 0, 0);
+  set_gfx_mode(GFX_AUTODETECT,get_width,get_height, 0, 0);
   install_sound(DIGI_AUTODETECT,MIDI_AUTODETECT,".");
 
 
