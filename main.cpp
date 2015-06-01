@@ -219,41 +219,59 @@ void load_slugging_xml(string new_xml_file){
 
 void update(){
 
+    //Changes the screen mode to windowed mode
     if(key[KEY_F1]){
         set_gfx_mode(GFX_AUTODETECT_WINDOWED,1200,400, 0, 0);
         box_scale = SCREEN_W/6;
     }
+
+    //Changes the screen mode to fullscreen based on the desktop resolution
     if(key[KEY_F2]){
         set_gfx_mode(GFX_AUTODETECT,get_width,get_height, 0, 0);
         box_scale = SCREEN_W/6;
     }
 
+    //Checks if any of these keys are pressed and if the delay is up, then generates a random number and does all that stuff
+    if((key[KEY_ENTER] || key[KEY_ENTER_PAD] || key[KEY_DEL] || key[KEY_SPACE] ||key[KEY_DEL_PAD] ) && step>20){
 
-    if((key[KEY_ENTER] || key[KEY_ENTER_PAD] || key[KEY_DEL] || key[KEY_SPACE] ||key[KEY_DEL_PAD] ) && step>30){
 
+        //This cycles through 3 colors when you generate a number
         color++;
+
         if(color==4)
             color=1;
 
+        //Replaces all the slugging charts with blanks, in case the slugging charts aren't called up
         for(int i; i<6; i++){
           pitcher_ss[i]="";
           pitcher_gs[i]="";
           pitcher_as[i]="";
           pitcher_fs[i]="";
         }
-        for(int i; i<5; i++){
+        //Generates an array of 5 other random numbers
+        for(int i; i<5; i++)
           other_random_numbers[i]=random(1,100);
-        }
 
+        //Generates the main random number
         random_number=random(1,122);
+
+        //Generates the number in green
         random_number_steals_throws=random(1,122);
+
+        //Loads all the batting results xml
         load_xml();
+
+        //Loads all the slugging charts
         load_slugging_xml("ss.xml");
         load_slugging_xml("gs.xml");
         load_slugging_xml("as.xml");
         load_slugging_xml("fs.xml");
+
+        //Resets the step timer so that you can't generate 38 results in a row
         step=0;
     }
+
+    //Changes the batter number
     if(key[KEY_1] || key[KEY_1_PAD])batter_number=1;
     if(key[KEY_2] || key[KEY_2_PAD])batter_number=2;
     if(key[KEY_3] || key[KEY_3_PAD])batter_number=3;
@@ -266,8 +284,10 @@ void update(){
 
 void draw(){
 
+    //Draws white background
     rectfill(buffer,0,0,SCREEN_W,SCREEN_H,makecol(255,255,255));
 
+    //Draws the color at the bottom of the screen
     if(color==1)rectfill(buffer,0,SCREEN_H-52,SCREEN_W,SCREEN_H-1,makecol(255,255,0));
     if(color==2)rectfill(buffer,0,SCREEN_H-52,SCREEN_W,SCREEN_H-1,makecol(255,0,0));
     if(color==3)rectfill(buffer,0,SCREEN_H-52,SCREEN_W,SCREEN_H-1,makecol(0,0,255));
