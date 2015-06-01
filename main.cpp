@@ -220,7 +220,7 @@ void load_slugging_xml(string new_xml_file){
 void update(){
 
     if(key[KEY_F1]){
-        set_gfx_mode(GFX_AUTODETECT_WINDOWED,1200,399, 0, 0);
+        set_gfx_mode(GFX_AUTODETECT_WINDOWED,1200,400, 0, 0);
         box_scale = SCREEN_W/6;
     }
     if(key[KEY_F2]){
@@ -229,10 +229,11 @@ void update(){
     }
 
 
-    if((key[KEY_ENTER] || key[KEY_ENTER_PAD] || key[KEY_DEL] || key[KEY_SPACE] ||key[KEY_DEL_PAD] ) && step>9){
+    if((key[KEY_ENTER] || key[KEY_ENTER_PAD] || key[KEY_DEL] || key[KEY_SPACE] ||key[KEY_DEL_PAD] ) && step>30){
 
         color++;
-        if(color==4)color=1;
+        if(color==4)
+            color=1;
 
         for(int i; i<6; i++){
           pitcher_ss[i]="";
@@ -264,20 +265,19 @@ void update(){
 }
 
 void draw(){
+
     rectfill(buffer,0,0,SCREEN_W,SCREEN_H,makecol(255,255,255));
 
-    if(color==1)rectfill(buffer,0,348,SCREEN_W,398,makecol(255,255,0));
-    if(color==2)rectfill(buffer,0,348,SCREEN_W,398,makecol(255,0,0));
-    if(color==3)rectfill(buffer,0,348,SCREEN_W,398,makecol(0,0,255));
+    if(color==1)rectfill(buffer,0,SCREEN_H-52,SCREEN_W,SCREEN_H-1,makecol(255,255,0));
+    if(color==2)rectfill(buffer,0,SCREEN_H-52,SCREEN_W,SCREEN_H-1,makecol(255,0,0));
+    if(color==3)rectfill(buffer,0,SCREEN_H-52,SCREEN_W,SCREEN_H-1,makecol(0,0,255));
 
-    rect(buffer,0,348,SCREEN_W-1,398,makecol(0,0,0));
+    rect(buffer,0,SCREEN_H-52,SCREEN_W-1,SCREEN_H-1,makecol(0,0,0));
 
     rectfill(buffer,205,10,390,135,makecol(0,0,0));
     textprintf_ex(buffer,ptsans_108,210,-25,makecol(255,0,0),makecol(0,0,-1),"%i",random_number);
     textprintf_ex(buffer,ptsans_big,25,13,makecol(0,0,0),makecol(0,0,-1),"%i",batter_number);
     textprintf_ex(buffer,ptsans,10,10,makecol(0,0,0),makecol(0,0,-1),"Batter Number");
-
-
 
     rectfill(buffer,391,10,640,77,makecol(255,255,0));
     rect(buffer,391,10,515,77,makecol(0,0,0));
@@ -301,21 +301,24 @@ void draw(){
 
     textprintf_ex(buffer,ptsans,398,100,makecol(0,0,0),makecol(0,0,-1),"Steals and throws>");
 
-
+    //Colored cell filling boxes
     rectfill(buffer,0,148,SCREEN_W-1,168,makecol(0,0,200));
     rectfill(buffer,0,188,SCREEN_W-1,208,makecol(51,204,204));
     rectfill(buffer,0,228,SCREEN_W-1,248,makecol(0,255,0));
     rectfill(buffer,0,268,SCREEN_W-1,288,makecol(255,204,0));
     rectfill(buffer,0,308,SCREEN_W-1,328,makecol(255,102,0));
 
+    //Boxes around slugging charts boxes
     rect(buffer,0,188,SCREEN_W-1,208,makecol(0,0,0));
     rect(buffer,0,228,SCREEN_W-1,248,makecol(0,0,0));
     rect(buffer,0,268,SCREEN_W-1,288,makecol(0,0,0));
     rect(buffer,0,308,SCREEN_W-1,328,makecol(0,0,0));
 
 
-
+    //Box around cells
     rect(buffer,0,148,SCREEN_W-1,168,makecol(0,0,0));
+
+    //Box around top "Pitcher" cell
     rect(buffer,0,148,SCREEN_W-1,348,makecol(0,0,0));
 
     //Vertical lines
@@ -405,8 +408,8 @@ void draw(){
 
 
 void setup(){
-    buffer=create_bitmap(get_width,get_height);
 
+    buffer=create_bitmap(get_width,get_height);
 
     // Load fonts
     f1 = load_font("ptsans.pcx", NULL, NULL);
