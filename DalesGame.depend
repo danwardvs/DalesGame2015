@@ -1,0 +1,34 @@
+# depslib dependency file v1.0
+1424215673 source:c:\users\danward\documents\github\dalesgame2015\version 2\dalesgame2\main.cpp
+	<allegro.h>
+	<alpng.h>
+	<time.h>
+	<iostream>
+	<fstream>
+	<vector>
+	<string>
+	"rapidxml.hpp"
+	"rapidxml_print.hpp"
+
+1433111940 source:c:\users\danny\documents\github\dalesgame2015\version 2\dalesgame2\main.cpp
+	<allegro.h>
+	<alpng.h>
+	<time.h>
+	<iostream>
+	<fstream>
+	<vector>
+	<string>
+	"rapidxml.hpp"
+	"rapidxml_print.hpp"
+
+1433127003 source:c:\users\danny\documents\github\dalesgame2015\main.cpp
+	<allegro.h>
+	<alpng.h>
+	<time.h>
+	<iostream>
+	<fstream>
+	<vector>
+	<string>
+	"rapidxml.hpp"
+	"rapidxml_print.hpp"
+
