@@ -7,10 +7,10 @@ struct colour{
   int g;
   int b;
   colour(){}
-  colour(int newR, int newG, int newB){
+  colour(unsigned char newR, unsigned char newG, unsigned char newB){
     r = newR;
     g = newG;
-    b = newG;
+    b = newB;
   }
 };
 

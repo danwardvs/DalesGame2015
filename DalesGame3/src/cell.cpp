@@ -16,7 +16,8 @@ void cell::update(){
 }
 
 void cell::draw(BITMAP* tempBitmap){
-    //rect(tempBitmap,x,y,x+width,y+height,makecol(0,0,0));
-    rect(tempBitmap,0,0,10,10,makecol(0,0,0));
-    int a;
+    rectfill(tempBitmap,x,y,x+width,y+height,makecol(backgroundColour.r,backgroundColour.g,backgroundColour.b));
+
+
+    rect(tempBitmap,x,y,x+width,y+height,makecol(0,0,0));
 }

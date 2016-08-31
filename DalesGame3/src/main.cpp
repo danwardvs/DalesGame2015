@@ -18,7 +18,7 @@ int step;
 
 int batter_number=1;
 
-colour green(0,0,255);
+colour green(0,255,0);
 
 // Fonts
 FONT* f1;
@@ -258,9 +258,12 @@ void update(){
 
 void draw(){
     rectfill(buffer,0,0,SCREEN_W,SCREEN_H,makecol(255,255,255));
-    for(int i=0; i<game_cells.size(); i++){
-      game_cells[i].draw(buffer);
-    }
+    //for(int i=0; i<game_cells.size(); i++){
+    //  game_cells[i].draw(buffer);
+    //}
+    game_cells[0].draw(buffer);
+    textprintf_ex(buffer,ptsans,10,10,makecol(0,0,0),makecol(0,0,-1),"%i",game_cells.size());
+
 
     draw_sprite(screen,buffer,0,0);
 }
@@ -273,7 +276,7 @@ void draw(){
 
 void setup(){
 
-    cell newCell(10,10,20,20,green,green,"Hello world!");
+    cell newCell(10,10,10,10,green,green,"Hello world!");
     game_cells.push_back(newCell);
 
     buffer=create_bitmap(SCREEN_W,SCREEN_H);
