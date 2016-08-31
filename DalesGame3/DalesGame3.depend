@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1472513182 source:c:\users\danward\documents\github\dalesgame2015\dalesgame3\main.cpp
+	<allegro.h>
+	<alpng.h>
+	<time.h>
+	<iostream>
+	<fstream>
+	<vector>
+	<string>
+	"rapidxml.hpp"
+	"rapidxml_print.hpp"
+
+1472523795 source:c:\users\danward\documents\github\dalesgame2015\dalesgame3\src\cell.cpp
+	"cell.h"
+
+1472522637 source:c:\users\danward\documents\github\dalesgame2015\dalesgame3\src\main.cpp
+	<allegro.h>
+	<alpng.h>
+	<time.h>
+	<iostream>
+	<fstream>
+	<vector>
+	<string>
+	"globals.h"
+	"cell.h"
+	"rapidxml.hpp"
+	"rapidxml_print.hpp"
+

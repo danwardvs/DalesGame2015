@@ -18,6 +18,8 @@ int step;
 
 int batter_number=1;
 
+colour green;
+
 // Fonts
 FONT* f1;
 FONT* f2;
