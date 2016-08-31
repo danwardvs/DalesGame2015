@@ -20,16 +20,7 @@ int batter_number=1;
 
 colour green(0,255,0);
 
-// Fonts
-FONT* f1;
-FONT* f2;
-FONT* f3;
-FONT* f4;
-FONT* f5;
-FONT* ptsans;
-FONT* ptsans_big;
-FONT* ptsans_108;
-FONT* ptsans_48;
+FONT* load_font();
 
 bool close_button_pressed;
 
@@ -262,7 +253,7 @@ void draw(){
     //  game_cells[i].draw(buffer);
     //}
     game_cells[0].draw(buffer);
-    textprintf_ex(buffer,ptsans,10,10,makecol(0,0,0),makecol(0,0,-1),"%i",game_cells.size());
+    textprintf_ex(buffer,c_14,10,10,makecol(0,0,0),makecol(0,0,-1),"%i",game_cells.size());
 
 
     draw_sprite(screen,buffer,0,0);
@@ -272,7 +263,26 @@ void draw(){
 
 
 
+FONT* load_font(std::string newFontPath){
 
+    // Load fonts
+    FONT* font_5;
+    FONT* font_1 = load_font(newFontPath.c_str(), NULL, NULL);
+    FONT* font_2 = extract_font_range(font_1, ' ', 'A'-1);
+    FONT* font_3 = extract_font_range(font_1, 'A', 'Z');
+    FONT* font_4 = extract_font_range(font_1, 'Z'+1, 'z');
+    FONT* font_final = merge_fonts(font_4,font_5 = merge_fonts(font_2, font_3));
+
+    destroy_font(font_1);
+    destroy_font(font_2);
+    destroy_font(font_3);
+    destroy_font(font_4);
+    destroy_font(font_5);
+
+    return font_final;
+
+
+}
 
 void setup(){
 
@@ -280,40 +290,6 @@ void setup(){
     game_cells.push_back(newCell);
 
     buffer=create_bitmap(SCREEN_W,SCREEN_H);
-
-
-    // Load fonts
-    f1 = load_font("ptsans.pcx", NULL, NULL);
-    f2 = extract_font_range(f1, ' ', 'A'-1);
-    f3 = extract_font_range(f1, 'A', 'Z');
-    f4 = extract_font_range(f1, 'Z'+1, 'z');
-    ptsans = merge_fonts(f4, f5 = merge_fonts(f2, f3));
-
-    f1 = load_font("ptsans_big.pcx", NULL, NULL);
-    f2 = extract_font_range(f1, ' ', 'A'-1);
-    f3 = extract_font_range(f1, 'A', 'Z');
-    f4 = extract_font_range(f1, 'Z'+1, 'z');
-    ptsans_big = merge_fonts(f4, f5 = merge_fonts(f2, f3));
-
-    f1 = load_font("ptsans_108.pcx", NULL, NULL);
-    f2 = extract_font_range(f1, ' ', 'A'-1);
-    f3 = extract_font_range(f1, 'A', 'Z');
-    f4 = extract_font_range(f1, 'Z'+1, 'z');
-    ptsans_108 = merge_fonts(f4, f5 = merge_fonts(f2, f3));
-
-    f1 = load_font("ptsans_48.pcx", NULL, NULL);
-    f2 = extract_font_range(f1, ' ', 'A'-1);
-    f3 = extract_font_range(f1, 'A', 'Z');
-    f4 = extract_font_range(f1, 'Z'+1, 'z');
-    ptsans_48 = merge_fonts(f4, f5 = merge_fonts(f2, f3));
-
-
-    // Destroy temporary fonts
-    destroy_font(f1);
-    destroy_font(f2);
-    destroy_font(f3);
-    destroy_font(f4);
-    destroy_font(f5);
 
     srand(time(NULL));
 
@@ -332,6 +308,21 @@ void setup(){
 
    // if (!(bmp = load_bitmap("bmp.png", NULL)))
    //   abort_on_error("Cannot find image bmp.png\nPlease check your files and try again");
+
+   c_8 = load_font("fonts/c_8.pcx");
+   c_10 = load_font("fonts/c_10.pcx");
+   c_12 = load_font("fonts/c_12.pcx");
+   c_14 = load_font("fonts/c_14.pcx");
+   c_16 = load_font("fonts/c_16.pcx");
+   c_18 = load_font("fonts/c_18.pcx");
+   c_20 = load_font("fonts/c_20.pcx");
+   c_22 = load_font("fonts/c_22.pcx");
+   c_24 = load_font("fonts/c_24.pcx");
+   c_26 = load_font("fonts/c_26.pcx");
+   c_28 = load_font("fonts/c_28.pcx");
+   c_36 = load_font("fonts/c_36.pcx");
+   c_48 = load_font("fonts/c_48.pcx");
+   c_72 = load_font("fonts/c_72.pcx");
 }
 
 
