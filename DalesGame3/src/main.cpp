@@ -253,7 +253,7 @@ void draw(){
     //  game_cells[i].draw(buffer);
     //}
     game_cells[0].draw(buffer);
-    textprintf_ex(buffer,c_14,10,10,makecol(0,0,0),makecol(0,0,-1),"%i",game_cells.size());
+   // textprintf_ex(buffer,c_14,10,10,makecol(0,0,0),makecol(0,0,-1),"%i",game_cells.size());
 
 
     draw_sprite(screen,buffer,0,0);

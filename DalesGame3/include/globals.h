@@ -14,7 +14,30 @@ struct colour{
     b = newB;
   }
 };
+/*
+struct scalable_font{
+  FONT* pt8;
+  FONT* pt10;
+  FONT* pt12;
+  FONT* pt14;
+  FONT* pt16;
+  FONT* pt18;
+  FONT* pt20;
+  FONT* pt22;
+  FONT* pt24;
+  FONT* pt26;
+  FONT* pt28;
+  FONT* pt36;
+  FONT* pt48;
+  FONT* pt72;
+  std::string path;
 
+  scalable_font(){}
+  scalable_font(std::string newPath){
+    path = newPath;
+  }
 
+};
+*/
 
 #endif
