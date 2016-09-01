@@ -24,6 +24,11 @@ void cell::set_width(int newWidth){
 void cell::set_height(int newHeight){
   height = newHeight;
 }
+void cell::set_text(std::string newText){
+  text = newText;
+}
+
+
 
 // Run cell updates (nothing here :( )
 void cell::update(){

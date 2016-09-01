@@ -29,6 +29,7 @@ class cell{
 
     void set_width(int newWidth);
     void set_height(int newHeight);
+    void set_text(std::string newText);
 
     // Draws the cell
     void draw(BITMAP* tempBitmap);
