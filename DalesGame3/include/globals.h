@@ -48,6 +48,7 @@ struct scalable_font{
   FONT* pt36;
   FONT* pt48;
   FONT* pt72;
+  FONT* pt100;
   FONT* load_font_from_file();
   FONT* size();
   std::string path;
@@ -76,6 +77,7 @@ struct scalable_font{
       case 36:return pt36;
       case 48:return pt48;
       case 72:return pt72;
+      case 100:return pt100;
       default:return pt8;
 
 
@@ -99,6 +101,7 @@ struct scalable_font{
     pt36 = load_font_from_file(path + "_36.pcx");
     pt48 = load_font_from_file(path + "_48.pcx");
     pt72 = load_font_from_file(path + "_72.pcx");
+    pt100 = load_font_from_file(path + "_100.pcx");
   }
 
   FONT* load_font_from_file( std::string newFontPath){

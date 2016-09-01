@@ -50,7 +50,9 @@ void cell::draw( BITMAP* tempBitmap){
 
     }else{
       int newSize;
-      if(test_size(72)){
+      if(test_size(100)){
+        newSize=100;
+      }else if(test_size(72)){
         newSize=72;
       }else if(test_size(48)){
         newSize=48;
@@ -88,12 +90,15 @@ void cell::draw( BITMAP* tempBitmap){
       }else if(test_size(10)){
         newSize=10;
 
-      }else{
+      }else if(test_size(8)){
         newSize=8;
-
+      }else{
+        newSize=0;
       }
-      textprintf_ex( tempBitmap, font.size(newSize), x, y, makecol(0,0,0), makecol(0,0,-1), "%s", text.c_str());
-
+      if(newSize!=0)
+        textprintf_ex( tempBitmap, font.size(newSize), x, y, makecol(0,0,0), makecol(0,0,-1), "%s", text.c_str());
+      else
+       textprintf_ex( tempBitmap, font.size(newSize), x, y, makecol(0,0,0), makecol(0,0,-1), "```");
     }
 
 }

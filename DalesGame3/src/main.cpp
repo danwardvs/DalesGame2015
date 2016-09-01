@@ -13,6 +13,7 @@
 #include "rapidxml_print.hpp"
 
 BITMAP* buffer;
+BITMAP* cursor;
 
 int step;
 
@@ -99,25 +100,6 @@ void abort_on_error(const char *message){
   exit(-1);
 }
 
-FONT* load_font( std::string newFontPath){
-  // Load fonts
-  FONT* font_5;
-  FONT* font_1 = load_font(newFontPath.c_str(), NULL, NULL);
-  FONT* font_2 = extract_font_range(font_1, ' ', 'A'-1);
-  FONT* font_3 = extract_font_range(font_1, 'A', 'Z');
-  FONT* font_4 = extract_font_range(font_1, 'Z'+1, 'z');
-  FONT* font_final = merge_fonts(font_4,font_5 = merge_fonts(font_2, font_3));
-
-  // Cleanup
-  destroy_font(font_1);
-  destroy_font(font_2);
-  destroy_font(font_3);
-  destroy_font(font_4);
-  destroy_font(font_5);
-
-  // Return a pointer to our loaded font
-  return font_final;
-}
 
 
 
@@ -128,17 +110,17 @@ void load_xml(){
 
   // Read the xml file into a vector
   if( batter_number == 1)
-    xml_file = "1b.xml";
+    xml_file = "data/1b.xml";
   if( batter_number == 2)
-    xml_file = "2b.xml";
+    xml_file = "data/2b.xml";
   if( batter_number == 3)
-    xml_file = "3b.xml";
+    xml_file = "data/3b.xml";
   if( batter_number == 4)
-    xml_file="4b.xml";
+    xml_file="data/4b.xml";
   if( batter_number == 5)
-    xml_file = "5b.xml";
+    xml_file = "data/5b.xml";
   if( batter_number == 6)
-    xml_file = "6b.xml";
+    xml_file = "data/6b.xml";
 
   // Make an xml object
   std::ifstream theFile (xml_file.c_str());
@@ -269,10 +251,10 @@ void update(){
     random_number = random(1,122);
     random_number_steals_throws = random(1,122);
     load_xml();
-    load_slugging_xml( "ss.xml");
-    load_slugging_xml( "gs.xml");
-    load_slugging_xml( "as.xml");
-    load_slugging_xml( "fs.xml");
+    load_slugging_xml( "data/ss.xml");
+    load_slugging_xml( "data/gs.xml");
+    load_slugging_xml( "data/as.xml");
+    load_slugging_xml( "data/fs.xml");
     step = 0;
   }
 
@@ -296,6 +278,7 @@ void update(){
 
 // Draw all the required graphics to screen
 void draw(){
+
   rectfill(buffer,0,0,SCREEN_W,SCREEN_H,makecol(255,255,255));
 
   // Draw our nice lil rectangle
@@ -304,6 +287,8 @@ void draw(){
   }
 
   textprintf_ex(buffer,calibri.size(28),50,550,makecol(0,0,0),makecol(0,0,-1),"Scalable fonts OP!");
+
+  draw_sprite(buffer,cursor,mouse_x,mouse_y);
 
   // Draw the buffer to the screen
   draw_sprite( screen, buffer, 0, 0);
@@ -354,8 +339,8 @@ void setup(){
   LOCK_FUNCTION(close_button_handler);
   set_close_button_callback(close_button_handler);
 
-  // if (!(bmp = load_bitmap("bmp.png", NULL)))
-  //   abort_on_error("Cannot find image bmp.png\nPlease check your files and try again");
+  if (!(cursor = load_bitmap("images/cursor.png", NULL)))
+    abort_on_error("Cannot find image images/cursor.png\nPlease check your files and try again");
 
   calibri.load_all_fonts();
    // Lil cell
