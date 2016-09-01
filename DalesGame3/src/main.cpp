@@ -16,6 +16,8 @@ BITMAP* buffer;
 
 int step;
 
+scalable_font calibri("fonts/calibri");
+
 int batter_number = 1;
 
 // Color defs
@@ -95,6 +97,26 @@ void abort_on_error(const char *message){
   }
   allegro_message("%s.\n %s\n", message, allegro_error);
   exit(-1);
+}
+
+FONT* load_font( std::string newFontPath){
+  // Load fonts
+  FONT* font_5;
+  FONT* font_1 = load_font(newFontPath.c_str(), NULL, NULL);
+  FONT* font_2 = extract_font_range(font_1, ' ', 'A'-1);
+  FONT* font_3 = extract_font_range(font_1, 'A', 'Z');
+  FONT* font_4 = extract_font_range(font_1, 'Z'+1, 'z');
+  FONT* font_final = merge_fonts(font_4,font_5 = merge_fonts(font_2, font_3));
+
+  // Cleanup
+  destroy_font(font_1);
+  destroy_font(font_2);
+  destroy_font(font_3);
+  destroy_font(font_4);
+  destroy_font(font_5);
+
+  // Return a pointer to our loaded font
+  return font_final;
 }
 
 
@@ -278,7 +300,7 @@ void draw(){
     game_cells[i].draw(buffer);
   }
 
-  // textprintf_ex(buffer,c_14,10,10,makecol(0,0,0),makecol(0,0,-1),"%i",game_cells.size());
+  textprintf_ex(buffer,calibri.size(28),50,550,makecol(0,0,0),makecol(0,0,-1),"Scalable fonts OP!");
 
   // Draw the buffer to the screen
   draw_sprite( screen, buffer, 0, 0);
@@ -288,25 +310,6 @@ void draw(){
 
 
 
-FONT* load_font( std::string newFontPath){
-  // Load fonts
-  FONT* font_5;
-  FONT* font_1 = load_font(newFontPath.c_str(), NULL, NULL);
-  FONT* font_2 = extract_font_range(font_1, ' ', 'A'-1);
-  FONT* font_3 = extract_font_range(font_1, 'A', 'Z');
-  FONT* font_4 = extract_font_range(font_1, 'Z'+1, 'z');
-  FONT* font_final = merge_fonts(font_4,font_5 = merge_fonts(font_2, font_3));
-
-  // Cleanup
-  destroy_font(font_1);
-  destroy_font(font_2);
-  destroy_font(font_3);
-  destroy_font(font_4);
-  destroy_font(font_5);
-
-  // Return a pointer to our loaded font
-  return font_final;
-}
 
 void setup(){
   // Init allegro
@@ -330,57 +333,6 @@ void setup(){
   cell newCell( 10, 10, 10, 10, green, green, "Hello world!");
   game_cells.push_back( newCell);
 
-  // A danny suprise (actually a stress test)
-  for( int i = 0; i < 100; i++){
-    for( int t = 0; t < 100; t++){
-      int randomColor = random( 1, 6);
-
-      switch( randomColor){
-        case 1:
-          {
-            cell newCell( i * 40, t * 40, 40, 40, purple, blue, "Hello MEMES!");
-            game_cells.push_back( newCell);
-            break;
-          }
-        case 2:
-          {
-            cell newCell( i * 40, t * 40, 40, 40, orange, blue, "Hello MEMES!");
-            game_cells.push_back( newCell);
-            break;
-          }
-        case 3:
-          {
-            cell newCell( i * 40, t * 40, 40, 40, red, blue, "Hello MEMES!");
-            game_cells.push_back( newCell);
-            break;
-          }
-        case 4:
-          {
-            cell newCell( i * 40, t * 40, 40, 40, blue, blue, "Hello MEMES!");
-            game_cells.push_back( newCell);
-            break;
-          }
-        case 5:
-          {
-            cell newCell( i * 40, t * 40, 40, 40, yellow, blue, "Hello MEMES!");
-            game_cells.push_back( newCell);
-            break;
-          }
-        case 6:
-          {
-            cell newCell( i * 40, t * 40, 40, 40, green, blue, "Hello MEMES!");
-            game_cells.push_back( newCell);
-            break;
-          }
-        default:
-          {
-            cell newCell7( i * 40, t * 40, 40, 40, white, blue, "Hello MEMES!");
-            game_cells.push_back( newCell7);
-            break;
-          }
-      }
-    }
-  }
 
   // Buffer the size of the screen
   buffer = create_bitmap( SCREEN_W, SCREEN_H);
@@ -404,6 +356,8 @@ void setup(){
 
   // if (!(bmp = load_bitmap("bmp.png", NULL)))
   //   abort_on_error("Cannot find image bmp.png\nPlease check your files and try again");
+
+  calibri.load_all_fonts();
 
   // Load the fonts
   c_8 = load_font( "fonts/calibri_8.pcx");
