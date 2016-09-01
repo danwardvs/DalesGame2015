@@ -30,7 +30,7 @@ void cell::update(){
 
 }
 bool cell::test_size(int newSize){
-  if(text_height(font.size(newSize))<height && text_length(font.size(newSize),text.c_str())<width )
+  if(text_height(font.size(newSize))<height && text_length(font.size(newSize),text.c_str())<width-4 )
     return true;
   return false;
 
@@ -46,7 +46,7 @@ void cell::draw( BITMAP* tempBitmap){
 
     // Draw containing text
     if(text_size!=0){
-      textprintf_ex( tempBitmap, font.size(text_size), x, y, makecol(0,0,0), makecol(0,0,-1), "%s", text.c_str());
+      textprintf_ex( tempBitmap, font.size(text_size), x+4, y, makecol(textColour.r,textColour.g,textColour.b), makecol(0,0,-1), "%s", text.c_str());
 
     }else{
       int newSize;
@@ -96,9 +96,9 @@ void cell::draw( BITMAP* tempBitmap){
         newSize=0;
       }
       if(newSize!=0)
-        textprintf_ex( tempBitmap, font.size(newSize), x, y, makecol(0,0,0), makecol(0,0,-1), "%s", text.c_str());
+        textprintf_ex( tempBitmap, font.size(newSize), x+4, y,makecol(textColour.r,textColour.g,textColour.b), makecol(0,0,-1), "%s", text.c_str());
       else
-       textprintf_ex( tempBitmap, font.size(newSize), x, y, makecol(0,0,0), makecol(0,0,-1), "```");
+       textprintf_ex( tempBitmap, font.size(newSize), x+4, y, makecol(textColour.r,textColour.g,textColour.b), makecol(0,0,-1), "```");
     }
 
 }

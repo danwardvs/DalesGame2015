@@ -24,7 +24,8 @@ int batter_number = 1;
 // Color defs
 colour red( 255, 0, 0);
 colour green( 0, 255, 0);
-colour blue( 0, 0, 255);
+colour blue( 0, 0, 200);
+colour teal( 0, 225,225);
 colour purple( 255, 0, 255);
 colour orange( 255, 100, 0);
 colour yellow( 255, 255, 0);
@@ -99,8 +100,10 @@ void abort_on_error(const char *message){
   allegro_message("%s.\n %s\n", message, allegro_error);
   exit(-1);
 }
-
-
+void create_cell(int newX, int newY, int newWidth, int newHeight, colour newBackgroundColour, colour newTextColour, scalable_font newFont,int newTextSize, std::string newText){
+  cell newCell( newX, newY, newWidth, newHeight, newBackgroundColour, newTextColour,newFont, newTextSize, newText);
+  game_cells.push_back( newCell);
+}
 
 
 void load_xml(){
@@ -295,7 +298,76 @@ void draw(){
 }
 
 
+void generate_cells(){
+  int spacing_6 = SCREEN_W/6;
+  create_cell(0,200,spacing_6,50,blue,white,calibri,0,"Pitcher #1");
+  create_cell(spacing_6,200,spacing_6,50,blue,white,calibri,0,"Pitcher #2");
+  create_cell(spacing_6*2,200,spacing_6,50,blue,white,calibri,0,"Pitcher #3");
+  create_cell(spacing_6*3,200,spacing_6,50,blue,white,calibri,0,"Pitcher #4");
+  create_cell(spacing_6*4,200,spacing_6,50,blue,white,calibri,0,"Pitcher #5");
+  create_cell(spacing_6*5,200,spacing_6,50,blue,white,calibri,0,"Pitcher #6");
 
+  create_cell(0,250,spacing_6,50,white,black,calibri,0,"");
+  create_cell(spacing_6,250,spacing_6,50,white,black,calibri,0,"");
+  create_cell(spacing_6*2,250,spacing_6,50,white,black,calibri,0,"");
+  create_cell(spacing_6*3,250,spacing_6,50,white,black,calibri,0,"");
+  create_cell(spacing_6*4,250,spacing_6,50,white,black,calibri,0,"");
+  create_cell(spacing_6*5,250,spacing_6,50,white,black,calibri,0,"");
+
+  create_cell(0,300,spacing_6,50,teal,black,calibri,0,"Fair Slugger");
+  create_cell(spacing_6,300,spacing_6,50,teal,black,calibri,0,"Fair Slugger");
+  create_cell(spacing_6*2,300,spacing_6,50,teal,black,calibri,0,"Fair Slugger");
+  create_cell(spacing_6*3,300,spacing_6,50,teal,black,calibri,0,"Fair Slugger");
+  create_cell(spacing_6*4,300,spacing_6,50,teal,black,calibri,0,"Fair Slugger");
+  create_cell(spacing_6*5,300,spacing_6,50,teal,black,calibri,0,"Fair Slugger");
+
+  create_cell(0,350,spacing_6,50,white,black,calibri,0,"");
+  create_cell(spacing_6,350,spacing_6,50,white,black,calibri,0,"");
+  create_cell(spacing_6*2,350,spacing_6,50,white,black,calibri,0,"");
+  create_cell(spacing_6*3,350,spacing_6,50,white,black,calibri,0,"");
+  create_cell(spacing_6*4,350,spacing_6,50,white,black,calibri,0,"");
+  create_cell(spacing_6*5,350,spacing_6,50,white,black,calibri,0,"");
+
+   create_cell(0,400,spacing_6,50,green,black,calibri,0,"Average Slugger");
+  create_cell(spacing_6,400,spacing_6,50,green,black,calibri,0,"Average Slugger");
+  create_cell(spacing_6*2,400,spacing_6,50,green,black,calibri,0,"Average Slugger");
+  create_cell(spacing_6*3,400,spacing_6,50,green,black,calibri,0,"Average Slugger");
+  create_cell(spacing_6*4,400,spacing_6,50,green,black,calibri,0,"Average Slugger");
+  create_cell(spacing_6*5,400,spacing_6,50,green,black,calibri,0,"Average Slugger");
+
+  create_cell(0,450,spacing_6,50,white,black,calibri,0,"");
+  create_cell(spacing_6,450,spacing_6,50,white,black,calibri,0,"");
+  create_cell(spacing_6*2,450,spacing_6,50,white,black,calibri,0,"");
+  create_cell(spacing_6*3,450,spacing_6,50,white,black,calibri,0,"");
+  create_cell(spacing_6*4,450,spacing_6,50,white,black,calibri,0,"");
+  create_cell(spacing_6*5,450,spacing_6,50,white,black,calibri,0,"");
+
+  create_cell(0,500,spacing_6,50,yellow,black,calibri,0,"Good Slugger");
+  create_cell(spacing_6,500,spacing_6,50,yellow,black,calibri,0,"Good Slugger");
+  create_cell(spacing_6*2,500,spacing_6,50,yellow,black,calibri,0,"Good Slugger");
+  create_cell(spacing_6*3,500,spacing_6,50,yellow,black,calibri,0,"Good Slugger");
+  create_cell(spacing_6*4,500,spacing_6,50,yellow,black,calibri,0,"Good Slugger");
+  create_cell(spacing_6*5,500,spacing_6,50,yellow,black,calibri,0,"Good Slugger");
+
+  create_cell(0,550,spacing_6,50,white,black,calibri,0,"");
+  create_cell(spacing_6,550,spacing_6,50,white,black,calibri,0,"");
+  create_cell(spacing_6*2,550,spacing_6,50,white,black,calibri,0,"");
+  create_cell(spacing_6*3,550,spacing_6,50,white,black,calibri,0,"");
+  create_cell(spacing_6*4,550,spacing_6,50,white,black,calibri,0,"");
+  create_cell(spacing_6*5,550,spacing_6,50,white,black,calibri,0,"");
+
+  create_cell(0,600,spacing_6,50,orange,black,calibri,0,"Super Slugger");
+  create_cell(spacing_6,600,spacing_6,50,orange,black,calibri,0,"Super Slugger");
+  create_cell(spacing_6*2,600,spacing_6,50,orange,black,calibri,0,"Super Slugger");
+  create_cell(spacing_6*3,600,spacing_6,50,orange,black,calibri,0,"Super Slugger");
+  create_cell(spacing_6*4,600,spacing_6,50,orange,black,calibri,0,"Super Slugger");
+  create_cell(spacing_6*5,600,spacing_6,50,orange,black,calibri,0,"Super Slugger");
+
+
+
+
+
+}
 
 
 
@@ -344,8 +416,10 @@ void setup(){
 
   calibri.load_all_fonts();
    // Lil cell
-  cell newCell( 10, 10, 1000, 100, green, green,calibri, 0, "Hello world!");
+  cell newCell( 10, 10, 1000, 100, green, black,calibri, 0, "Hello world!");
   game_cells.push_back( newCell);
+
+  generate_cells();
 
 }
 
