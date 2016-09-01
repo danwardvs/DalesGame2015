@@ -17,13 +17,18 @@
 class cell{
   public:
     // Csr
-    cell( int newX, int newY, int newWidth, int newHeight, colour newBackgroundColour, colour newTextColour, std::string newText);
+    cell( int newX, int newY, int newWidth, int newHeight, colour newBackgroundColour, colour newTextColour,scalable_font newFont, int newTextSize, std::string newText);
 
     // Dcsr
     ~cell();
 
     // Updates cell
     void update();
+
+    bool test_size(int newSize);
+
+    void set_width(int newWidth);
+    void set_height(int newHeight);
 
     // Draws the cell
     void draw(BITMAP* tempBitmap);
@@ -41,9 +46,13 @@ class cell{
     // Size
     int width;
     int height;
+    int text_size;
+
 
     // Text, if it contains any
     std::string text;
+    scalable_font font;
+
 };
 
 #endif // ITEM_H

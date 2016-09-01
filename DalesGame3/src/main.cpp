@@ -236,6 +236,9 @@ void load_slugging_xml(std::string new_xml_file){
 
 // Update game logic
 void update(){
+
+  game_cells[0].set_width(mouse_x-10);
+  game_cells[0].set_height(mouse_y-10);
   // Change graphics mode while running
   if( key[KEY_F1])
     set_gfx_mode(GFX_AUTODETECT_WINDOWED,1200,399, 0, 0);
@@ -329,9 +332,6 @@ void setup(){
   // Title (its a bit more than a number generator)
   set_window_title("OPBL Official Number Generator 2.0");
 
-  // Lil cell
-  cell newCell( 10, 10, 10, 10, green, green, "Hello world!");
-  game_cells.push_back( newCell);
 
 
   // Buffer the size of the screen
@@ -358,22 +358,10 @@ void setup(){
   //   abort_on_error("Cannot find image bmp.png\nPlease check your files and try again");
 
   calibri.load_all_fonts();
+   // Lil cell
+  cell newCell( 10, 10, 1000, 100, green, green,calibri, 0, "Hello world!");
+  game_cells.push_back( newCell);
 
-  // Load the fonts
-  c_8 = load_font( "fonts/calibri_8.pcx");
-  c_10 = load_font( "fonts/calibri_10.pcx");
-  c_12 = load_font( "fonts/calibri_12.pcx");
-  c_14 = load_font( "fonts/calibri_14.pcx");
-  c_16 = load_font( "fonts/calibri_16.pcx");
-  c_18 = load_font( "fonts/calibri_18.pcx");
-  c_20 = load_font( "fonts/calibri_20.pcx");
-  c_22 = load_font( "fonts/calibri_22.pcx");
-  c_24 = load_font( "fonts/calibri_24.pcx");
-  c_26 = load_font( "fonts/calibri_26.pcx");
-  c_28 = load_font( "fonts/calibri_28.pcx");
-  c_36 = load_font( "fonts/calibri_36.pcx");
-  c_48 = load_font( "fonts/calibri_48.pcx");
-  c_72 = load_font( "fonts/calibri_72.pcx");
 }
 
 // Main, program starts here

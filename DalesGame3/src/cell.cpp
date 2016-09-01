@@ -1,7 +1,7 @@
 #include "cell.h"
 
 // Construct the cell
-cell::cell( int newX, int newY, int newWidth, int newHeight, colour newBackgroundColour, colour newTextColour, std::string newText){
+cell::cell( int newX, int newY, int newWidth, int newHeight, colour newBackgroundColour, colour newTextColour, scalable_font newFont,int newTextSize, std::string newText){
   x = newX;
   y = newY;
   width = newWidth;
@@ -9,6 +9,8 @@ cell::cell( int newX, int newY, int newWidth, int newHeight, colour newBackgroun
   backgroundColour =  newBackgroundColour;
   textColour = newTextColour;
   text = newText;
+  font = newFont;
+  text_size = newTextSize;
 }
 
 // Deconstruct the cell
@@ -16,8 +18,21 @@ cell::~cell(){
 
 }
 
+void cell::set_width(int newWidth){
+  width = newWidth;
+}
+void cell::set_height(int newHeight){
+  height = newHeight;
+}
+
 // Run cell updates (nothing here :( )
 void cell::update(){
+
+}
+bool cell::test_size(int newSize){
+  if(text_height(font.size(newSize))<height && text_length(font.size(newSize),text.c_str())<width )
+    return true;
+  return false;
 
 }
 
@@ -30,5 +45,55 @@ void cell::draw( BITMAP* tempBitmap){
     rect( tempBitmap, x, y, x + width, y + height, makecol(0,0,0));
 
     // Draw containing text
-    textprintf_ex( tempBitmap, c_8, x, y, makecol(0,0,0), makecol(0,0,-1), "%s", text.c_str());
+    if(text_size!=0){
+      textprintf_ex( tempBitmap, font.size(text_size), x, y, makecol(0,0,0), makecol(0,0,-1), "%s", text.c_str());
+
+    }else{
+      int newSize;
+      if(test_size(72)){
+        newSize=72;
+      }else if(test_size(48)){
+        newSize=48;
+
+      }else if(test_size(36)){
+        newSize=36;
+
+      }else if(test_size(28)){
+        newSize=28;
+
+      }else if(test_size(26)){
+        newSize=26;
+
+      }else if(test_size(24)){
+        newSize=24;
+
+      }else if(test_size(22)){
+        newSize=22;
+
+      }else if(test_size(20)){
+        newSize=20;
+
+      }else if(test_size(18)){
+        newSize=18;
+
+      }else if(test_size(16)){
+        newSize=16;
+
+      }else if(test_size(14)){
+        newSize=14;
+
+      }else if(test_size(12)){
+        newSize=12;
+
+      }else if(test_size(10)){
+        newSize=10;
+
+      }else{
+        newSize=8;
+
+      }
+      textprintf_ex( tempBitmap, font.size(newSize), x, y, makecol(0,0,0), makecol(0,0,-1), "%s", text.c_str());
+
+    }
+
 }
