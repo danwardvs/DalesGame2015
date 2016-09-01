@@ -1,83 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data>
-  
-    <GeneratedNumber number="85">
-<batResult pitcher1="" pitcher2="" pitcher3="" pitcher4="" pitcher5="" pitcher6="1B">
-  </batResult>
-</GeneratedNumber>
-  
-    <GeneratedNumber number="86">
-<batResult pitcher1="" pitcher2="" pitcher3="" pitcher4="" pitcher5="1B" pitcher6="1B">
-  </batResult>
-</GeneratedNumber>
-  
-    <GeneratedNumber number="87">
-<batResult pitcher1="" pitcher1="" pitcher2="" pitcher3="" pitcher4="1B" pitcher5="1B" pitcher6="1B/2B-SR">
-  </batResult>
-</GeneratedNumber>
-  
-    <GeneratedNumber number="88">
-<batResult pitcher1="" pitcher2="" pitcher3="1B" pitcher4="1B" pitcher5="1B/2B-SR" pitcher6="1B/3B-SR">
-  </batResult>
-</GeneratedNumber>
-  
-    <GeneratedNumber number="89">
-<batResult pitcher1="" pitcher2="1B" pitcher3="1B" pitcher4="1B/2B-SR" pitcher5="1B/3B-SR" pitcher6="1B/2B-GR">
-  </batResult>
-</GeneratedNumber>
-  
-    <GeneratedNumber number="90">
-<batResult pitcher1="1B" pitcher2="1B" pitcher3="1B/2B-SR" pitcher4="1B/3B-SR" pitcher5="1B/2B-GR" pitcher6="1B/3B-GR">
-  </batResult>
-</GeneratedNumber>
-  
-    <GeneratedNumber number="91">
-<batResult pitcher1="1B" pitcher2="1B/2B-SR" pitcher3="1B/3B-SR" pitcher4="1B/2B-GR" pitcher5="1B/3B-GR" pitcher6="1B/2B-AR">
-  </batResult>
-</GeneratedNumber>
-  
-    <GeneratedNumber number="92">
-<batResult pitcher1="1B/2B-SR" pitcher2="1B/3B-SR" pitcher3="1B/2B-GR" pitcher4="1B/3B-GR" pitcher5="1B/2B-AR" pitcher6="1B/2B-FR">
-  </batResult>
-</GeneratedNumber>
-  
-    <GeneratedNumber number="93">
-<batResult pitcher1="1B/3B-SR" pitcher2="1B/2B-GR"pitcher3="1B/3B-GR" pitcher4="1B/2B-AR" pitcher5="1B/2B-FR" pitcher6="1B/2B-PR">
-  </batResult>
-</GeneratedNumber>
-  
-    <GeneratedNumber number="94">
-<batResult pitcher1="1B/2B-GR" pitcher2="1B/3B-GR"pitcher3="1B/2B-AR" pitcher4="1B/2B-FR" pitcher5="1B/2B-PR" pitcher6="2B">
-  </batResult>
-</GeneratedNumber>
-  
-    <GeneratedNumber number="95">
-<batResult pitcher1="1B/3B-GR" pitcher2="1B/2B-AR"pitcher3="1B/2B-FR" pitcher4="1B/2B-PR" pitcher5="2B" pitcher6="2B/3B-R#">
-  </batResult>
-</GeneratedNumber>
-  
-    <GeneratedNumber number="96">
-<batResult pitcher1="1B/2B-AR" pitcher2="1B/2B-FR"pitcher3="1B/2B-PR" pitcher4="2B" pitcher5="2B/3B-R#" pitcher6="2B/3B-R#">
-  </batResult>
-</GeneratedNumber>
-  
-    <GeneratedNumber number="97">
-<batResult pitcher1="1B/2B-FR" pitcher2="1B/2B-PR"pitcher3="2B/3B-R#" pitcher4="2B/3B-R#" pitcher5="2B/3B-R#" pitcher6="HR">
-  </batResult>
-</GeneratedNumber>
-  
-    <GeneratedNumber number="98">
-<batResult pitcher1="2B/3B-R#" pitcher2="2B/3B-R#"pitcher3="HR" pitcher4="HR" pitcher5="HR" pitcher6="HR">
-  </batResult>
-</GeneratedNumber>
-  
-    <GeneratedNumber number="99">
-<batResult pitcher1="2B-C/2B-G/HR-P" pitcher2="2B-C/2B-G/HR-P"pitcher3="2B-C/2B-G/HR-P" pitcher4="2B-C/2B-G/HR-P" pitcher5="2B-C/2B-G/HR-P" pitcher6="2B-C/2B-G/HR-P">
-  </batResult>
-</GeneratedNumber>
-  
-    <GeneratedNumber number="100">
-<batResult pitcher1="2B-C/2B*-G/HR-P" pitcher2="2B-C/2B*-G/HR-P"pitcher3="2B-C/2B*-G/HR-P" pitcher4="2B-C/2B*-G/HR-P" pitcher5="2B-C/2B*-G/HR-P" pitcher6="2B-C/2B*-G/HR-P">
-  </batResult>
-</GeneratedNumber>
+
+	<GeneratedNumber number="85">
+		<batResult pitcher1="" pitcher2="" pitcher3="" pitcher4="" pitcher5="" pitcher6="1B">
+		</batResult>
+	</GeneratedNumber>
+
+	<GeneratedNumber number="86">
+		<batResult pitcher1="" pitcher2="" pitcher3="" pitcher4="" pitcher5="1B" pitcher6="1B">
+		</batResult>
+	</GeneratedNumber>
+
+	<GeneratedNumber number="87">
+		<batResult pitcher1="" pitcher2="" pitcher3="" pitcher4="1B" pitcher5="1B" pitcher6="1B/2B-SR">
+		</batResult>
+	</GeneratedNumber>
+
+	<GeneratedNumber number="88">
+		<batResult pitcher1="" pitcher2="" pitcher3="1B" pitcher4="1B" pitcher5="1B/2B-SR" pitcher6="1B/3B-SR">
+		</batResult>
+	</GeneratedNumber>
+
+	<GeneratedNumber number="89">
+		<batResult pitcher1="" pitcher2="1B" pitcher3="1B" pitcher4="1B/2B-SR" pitcher5="1B/3B-SR" pitcher6="1B/2B-GR">
+		</batResult>
+	</GeneratedNumber>
+
+	<GeneratedNumber number="90">
+		<batResult pitcher1="1B" pitcher2="1B" pitcher3="1B/2B-SR" pitcher4="1B/3B-SR" pitcher5="1B/2B-GR" pitcher6="1B/3B-GR">
+		</batResult>
+	</GeneratedNumber>
+
+	<GeneratedNumber number="91">
+		<batResult pitcher1="1B" pitcher2="1B/2B-SR" pitcher3="1B/3B-SR" pitcher4="1B/2B-GR" pitcher5="1B/3B-GR" pitcher6="1B/2B-AR">
+		</batResult>
+	</GeneratedNumber>
+
+	<GeneratedNumber number="92">
+		<batResult pitcher1="1B/2B-SR" pitcher2="1B/3B-SR" pitcher3="1B/2B-GR" pitcher4="1B/3B-GR" pitcher5="1B/2B-AR" pitcher6="1B/2B-FR">
+		</batResult>
+	</GeneratedNumber>
+
+	<GeneratedNumber number="93">
+		<batResult pitcher1="1B/3B-SR" pitcher2="1B/2B-GR" pitcher3="1B/3B-GR" pitcher4="1B/2B-AR" pitcher5="1B/2B-FR" pitcher6="1B/2B-PR">
+		</batResult>
+	</GeneratedNumber>
+
+	<GeneratedNumber number="94">
+		<batResult pitcher1="1B/2B-GR" pitcher2="1B/3B-GR" pitcher3="1B/2B-AR" pitcher4="1B/2B-FR" pitcher5="1B/2B-PR" pitcher6="2B">
+		</batResult>
+	</GeneratedNumber>
+
+	<GeneratedNumber number="95">
+		<batResult pitcher1="1B/3B-GR" pitcher2="1B/2B-AR" pitcher3="1B/2B-FR" pitcher4="1B/2B-PR" pitcher5="2B" pitcher6="2B/3B-R#">
+		</batResult>
+	</GeneratedNumber>
+
+	<GeneratedNumber number="96">
+		<batResult pitcher1="1B/2B-AR" pitcher2="1B/2B-FR" pitcher3="1B/2B-PR" pitcher4="2B" pitcher5="2B/3B-R#" pitcher6="2B/3B-R#">
+		</batResult>
+	</GeneratedNumber>
+
+	<GeneratedNumber number="97">
+		<batResult pitcher1="1B/2B-FR" pitcher2="1B/2B-PR" pitcher3="2B/3B-R#" pitcher4="2B/3B-R#" pitcher5="2B/3B-R#" pitcher6="HR">
+		</batResult>
+	</GeneratedNumber>
+
+	<GeneratedNumber number="98">
+		<batResult pitcher1="2B/3B-R#" pitcher2="2B/3B-R#" pitcher3="HR" pitcher4="HR" pitcher5="HR" pitcher6="HR">
+		</batResult>
+	</GeneratedNumber>
+
+	<GeneratedNumber number="99">
+		<batResult pitcher1="2B-C/2B-G/HR-P" pitcher2="2B-C/2B-G/HR-P" pitcher3="2B-C/2B-G/HR-P" pitcher4="2B-C/2B-G/HR-P" pitcher5="2B-C/2B-G/HR-P" pitcher6="2B-C/2B-G/HR-P">
+		</batResult>
+	</GeneratedNumber>
+
+	<GeneratedNumber number="100">
+		<batResult pitcher1="2B-C/2B*-G/HR-P" pitcher2="2B-C/2B*-G/HR-P" pitcher3="2B-C/2B*-G/HR-P" pitcher4="2B-C/2B*-G/HR-P" pitcher5="2B-C/2B*-G/HR-P" pitcher6="2B-C/2B*-G/HR-P">
+		</batResult>
+	</GeneratedNumber>
 </data>

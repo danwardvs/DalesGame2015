@@ -1,8 +1,24 @@
+/*
+ * Globals
+ * Stores global program variables
+ * 31/08/16
+ * Allan Legemaate
+ */
+
+
 #ifndef GLOBALS_H
 #define GLOBALS_H
 
-FONT *c_8,*c_10,*c_12,*c_14,*c_16,*c_18,*c_20,*c_22,*c_24,*c_26,*c_28,*c_36,*c_48,*c_72;
+#include <allegro.h>
+#include <string>
 
+// Fonts
+extern FONT *c_8, *c_10, *c_12, *c_14, *c_16, *c_18, *c_20, *c_22, *c_24, *c_26, *c_28, *c_36, *c_48,*c_72;
+
+// A color storing object
+// Even though you can store colors as an int
+// And use color.getR() color.getG() color.getB()
+// to get componants where color is int color;  ;)
 struct colour{
   int r;
   int g;
@@ -14,7 +30,8 @@ struct colour{
     b = newB;
   }
 };
-/*
+
+// Scalable font!
 struct scalable_font{
   FONT* pt8;
   FONT* pt10;
@@ -38,6 +55,5 @@ struct scalable_font{
   }
 
 };
-*/
 
 #endif

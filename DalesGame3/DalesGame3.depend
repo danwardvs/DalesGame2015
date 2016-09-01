@@ -26,3 +26,32 @@
 	"rapidxml.hpp"
 	"rapidxml_print.hpp"
 
+1472692531 source:c:\users\allan\documents\games indev\dalesgame2015\dalesgame3\src\cell.cpp
+	"cell.h"
+
+1472691163 source:c:\users\allan\documents\games indev\dalesgame2015\dalesgame3\src\main.cpp
+	<allegro.h>
+	<alpng.h>
+	<time.h>
+	<iostream>
+	<fstream>
+	<vector>
+	<string>
+	"globals.h"
+	"cell.h"
+	"rapidxml.hpp"
+	"rapidxml_print.hpp"
+
+1472692507 c:\users\allan\documents\games indev\dalesgame2015\dalesgame3\include\cell.h
+	<string>
+	<sstream>
+	"allegro.h"
+	"globals.h"
+
+1472690916 c:\users\allan\documents\games indev\dalesgame2015\dalesgame3\include\globals.h
+	<allegro.h>
+	<string>
+
+1472690822 source:c:\users\allan\documents\games indev\dalesgame2015\dalesgame3\globals.cpp
+	<globals.h>
+
