@@ -27,8 +27,8 @@ void cell::draw( BITMAP* tempBitmap){
     rectfill( tempBitmap, x, y, x + width, y + height, makecol( backgroundColour.r, backgroundColour.g, backgroundColour.b));
 
     // Draw outline
-    rect( tempBitmap, x, y,x + width, y + height, makecol(0,0,0));
+    rect( tempBitmap, x, y, x + width, y + height, makecol(0,0,0));
 
     // Draw containing text
-    textprintf_ex( tempBitmap, c_8, 10, 10, makecol(0,0,0), makecol(0,0,-1), "%s", text.c_str());
+    textprintf_ex( tempBitmap, c_8, x, y, makecol(0,0,0), makecol(0,0,-1), "%s", text.c_str());
 }

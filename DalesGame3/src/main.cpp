@@ -274,7 +274,7 @@ void draw(){
   rectfill(buffer,0,0,SCREEN_W,SCREEN_H,makecol(255,255,255));
 
   // Draw our nice lil rectangle
-  for(int i = 0; i < game_cells.size(); i++){
+  for(unsigned int i = 0; i < game_cells.size(); i++){
     game_cells[i].draw(buffer);
   }
 
@@ -333,8 +333,52 @@ void setup(){
   // A danny suprise (actually a stress test)
   for( int i = 0; i < 100; i++){
     for( int t = 0; t < 100; t++){
-      cell newCell( i * 40, t * 40, 40, 40, red, blue, "Hello MEMES!");
-      game_cells.push_back( newCell);
+      int randomColor = random( 1, 6);
+
+      switch( randomColor){
+        case 1:
+          {
+            cell newCell( i * 40, t * 40, 40, 40, purple, blue, "Hello MEMES!");
+            game_cells.push_back( newCell);
+            break;
+          }
+        case 2:
+          {
+            cell newCell( i * 40, t * 40, 40, 40, orange, blue, "Hello MEMES!");
+            game_cells.push_back( newCell);
+            break;
+          }
+        case 3:
+          {
+            cell newCell( i * 40, t * 40, 40, 40, red, blue, "Hello MEMES!");
+            game_cells.push_back( newCell);
+            break;
+          }
+        case 4:
+          {
+            cell newCell( i * 40, t * 40, 40, 40, blue, blue, "Hello MEMES!");
+            game_cells.push_back( newCell);
+            break;
+          }
+        case 5:
+          {
+            cell newCell( i * 40, t * 40, 40, 40, yellow, blue, "Hello MEMES!");
+            game_cells.push_back( newCell);
+            break;
+          }
+        case 6:
+          {
+            cell newCell( i * 40, t * 40, 40, 40, green, blue, "Hello MEMES!");
+            game_cells.push_back( newCell);
+            break;
+          }
+        default:
+          {
+            cell newCell7( i * 40, t * 40, 40, 40, white, blue, "Hello MEMES!");
+            game_cells.push_back( newCell7);
+            break;
+          }
+      }
     }
   }
 
