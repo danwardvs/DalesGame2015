@@ -81,6 +81,7 @@ std::string to_string(newType newValue){
     return newResult;
 
 }
+
 void ticker(){
   ticks++;
 }
@@ -104,6 +105,10 @@ int random(int newLowest, int newHighest){
   return randomNumber;
 }
 
+bool file_exists(std::string name) {
+  std::ifstream f(name.c_str());
+  return f.good();
+}
 
 //A function to streamline error reporting in file loading
 void abort_on_error(const char *message){
@@ -493,7 +498,43 @@ void generate_cells(){
 
 }
 
+void check_xml(){
 
+  if(!file_exists("data/1b.xml"))
+    abort_on_error("Cannot find file data/1b.xml\nPlease check your files and try again");
+
+  else if(!file_exists("data/2b.xml"))
+    abort_on_error("Cannot find file data/2b.xml\nPlease check your files and try again");
+
+  else if(!file_exists("data/3b.xml"))
+    abort_on_error("Cannot find file data/3b.xml\nPlease check your files and try again");
+
+  else if(!file_exists("data/4b.xml"))
+    abort_on_error("Cannot find file data/4b.xml\nPlease check your files and try again");
+
+  else if(!file_exists("data/5b.xml"))
+    abort_on_error("Cannot find file data/5b.xml\nPlease check your files and try again");
+
+  else if(!file_exists("data/6b.xml"))
+    abort_on_error("Cannot find file data/6b.xml\nPlease check your files and try again");
+
+  else if(!file_exists("data/fs.xml"))
+    abort_on_error("Cannot find file data/fs.xml\nPlease check your files and try again");
+
+  else if(!file_exists("data/as.xml"))
+    abort_on_error("Cannot find file data/as.xml\nPlease check your files and try again");
+
+  else if(!file_exists("data/gs.xml"))
+    abort_on_error("Cannot find file data/gs.xml\nPlease check your files and try again");
+
+  else if(!file_exists("data/ss.xml"))
+    abort_on_error("Cannot find file data/ss.xml\nPlease check your files and try again");
+
+
+
+
+
+}
 
 void setup(){
   // Init allegro
@@ -547,7 +588,7 @@ void setup(){
 
 
   generate_cells();
-
+  check_xml();
 
   //cell newCell( 300, 10, 1000, 100, green, black,calibri_bold, 0, "Hello world!");
   //game_cells.push_back( newCell);
