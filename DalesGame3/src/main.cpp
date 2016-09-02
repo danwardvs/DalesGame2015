@@ -52,6 +52,9 @@ int old_time;
 
 int screen_colour = 1;
 
+// Yo Allan set this guy to true for a nice surprise!
+bool nicefont=false;
+
 int random_number;
 int random_number_steals_throws;
 int other_random_numbers[9];
@@ -234,8 +237,8 @@ void load_slugging_xml(std::string new_xml_file){
 // Update game logic
 void update(){
 
-  //game_cells[55].set_width(mouse_x-300);
-  //game_cells[55].set_height(mouse_y-10);
+  if(nicefont)game_cells[15].set_width(mouse_x-10);
+  if(nicefont)game_cells[15].set_height(mouse_y-200);
 
   // Change graphics mode while running
   if( key[KEY_F1]){
@@ -345,6 +348,9 @@ void update(){
     game_cells[i+63].set_text(pitcher_ss[i]);
   }
 
+  if(nicefont)
+    game_cells[15].set_text("NiCe TeXt! 4allanz");
+
 
 
 
@@ -365,6 +371,8 @@ void draw(){
 
   //textprintf_ex(buffer,calibri_bold.size(28),50,550,makecol(0,0,0),makecol(0,0,-1),"Scalable fonts OP!");
   textprintf_ex(buffer,calibri.size(16),15,12,makecol(0,0,0),makecol(0,0,-1),"Batter Number");
+
+  if(nicefont)game_cells[15].draw(buffer);
 
   draw_sprite(buffer,cursor,mouse_x,mouse_y);
 
