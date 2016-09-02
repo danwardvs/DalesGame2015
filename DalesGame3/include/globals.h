@@ -61,6 +61,16 @@ struct scalable_font{
     path = newPath;
   }
 
+  // A function to streamline error reporting in file loading
+  void abort_on_error(const char *message){
+    set_window_title("Error!");
+    if (screen != NULL){
+      set_gfx_mode(GFX_TEXT, 0, 0, 0, 0);
+    }
+    allegro_message("%s.\n %s\n", message, allegro_error);
+    exit(-1);
+  }
+
   FONT* size(int newSize){
     switch(newSize){
       case 8:return pt8;

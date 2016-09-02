@@ -242,19 +242,19 @@ void load_slugging_xml(std::string new_xml_file){
 // Update game logic
 void update(){
 
+  // Allan tech demo code
   if(nicefont)game_cells[15].set_width(mouse_x-10);
   if(nicefont)game_cells[15].set_height(mouse_y-200);
 
-  // Change graphics mode while running
+  // Compact mode
   if( key[KEY_F1]){
     set_gfx_mode(GFX_AUTODETECT_WINDOWED, 1024,768, 0, 0);
     game_cells.clear();
     generate_cells();
   }
-  if( key[KEY_F2])
-    set_gfx_mode(GFX_AUTODETECT_WINDOWED,1200,800, 0, 0);
 
-  // Turn
+
+  // Generate new number
   if(( key[KEY_ENTER] || key[KEY_ENTER_PAD] || key[KEY_DEL] || key[KEY_SPACE] || key[KEY_DEL_PAD]) && step > 9){
     // Cycle screen colors
     screen_colour++;
