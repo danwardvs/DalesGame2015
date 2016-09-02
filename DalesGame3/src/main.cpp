@@ -54,7 +54,7 @@ int screen_colour = 1;
 
 int random_number;
 int random_number_steals_throws;
-int other_random_numbers[6];
+int other_random_numbers[9];
 
 std::string base_result_pitcher[6];
 
@@ -261,8 +261,8 @@ void update(){
       pitcher_fs[i] = "";
     }
 
-    // Make a list of 5 random numbers
-    for( int i = 0; i < 5; i++){
+    // Make a list of 9 random numbers
+    for( int i = 0; i < 10; i++){
       other_random_numbers[i] = random(1,100);
     }
 
@@ -309,6 +309,13 @@ void update(){
   game_cells[5].set_text(to_string(random_number_steals_throws));
   game_cells[6].set_text(to_string(other_random_numbers[2]));
   game_cells[7].set_text(to_string(other_random_numbers[3]));
+
+  game_cells[69].set_text(to_string(other_random_numbers[4]));
+  game_cells[70].set_text(to_string(other_random_numbers[5]));
+  game_cells[71].set_text(to_string(other_random_numbers[6]));
+  game_cells[72].set_text(to_string(other_random_numbers[7]));
+  game_cells[73].set_text(to_string(other_random_numbers[8]));
+  game_cells[74].set_text(to_string(other_random_numbers[9]));
 
   // Batter number
   game_cells[0].set_text(to_string(batter_number));
@@ -464,6 +471,13 @@ void generate_cells(){
   create_cell(spacing_6*3,650,spacing_6,50,white,black,calibri_bold,0,left,"");
   create_cell(spacing_6*4,650,spacing_6,50,white,black,calibri_bold,0,left,"");
   create_cell(spacing_6*5,650,spacing_6,50,white,black,calibri_bold,0,left,"");
+
+  create_cell(0,710,spacing_6,50,yellow,black,calibri_bold,0,centre,"");
+  create_cell(spacing_6,710,spacing_6,50,yellow,black,calibri_bold,0,centre,"");
+  create_cell(spacing_6*2,710,spacing_6,50,yellow,black,calibri_bold,0,centre,"");
+  create_cell(spacing_6*3,710,spacing_6,50,yellow,black,calibri_bold,0,centre,"");
+  create_cell(spacing_6*4,710,spacing_6,50,yellow,black,calibri_bold,0,centre,"");
+  create_cell(spacing_6*5,710,spacing_6,50,yellow,black,calibri_bold,0,centre,"");
 
 
 
