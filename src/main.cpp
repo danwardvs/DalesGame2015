@@ -10,6 +10,7 @@
 #include "cell.h"
 
 #include "rapidxml.hpp"
+
 #include "rapidxml_print.hpp"
 
 #define left false
@@ -101,7 +102,8 @@ END_OF_FUNCTION(close_button_handler)
 int random(int newLowest, int newHighest){
   int lowest = newLowest, highest = newHighest;
   int range = (highest - lowest) + 1;
-  int randomNumber = lowest+int(range*rand()/(RAND_MAX + 1.0));
+  int randomNumber; // this doens't work on linux = lowest+int(range*rand()/(RAND_MAX + 1.0));
+  randomNumber = rand() % range + lowest;
   return randomNumber;
 }
 
@@ -563,7 +565,8 @@ void setup(){
   // Init randomizer and run once to start
   srand(time(NULL));
   for(int i=0; i<1000; i++){
-    random(0,i);
+    std::cout<<random(1,122);
+    std::cout<<" ";
   }
 
   // Setup for FPS system

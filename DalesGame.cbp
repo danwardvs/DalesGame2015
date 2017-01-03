@@ -2,12 +2,12 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="Dale&apos;s Game" />
+		<Option title="DalesGame3" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Release">
-				<Option output="build/Dale&apos;s Game" prefix_auto="1" extension_auto="1" />
+				<Option output="build/DalesGame3" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="build/" />
 				<Option object_output="obj/" />
 				<Option type="0" />
@@ -23,12 +23,14 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="main.cpp" />
+		<Unit filename="include/cell.h" />
+		<Unit filename="include/globals.h" />
+		<Unit filename="src/cell.cpp" />
+		<Unit filename="src/main.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
 			<debugger />
-			<lib_finder disable_auto="1" />
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>
